@@ -67,7 +67,7 @@
 				color: 'yellow',
 				opacity: 0.15,
 				weight: 1
-			}).bindTooltip('Spawn');
+			}).bindTooltip('Spawn').bindPopup('Spawn');
 
 			// Populate the homes group from the homesList.
 			// We'll show it by default but add it to the controls.
@@ -80,7 +80,7 @@
 						fillOpacity: 0.6,
 						weight: 2,
 						radius: 15
-					}).bindTooltip(home.name)
+					}).bindTooltip(home.name).bindPopup(home.name)
 				);
 			});
 
@@ -95,7 +95,7 @@
 						fillOpacity: 0.5,
 						weight: 1,
 						radius: 100
-					}).bindTooltip(warp.name)
+					}).bindTooltip(warp.name).bindPopup(warp.name)
 				);
 			});
 
