@@ -63,6 +63,13 @@
 				noWrap: true,
 				tms: false
 			});
+			// Create the overworld-layer to display MagnaRisa.
+			var nether = L.tileLayer('nether/{z}/{x}/{y}.png', {
+				minZoom: mapMinZoom,
+				maxZoom: mapMaxZoom,
+				noWrap: true,
+				tms: false
+			});
 			
 			// Define the protected spawn area.
 			// We'll add this to the controls.
@@ -71,6 +78,12 @@
 				opacity: 0.15,
 				weight: 1
 			}).bindTooltip('Spawn').bindPopup('Spawn');
+			
+			var hub = L.rectangle([[(-44/coCor), (-44/coCor)], [(95/coCor), (95/coCor)]], {
+				color: 'magenta',
+				opacity: 0.15,
+				weight: 1
+			}).bindTooltip('Hub').bindPopup('Hub');
 
 			// Populate the homes group from the homesList.
 			// We'll show it by default but add it to the controls.
@@ -119,11 +132,58 @@
 				crs.unproject(L.point(mapExtent[0], mapExtent[1]))
 			]);
 
-			L.control.layers({"Overworld": overworld},{"Spawn": spawn, "Warps": warps, "Homes": homes}).addTo(map);
+			// Define a default search marker and function to draw it.
+			// This is done so we got the searchMarker in a variable.
+			var searchMarker = L.circleMarker();
+			function addSearchMarker(latlng, title, map){
+				searchMarker.remove();
+				searchMarker = L.circleMarker(latlng, {color:'red'}).addTo(map);
+			};
+
+			// Create the different controls and search options.
+			// Controll over what is shown is done based on the baselayerchange event.
+			var defaultControls = L.control.layers({"Overworld": overworld, "Nether": nether},{"Spawn": spawn, "Warps": warps, "Homes": homes});
+			var netherControls = L.control.layers({"Overworld": overworld, "Nether": nether},{"Hub": hub});
+			var defaultSearch = new L.Control.Search({
+				layer: homes,
+				initial: false,
+				autoType: false,
+				position:'topright',
+				marker: false,
+				moveToLocation: function(latlng, title, map){addSearchMarker(latlng, title, map)}
+			});
+			
 			// Display the coordinates
 			L.control.mousePosition({lngFirst: true, lngFormatter: lng, latFormatter: lat}).addTo(map);
-			// Add the search option
-			map.addControl( new L.Control.Search({layer: homes, initial: false, position:'topright'}) );
+			
+			// Add the default controls to the map
+			defaultControls.addTo(map);
+			map.addControl(defaultSearch);
+			
+			// Change the controls and search based on the base layer.
+			map.on('baselayerchange', function(i){
+				searchMarker.remove();
+				
+				switch(i.name){
+					default:
+						defaultControls.addTo(map);
+						defaultSearch.addTo(map);
+						
+						netherControls.remove();
+						hub.remove();
+						break;
+					case 'Nether':
+						defaultControls.remove();
+						defaultSearch.remove();
+						spawn.remove();
+						warps.remove();
+						homes.remove();
+						
+						netherControls.addTo(map);
+						hub.addTo(map);
+						break;
+				}
+			})
 		});
     </script>
   </body>
