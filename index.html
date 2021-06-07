@@ -103,7 +103,7 @@
 				homesList.forEach( home => {
 					homes.addLayer(
 						L.circle([(home.y*-1/coCor),(home.x/coCor)], {
-							color: 'red',
+							color: home.private,
 							opacity: 0.6,
 							fillOpacity: 0.6,
 							weight: 2,
