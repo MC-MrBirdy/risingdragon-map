@@ -16,7 +16,9 @@
 	<script src="leafletjs/leaflet-search.js" type="text/javascript"></script>
 	
 	<script src="overworld/warps.js" type="text/javascript"></script>
+	<script src="nether/homes.js" type="text/javascript"></script>
 	<script src="overworld/homes.js" type="text/javascript"></script>
+	<script src="overworldokt20/homes.js" type="text/javascript"></script>
 	
     <style>
       html, body, #map { width:100%; height:100%; margin:0; padding:0; z-index: 1; background: grey; }
@@ -55,7 +57,8 @@
 		};
 	  
 		document.addEventListener('DOMContentLoaded', (event) => {
-		
+			
+			// Creating the worlds
 			// Create the overworld-layer to display MagnaRisa.
 			var overworld = L.tileLayer('overworld/{z}/{x}/{y}.png', {
 				minZoom: mapMinZoom,
@@ -65,6 +68,14 @@
 			});
 			// Create the overworld-layer to display MagnaRisa.
 			var nether = L.tileLayer('nether/{z}/{x}/{y}.png', {
+				minZoom: mapMinZoom,
+				maxZoom: mapMaxZoom,
+				noWrap: true,
+				tms: false
+			});
+			
+			// Create the overworld-okt20-layer to display MagnaRisa.
+			var overworldOkt20 = L.tileLayer('overworldokt20/{z}/{x}/{y}.png', {
 				minZoom: mapMinZoom,
 				maxZoom: mapMaxZoom,
 				noWrap: true,
@@ -91,6 +102,40 @@
 			if( typeof homesList !== 'undefined' ) {
 				homesList.forEach( home => {
 					homes.addLayer(
+						L.circle([(home.y*-1/coCor),(home.x/coCor)], {
+							color: 'red',
+							opacity: 0.6,
+							fillOpacity: 0.6,
+							weight: 2,
+							radius: 15,
+							title: home.name
+						}).bindTooltip(home.name).bindPopup(home.name)
+					);
+				});
+			}
+			
+			// Nether homes
+			var homesNether = L.layerGroup([]);
+			if( typeof homesListNether !== 'undefined' ) {
+				homesListNether.forEach( home => {
+					homesNether.addLayer(
+						L.circle([(home.y*-1/coCor),(home.x/coCor)], {
+							color: 'lime',
+							opacity: 0.6,
+							fillOpacity: 0.6,
+							weight: 2,
+							radius: 15,
+							title: home.name
+						}).bindTooltip(home.name).bindPopup(home.name)
+					);
+				});
+			}
+			
+			// Old homes
+			var homesOkt20 = L.layerGroup([]);
+			if( typeof homesListOkt20 !== 'undefined' ) {
+				homesListOkt20.forEach( home => {
+					homesOkt20.addLayer(
 						L.circle([(home.y*-1/coCor),(home.x/coCor)], {
 							color: 'red',
 							opacity: 0.6,
@@ -142,8 +187,10 @@
 
 			// Create the different controls and search options.
 			// Controll over what is shown is done based on the baselayerchange event.
-			var defaultControls = L.control.layers({"Overworld": overworld, "Nether": nether},{"Spawn": spawn, "Warps": warps, "Homes": homes});
-			var netherControls = L.control.layers({"Overworld": overworld, "Nether": nether},{"Hub": hub});
+			var worldList = {"Overworld": overworld, "Nether": nether, "Overworld - Okt.20": overworldOkt20};
+			var defaultControls = L.control.layers(worldList,{"Spawn": spawn, "Warps": warps, "Homes": homes});
+			var netherControls = L.control.layers(worldList,{"Hub": hub, "Homes": homesNether});
+			var okt20Controls = L.control.layers(worldList,{"Spawn": spawn, "Homes": homesOkt20});
 			var defaultSearch = new L.Control.Search({
 				layer: homes,
 				initial: false,
@@ -171,6 +218,10 @@
 						
 						netherControls.remove();
 						hub.remove();
+						homesNether.remove();
+						
+						okt20Controls.remove();
+						homesOkt20.remove();
 						break;
 					case 'Nether':
 						defaultControls.remove();
@@ -181,6 +232,24 @@
 						
 						netherControls.addTo(map);
 						hub.addTo(map);
+						homesNether.addTo(map);
+						
+						okt20Controls.remove();
+						homesOkt20.remove();
+						break;
+					case 'Overworld - Okt.20':
+						defaultControls.remove();
+						defaultSearch.remove();
+						spawn.remove();
+						warps.remove();
+						homes.remove();
+						
+						netherControls.remove();
+						hub.remove();
+						homesNether.remove();
+						
+						okt20Controls.addTo(map);
+						homesOkt20.addTo(map);
 						break;
 				}
 			})

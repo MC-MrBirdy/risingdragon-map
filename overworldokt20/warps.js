@@ -1,0 +1,13 @@
+var warpListOkt20 = [{"name": "holiday18", "x": -2370, "y": 4186},
+			{"name": "holiday19", "x": -473, "y": -4223},
+			{"name": "CottageContest", "x": -1791, "y": 4080},
+			{"name": "DesertVillage", "x": 2875, "y": -263},
+			{"name": "DIYCountry", "x": -1347, "y": -736},
+			{"name": "FantasyFootball", "x": 2595, "y":-185 },
+			{"name": "AquaticDeep", "x": -1099, "y": 4705},
+			{"name": "HauntedHouse", "x": -2823, "y":3876 },
+			{"name": "SpookyVillage", "x": -1428, "y": -88},
+			{"name": "FrozenGarden", "x": -1258, "y": 3343},
+			{"name": "FlowerBingo", "x": -1024, "y": 3137},
+			{"name": "ZooRescue", "x": -1585, "y": -703},
+			{"name": "TreeTopTopia", "x": -856, "y": 2873}];
