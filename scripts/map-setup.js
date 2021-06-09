@@ -173,12 +173,7 @@ async function fillMarkers(worldData, list, markers) {
 					case "name": continue; break;
 					default:
 						if (item[attr]) {
-							if (item[attr].length == 2) {
-								var val = (item[attr][0] > 750) ? 750 : alterData[0][attr][0];
-								shape[attr] += eval(val + item[attr][1]);
-							} else {
-								shape[attr] = item[attr];
-							}
+							shape[attr] = (item[attr].includes(";")) ? eval(item[attr]) : item[attr];
 						}
 						break;
 				}
