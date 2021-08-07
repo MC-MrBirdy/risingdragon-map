@@ -11,6 +11,12 @@ var worldsConfig = [
 				"default":true
 			},
 			{
+				"name":"WarpsRaw",
+				"path":"/warps_raw.json",
+				"raw":true,
+				"default":false
+			},
+			{
 				"name":"Warps",
 				"path":"/warps.json",
 				"default":false

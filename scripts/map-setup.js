@@ -127,11 +127,10 @@ function getShape(shape) {
 /* ***************************************************
 // Creating a marker layerGroup based on path and name.
 ****************************************************** */
-async function fillMarkers(worldData, list, markers) {
+async function fillMarkers(worldData, list, markers, markersList = []) {
 	var path = worldData.path + list.path
 	var markerGroup = L.layerGroup([]);
-	var markersList = {};
-	var alterDataSets = [];	
+	var alterDataSets = [];
 	
 	// Check if there are alterations.
 	// If so load them.
@@ -145,8 +144,11 @@ async function fillMarkers(worldData, list, markers) {
 	}
 	
 	// Get the marker data.
-	await getJSON(path).then( data => { markersList = data });
-
+	// Make sure to check if we got a filled markerList.
+	if (markersList.length <= 0) {
+		await getJSON(path).then( data => { markersList = data });
+	}
+	
 	// Itherate through the homeList and create proper layers for it.
 	for (const marker of markersList) {
 		var shape = {
@@ -164,16 +166,26 @@ async function fillMarkers(worldData, list, markers) {
 		// Than search for the correct alterData set.
 		var firstName = marker.name.split(" - ")[0];
 		var alterData = alterDataSets.filter(obj => { return obj.name.toLowerCase() == firstName.toLowerCase()});
+		var doEval = false;
 		// If there's alterData we'll loop through it.
 		// We skip the name and apply the value to the attributes.
 		// If it's an array we'll use the second value in an eval.
 		alterData.forEach( item => {
-			for (var attr in shape) {
+			for (var attr in item)
+			{			
+				doEval = false;
+				attrOrg = attr;
+				
 				switch (attr) {
 					case "name": continue; break;
 					default:
-						if (item[attr]) {
-							shape[attr] = (item[attr].includes(";")) ? eval(item[attr]) : item[attr];
+						if (attr.endsWith("_eval")) {
+							attr = attr.replace("_eval","");
+							doEval = true;
+						}
+				
+						if (shape[attr]) {
+							shape[attr] = (doEval) ? eval("shape[attr]+Math.sqrt(item[attrOrg])") : item[attr];
 						}
 						break;
 				}
@@ -190,6 +202,62 @@ async function fillMarkers(worldData, list, markers) {
 	};
 	
 	markers[list.name] = markerGroup;
+	console.log(markers);
+	return markers;
+}
+
+/* ***************************************************
+// Make sure we can process raw data, so we convert it to a markerList.
+// After that the fillMarkers function will be called.
+****************************************************** */
+async function convertRaw(worldData, list, markers){
+	var path = worldData.path + list.path
+	var rawData = {};
+	var markerList = [];
+		
+	var key = 0;
+	
+	// Get the marker data.
+	await getJSON(path).then( data => { rawData = data });
+	for (region in rawData.regions) {
+		
+		var shapeType;
+		var latlngs = [[],[]];
+		var latlng = [];
+		
+		switch (rawData.regions[region]["type"]) {
+			case "poly2d": 
+				shapeType = "polygon";
+				for (id in rawData.regions[region]["points"]) {
+					latlngs[0].push([rawData.regions[region]["points"][id]["x"],rawData.regions[region]["points"][id]["z"]]);
+				}
+			break;
+			case "cuboid":
+				shapeType = "rectangle";
+				latlng = [[rawData.regions[region]["min"]["x"],rawData.regions[region]["min"]["z"]],[rawData.regions[region]["max"]["x"],rawData.regions[region]["max"]["z"]]];
+			break;
+			default:
+				shapeType = "circle";
+				latlng = [0,0];
+			break;
+		}
+		
+		var marker = {
+			"name" : region,
+			"shape" : shapeType,
+			"weight" : 2,
+			"radius" : 15,
+			"opacity" : 0.5,
+			"color" : "red",
+			"latlngs" : latlngs,
+			"latlng" : latlng
+		};
+		
+		markerList[key] = marker;
+		key++;
+	}
+	
+	markers = await fillMarkers(worldData, list, markers, markerList);
 	return markers;
 }
 
@@ -241,7 +309,12 @@ async function processWorldData(worldData, map) {
 	// Make sure we populate the markers.
 	// Not to forget define the default set to display.
 	for (const list of worldData.markers) {
-		markers = await fillMarkers(worldData, list, markers);
+		if (list["raw"]) {
+			if (checkShow == "alter") { markers = await convertRaw(worldData, list, markers); }
+		} else {
+			markers = await fillMarkers(worldData, list, markers);
+		}
+		
 		markersDefault = (list.default) ? list.name : markersDefault;
 	}
 	
