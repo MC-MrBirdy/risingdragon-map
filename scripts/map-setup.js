@@ -1,7 +1,6 @@
 const mapMinZoom = 3;
 const mapMaxZoom = 6;
 const coCor = 1.2;
-const sizeCor = 63386979.13749724;
 
 const mapMaxResolution = 1.00000000;
 const mapMinResolution = Math.pow(2, mapMaxZoom) * mapMaxResolution;
@@ -29,12 +28,11 @@ var worldIDs = {};
 var markerList = {};
 var searchMarker = L.circleMarker();
 var displayCoords = L.control.mousePosition({lngFirst: true, lngFormatter: lng, latFormatter: lat});
-var checkShow = new URL(window.location.href).searchParams.get("show");
-var checkDebug = new URL(window.location.href).searchParams.get("debug");
+var checkShow = (new URL(window.location.href).searchParams.get("show") == "alter") ? true : false;
+var checkDebug = (new URL(window.location.href).searchParams.get("debug") == "true") ? true : false;
 
 var defaultMap = 0;
 var mapID = 0;
-
 
 /* ***************************************************
 // Simple function to get the JSON data.
@@ -45,122 +43,96 @@ async function getJSON(url) {
 }
 
 /* ***************************************************
-// Correct the game coordinates to map coordinates.
-****************************************************** */
-function fixCoords(latlng) {
-	// If the first element has two items,
-	// we assume it to be coordinates for an rectangle.
-	if (latlng[0].length == 2) {
-		latlng[0] = fixCoords(latlng[0]);
-		latlng[1] = fixCoords(latlng[1]);
-	// Else we correct the coordinates as is.
-	// Since the game coordinates aren't like the map.
-	// We need to correct them (coCor) and swap them.
-	} else {
-		var tmpX = latlng[0]/coCor;
-		var tmpY = latlng[1]*-1/coCor;
-		latlng[1] = tmpX;
-		latlng[0] = tmpY;
-	}
-	
-	return latlng;
-}
-
-/* ***************************************************
-// Loop through the latlngs array to fix the coordinates.
-****************************************************** */
-function loopLatlngs(latlngs) {
-	for (var latlng of latlngs) { latlng = fixCoords(latlng); }
-	return latlngs;
-}
-
-/* ***************************************************
-// Correct the game coordinates for latlngs to map coordinates.
-****************************************************** */
-function fixLatlngs(latlngs) {
-	if (latlngs[0].length >= 2 && latlngs.length == 2) {
-		latlngs[0] = loopLatlngs(latlngs[0]);
-		latlngs[1] = loopLatlngs(latlngs[1]);
-	} else {
-		latlngs = loopLatlngs(latlngs);
-	}
-	return latlngs;
-}
-
-/* ***************************************************
 // Create a shape based on the arguments.
 ****************************************************** */
 function getShape(shape, worldData) {
 	var returnShape;
 	var information = {};
+	var tmpLatlngs;
 	
 	switch (shape["shape"]) {
 		default:
 		case "circle":
+			// Define  the shape
 			returnShape = L.circle(fixCoords(shape["latlng"]), {
 				color: shape["color"],
 				opacity: shape["opacity"],
 				fillOpacity: shape["opacity"],
 				weight: shape["weight"],
 				radius: shape["radius"],
-				title: shape["name"]
+				title: shape["name"] + ( (shape["description"]) ? " - " + shape["description"] : "" )
 			});
+			// Currently a circle has no information.
 			break;
 		case "rectangle":
+			// Copy the latlng before fixing them.
+			// This so we can calculate the proper size without fixes.
+			// Still we'll map the array and increase the latlng by a decent number.
+			// Doing so will prevent issues with negative numbers.
+			tmpLatlng = JSON.parse(JSON.stringify(shape["latlng"]));
+			tmpLatlng = tmpLatlng.map( n => n.map( n => n + 1000000 ) );
+			
+			// Define the shape
 			returnShape = L.rectangle(
 				[fixCoords(shape["latlng"])],
 				{
 					color: shape["color"],
 					opacity: shape["opacity"],
 					weight: shape["weight"],
-					title: shape["name"]
+					title: shape["name"] + ( (shape["description"]) ? " - " + shape["description"] : "" )
 				}
 			);
 			
-			total = Math.round(L.GeometryUtil.geodesicArea(returnShape.getLatLngs()[0]) / sizeCor);
-			percentage = Math.round((total / worldData.size) * 100);
+			// Calculate the size based on the original latlng.
+			total = rectangleArea(tmpLatlng);
+			percentage = Math.round(((total / worldData.size) * 100 ) * 100) / 100;
 
+			// Make sure we give the proper info back.
 			information = {
 				"total":total,
 				"percentage":percentage
 			};
 			
-			if (checkDebug == "true") {
+			if (checkDebug) {
 				console.log( "Name: " + shape["name"] );
 				console.log( "Size: " + total );
 				console.log( "      " + percentage + "%" );
 			}
 			break;
 		case "polygon":
+			// Copy the latlngs before fixing them.
+			// This so we can calculate the proper size without fixes.
+			tmpLatlngs = JSON.parse(JSON.stringify(shape["latlngs"]));
+			
+			// Define the shape.
 			returnShape = L.polygon(
-				fixLatlngs(shape["latlngs"]), 
+				fixLatlngs(shape["latlngs"]),
 				{
 					color: shape["color"],
 					opacity: shape["opacity"],
 					weight: shape["weight"],
-					title: shape["name"]
+					title: shape["name"] + ( (shape["description"]) ? " - " + shape["description"] : "" )
 				}
 			);
 			
-			polySize = Math.round(L.GeometryUtil.geodesicArea(returnShape.getLatLngs()[0]) / sizeCor);
-			cutoutSize = Math.round(L.GeometryUtil.geodesicArea(returnShape.getLatLngs()[1]) / sizeCor);
-			total = polySize - cutoutSize;
-			percentage = Math.round((total / worldData.size) * 100);
+			// Calculate the size based on the original latlngs.
+			total = Math.abs(polygonArea(tmpLatlngs));
+			percentage = Math.round(((total / worldData.size) * 100) * 100) / 100;
 
+			// Make sure we give the proper info back.
 			information = {
-				"polySize":polySize,
-				"cutoutSize":cutoutSize,
 				"total":total,
 				"percentage":percentage
 			};
 			
-			if (checkDebug == "true") {
+			if (checkDebug) {
 				console.log( "Name: " + shape["name"] );
 				console.log( "Size: " + total );
 				console.log( "      " + percentage + "%" );
 			}
 			break;
 	}
+	
 	return [returnShape,information];
 }
 
@@ -176,7 +148,7 @@ async function fillMarkers(worldData, list, markers, markersList = []) {
 	// If so load them.
 	if (worldData.alter && 
 		worldData.alter[list.name] &&
-		checkShow == "alter") {
+		checkShow) {
 		for (const alter of worldData.alter[list.name]) {
 			var alterPath = worldData.path + alter;
 			await getJSON(alterPath).then( data => { alterDataSets = alterDataSets.concat(data) });
@@ -209,6 +181,7 @@ async function fillMarkers(worldData, list, markers, markersList = []) {
 		var firstName = marker.name.split(" - ")[0];
 		var alterData = alterDataSets.filter(obj => { return obj.name.toLowerCase() == firstName.toLowerCase()});
 		var doEval = false;
+		
 		// If there's alterData we'll loop through it.
 		// We skip the name and apply the value to the attributes.
 		// If it's an array we'll use the second value in an eval.
@@ -233,8 +206,6 @@ async function fillMarkers(worldData, list, markers, markersList = []) {
 				}
 			}
 		});
-		
-		
 		
 		// Make sure we get the shape object.
 		// And add itt o the layer.
@@ -279,16 +250,31 @@ async function convertRaw(worldData, list, markers){
 	// Get the marker data.
 	await getJSON(path).then( data => { rawData = data });
 	for (region in rawData.regions) {
-		// Skip if it has a parent!
-		if (rawData.regions[region]["parent"]) {
+		
+		var frozenRegion = false;
+		if ( (rawData.regions[region]["parent"] && rawData.regions[region]["parent"] == "seventeenfreeze-se1")
+			|| (region == "seventeenfreeze-se1")
+			|| (rawData.regions[region]["flags"]["deny-message"] && rawData.regions[region]["flags"]["deny-message"].includes("frozen by staff"))
+			) {
+			frozenRegion = true;
+		}
+		
+		// Skip if it has a parent and no chat regions.
+		// Unless it's a frozen parent.
+		if (
+			(rawData.regions[region]["parent"] && !frozenRegion)
+			|| (rawData.regions[region]["flags"] && rawData.regions[region]["flags"]["send-chat"] && rawData.regions[region]["flags"]["send-chat"] == "deny")
+			|| (frozenRegion && checkShow == false)
+			) {
 			continue;
 		}
 		
-		var shapeType;
+		var shapeType = "undefined";
 		var latlngs = [[],[]];
 		var latlng = [];
 		
-		
+		// Make sure we got the correct shapeType.
+		// We can't work with the raw values...
 		switch (rawData.regions[region]["type"]) {
 			case "poly2d": 
 				shapeType = "polygon";
@@ -300,27 +286,42 @@ async function convertRaw(worldData, list, markers){
 				shapeType = "rectangle";
 				latlng = [[rawData.regions[region]["min"]["x"],rawData.regions[region]["min"]["z"]],[rawData.regions[region]["max"]["x"],rawData.regions[region]["max"]["z"]]];
 			break;
+			case "global":
+				shapeType = "undefined";
+			break;
 			default:
 				shapeType = "circle";
 				latlng = [0,0];
 			break;
 		}
 		
-		var marker = {
-			"name" : region,
-			"shape" : shapeType,
-			"weight" : 2,
-			"radius" : 15,
-			"opacity" : 0.5,
-			"color" : (list.color) ? list.color : "red",
-			"latlngs" : latlngs,
-			"latlng" : latlng
-		};
-		
-		markerList[key] = marker;
-		key++;
+		if (shapeType != "undefined") {
+			// Define the marker with all it's settings.
+			// Note some of the variables can be empty.
+			var marker = {
+				"name" : region,
+				"shape" : shapeType,
+				"weight" : 2,
+				"radius" : 15,
+				"opacity" : 0.5,
+				"color" : (list.color) ? list.color : "red",
+				"latlngs" : latlngs,
+				"latlng" : latlng
+			};
+			
+			// Change the frozen zones.
+			if ( frozenRegion ) {
+				marker["color"] = "lightblue";
+			}
+			
+			// Add the marker to the list.
+			markerList[key] = marker;
+			key++;
+		}
 	}
 	
+	// Execute the fillMarkers command and return the data.
+	// With normal data we can just call this function and be done.
 	markers = await fillMarkers(worldData, list, markers, markerList);
 	return markers;
 }
@@ -353,7 +354,7 @@ async function processWorldData(worldData, map) {
 	var markersDefault = (worldData.markers_default) ? worldData.markers_default : "Home";
 	
 	// Get the spawn area for the current world.
-	if (worldData.spawn != "")
+	if (worldData.spawn && worldData.spawn != "")
 	{
 		// Create a rectangle for the spawn area.
 		spawn = L.rectangle(
@@ -378,7 +379,7 @@ async function processWorldData(worldData, map) {
 	// Not to forget define the default set to display.
 	for (const list of worldData.markers) {
 		if (list["raw"]) {
-			//if (checkShow == "alter") { 
+			//if (checkShow) { 
 			markers = await convertRaw(worldData, list, markers);
 			//}
 		} else {
@@ -468,7 +469,10 @@ function addMapControls(currentMarkerList, map, mapName = null) {
 		autoType: false,
 		position:'topright',
 		marker: false,
-		moveToLocation: function(latlng, title, map) {addSearchMarker(latlng, title, map)}
+		moveToLocation: function(latlng, title, map) { 
+			addSearchMarker(latlng, title, map);
+			map.setView(latlng, 100);
+		}
 	});
 	
 	// Add the controls to the map.

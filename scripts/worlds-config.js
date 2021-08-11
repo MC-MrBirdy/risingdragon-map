@@ -19,18 +19,7 @@ var worldsConfig = [
 				"default":false,
 				"color":"yellow"
 			}],
-		"alter":{"Homes":["/time.json","/gone.json"]},
-		"spawn":
-			{
-				"name":"Spawn",
-				"x1":-298,
-				"y1":673,
-				"x2":702,
-				"y2":-327,
-				"color":"yellow",
-				"opacity":0.15,
-				"weight":1
-			}
+		"alter":{"Homes":["/time.json","/gone.json"]}
 	},
 	{
 		"id":1,
