@@ -199,7 +199,7 @@ async function fillMarkers(worldData, list, markers, markersList = []) {
 			"weight" : (marker.weight>=0) ? marker.weight : 2,
 			"radius" : (marker.radius>=0) ? marker.radius : 15,
 			"opacity" : (marker.opacity>=0) ? marker.opacity : 0.5,
-			"color" : (marker.color) ? marker.color : "red",
+			"color" : (marker.color) ? marker.color : (list.color) ? list.color : "red",
 			"latlngs" : (marker.latlngs) ? marker.latlngs : [],
 			"latlng" : (marker.latlng) ? marker.latlng : []
 		};
@@ -312,7 +312,7 @@ async function convertRaw(worldData, list, markers){
 			"weight" : 2,
 			"radius" : 15,
 			"opacity" : 0.5,
-			"color" : "red",
+			"color" : (list.color) ? list.color : "red",
 			"latlngs" : latlngs,
 			"latlng" : latlng
 		};
