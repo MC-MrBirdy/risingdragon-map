@@ -1,6 +1,7 @@
 const mapMinZoom = 3;
 const mapMaxZoom = 6;
 const coCor = 1.2;
+const sizeCor = 63386979.13749724;
 
 const mapMaxResolution = 1.00000000;
 const mapMinResolution = Math.pow(2, mapMaxZoom) * mapMaxResolution;
@@ -29,6 +30,10 @@ var markerList = {};
 var searchMarker = L.circleMarker();
 var displayCoords = L.control.mousePosition({lngFirst: true, lngFormatter: lng, latFormatter: lat});
 var checkShow = new URL(window.location.href).searchParams.get("show");
+var checkDebug = new URL(window.location.href).searchParams.get("debug");
+
+var defaultMap = 0;
+var mapID = 0;
 
 
 /* ***************************************************
@@ -85,8 +90,9 @@ function fixLatlngs(latlngs) {
 /* ***************************************************
 // Create a shape based on the arguments.
 ****************************************************** */
-function getShape(shape) {
+function getShape(shape, worldData) {
 	var returnShape;
+	var information = {};
 	
 	switch (shape["shape"]) {
 		default:
@@ -110,18 +116,52 @@ function getShape(shape) {
 					title: shape["name"]
 				}
 			);
+			
+			total = Math.round(L.GeometryUtil.geodesicArea(returnShape.getLatLngs()[0]) / sizeCor);
+			percentage = Math.round((total / worldData.size) * 100);
+
+			information = {
+				"total":total,
+				"percentage":percentage
+			};
+			
+			if (checkDebug == "true") {
+				console.log( "Name: " + shape["name"] );
+				console.log( "Size: " + total );
+				console.log( "      " + percentage + "%" );
+			}
 			break;
 		case "polygon":
 			returnShape = L.polygon(
 				fixLatlngs(shape["latlngs"]), 
 				{
 					color: shape["color"],
+					opacity: shape["opacity"],
+					weight: shape["weight"],
 					title: shape["name"]
 				}
 			);
+			
+			polySize = Math.round(L.GeometryUtil.geodesicArea(returnShape.getLatLngs()[0]) / sizeCor);
+			cutoutSize = Math.round(L.GeometryUtil.geodesicArea(returnShape.getLatLngs()[1]) / sizeCor);
+			total = polySize - cutoutSize;
+			percentage = Math.round((total / worldData.size) * 100);
+
+			information = {
+				"polySize":polySize,
+				"cutoutSize":cutoutSize,
+				"total":total,
+				"percentage":percentage
+			};
+			
+			if (checkDebug == "true") {
+				console.log( "Name: " + shape["name"] );
+				console.log( "Size: " + total );
+				console.log( "      " + percentage + "%" );
+			}
 			break;
 	}
-	return returnShape;
+	return [returnShape,information];
 }
 
 /* ***************************************************
@@ -149,10 +189,12 @@ async function fillMarkers(worldData, list, markers, markersList = []) {
 		await getJSON(path).then( data => { markersList = data });
 	}
 	
+	
 	// Itherate through the homeList and create proper layers for it.
-	for (const marker of markersList) {
+	for (const marker of markersList) {		
 		var shape = {
 			"name" : (marker.name) ? marker.name : "unidentified",
+			"description" : (marker.description) ? marker.description : "",
 			"shape" : (marker.shape) ? marker.shape : "circle",
 			"weight" : (marker.weight>=0) ? marker.weight : 2,
 			"radius" : (marker.radius>=0) ? marker.radius : 15,
@@ -192,17 +234,34 @@ async function fillMarkers(worldData, list, markers, markersList = []) {
 			}
 		});
 		
+		
+		
 		// Make sure we get the shape object.
 		// And add itt o the layer.
-		// var lShape = getShape(shape);
+		var lShape = getShape(shape, worldData);
+		var tooltip = marker.name;
+		var popup;
+		
+		if (marker.description) {
+			tooltip += "<br/><b>" + marker.description + "</b>";
+		}
+		
+		popup = tooltip;
+		if (Object.keys(lShape[1]).length > 0) {
+			//popup += "<br/><span class=\"showInfo\">Show info</span><br/>"
+			popup += "<br/><span class=\"info\">"
+				  +  "<span class=\"label\">Size:</span>~" + lShape[1].total + " /blocks"
+				  +  "<br/><span class=\"label\">&nbsp;</span>" + lShape[1].percentage + "%"
+				  +  "</span>";
+		}
+		
 		markerGroup.addLayer(
-			getShape(shape).bindTooltip(marker.name)
-			.bindPopup(marker.name)
+			lShape[0].bindTooltip(tooltip)
+			.bindPopup(popup)
 		);
 	};
 	
 	markers[list.name] = markerGroup;
-	console.log(markers);
 	return markers;
 }
 
@@ -220,10 +279,15 @@ async function convertRaw(worldData, list, markers){
 	// Get the marker data.
 	await getJSON(path).then( data => { rawData = data });
 	for (region in rawData.regions) {
+		// Skip if it has a parent!
+		if (rawData.regions[region]["parent"]) {
+			continue;
+		}
 		
 		var shapeType;
 		var latlngs = [[],[]];
 		var latlng = [];
+		
 		
 		switch (rawData.regions[region]["type"]) {
 			case "poly2d": 
@@ -267,6 +331,7 @@ async function convertRaw(worldData, list, markers){
 async function processWorldData(worldData, map) {
 	// Define the world tileLayer.
 	const world = L.tileLayer(worldData.path+'/{z}/{x}/{y}.png', {
+		attribution: '&copy;MagnaRisa',
 		id: worldData.id,
 		minZoom: mapMinZoom,
 		maxZoom: mapMaxZoom,
@@ -275,9 +340,12 @@ async function processWorldData(worldData, map) {
 		bounds: bounds
 	});
 	
+	// Add the size of the world to the worldData.
+	worldData.size = worldData.xsize * worldData.ysize;
+	
 	// Setup some variables for the markers.
 	var spawnName = "Spawn";
-	var defaultMap = (worldData.type == "default") ? true : false;
+	var isDefaultMap = (worldData.type == "default") ? true : false;
 	var spawn = L.layerGroup([]);
 	var homes = L.layerGroup([]);
 	var warps = L.layerGroup([]);
@@ -310,7 +378,9 @@ async function processWorldData(worldData, map) {
 	// Not to forget define the default set to display.
 	for (const list of worldData.markers) {
 		if (list["raw"]) {
-			if (checkShow == "alter") { markers = await convertRaw(worldData, list, markers); }
+			//if (checkShow == "alter") { 
+			markers = await convertRaw(worldData, list, markers);
+			//}
 		} else {
 			markers = await fillMarkers(worldData, list, markers);
 		}
@@ -319,10 +389,14 @@ async function processWorldData(worldData, map) {
 	}
 	
 	// Get the default world based on worldData type.
-	if (defaultMap) { map.addLayer(world); }
+	if (isDefaultMap) {
+		map.addLayer(world);
+		defaultMap = worldData.id;
+		mapID = worldData.id;
+	}
 	
 	// Return the data per world.
-	return {"id":worldData.id,"data":world,"markers":markers,"markersDefault":markersDefault,"default":defaultMap}
+	return {"id":worldData.id,"data":world,"markers":markers,"markersDefault":markersDefault,"default":isDefaultMap}
 }
 
 /* ***************************************************
@@ -343,59 +417,19 @@ function updateMap(map, i) {
 	map.off();
 	map.remove();
 	
-	var mapID = i.layer.options.id;
-	var mapName = worldIDs[mapID];
+	mapID = i.layer.options.id;
 	
 	// Define a new map.
-	map = new L.Map('map', {
-		maxZoom: mapMaxZoom,
-		minZoom: mapMinZoom,
-		crs: crs
-	}).fitBounds([
-		crs.unproject(L.point(mapExtent[2], mapExtent[3])),
-		crs.unproject(L.point(mapExtent[0], mapExtent[1]))
-	]);
-	
-	var currentMarkerList = markerList[mapID];
-	
-	// Redefine the controls to give the proper marker options.
-	var defaultControls = L.control.layers(worldsList, currentMarkerList.list);
-	var defaultSearch = new L.Control.Search({
-		layer: currentMarkerList.list[currentMarkerList.default],
-		initial: false,
-		autoType: false,
-		position:'topright',
-		marker: false,
-		moveToLocation: function(latlng, title, map) {addSearchMarker(latlng, title, map)}
-	});
-	
-	// Add the controls and layers to the map.
-	map.addControl(defaultControls);
-	map.addControl(defaultSearch);
-	map.addControl(displayCoords);
-	
-	map.addLayer(worldsList[mapName]);
-	map.addLayer(currentMarkerList.list[currentMarkerList.default]);
-	
-	// Enable the on baselayerchange function (this) again.
-	map.on('baselayerchange', function(i) { updateMap(map, i); });
+	map = getMap();
+	addMapControls(markerList[mapID], map, worldIDs[mapID]);
 }
 
 /* ***************************************************
 // Create the world map.
 ****************************************************** */
-async function coreMap() {
-	var defaultMap = 0;
-	
+async function coreMap() {	
 	// Define the map.
-	var map = new L.Map('map', {
-		maxZoom: mapMaxZoom,
-		minZoom: mapMinZoom,
-		crs: crs
-	}).fitBounds([
-		crs.unproject(L.point(mapExtent[2], mapExtent[3])),
-		crs.unproject(L.point(mapExtent[0], mapExtent[1]))
-	]);
+	var map = getMap();
 	
 	// Itherate through the world config.
 	// Create tileLayers for each world.
@@ -405,12 +439,27 @@ async function coreMap() {
 			markerList[world.id] = {"default":world.markersDefault,"list":world.markers};
 			worldIDs[world.id] = worldData.name;
 			worldsList[worldData.name] = world.data;
-			defaultMap = (world.default) ? world.id : defaultMap;
 		});
 	};
 	
-	var currentMarkerList = markerList[defaultMap];
-	
+	addMapControls(markerList[defaultMap], map);
+}
+
+
+// No need to repeat code...
+function getMap() {
+	return new L.Map('map', {
+		maxZoom: mapMaxZoom,
+		minZoom: mapMinZoom,
+		crs: crs
+	}).fitBounds([
+		crs.unproject(L.point(mapExtent[2], mapExtent[3])),
+		crs.unproject(L.point(mapExtent[0], mapExtent[1]))
+	]);
+	//.setView([190,0], 4);
+}
+
+function addMapControls(currentMarkerList, map, mapName = null) {
 	// Define the control layers for the worlds.
 	var defaultControls = L.control.layers(worldsList, currentMarkerList.list);
 	var defaultSearch = new L.Control.Search({
@@ -426,6 +475,11 @@ async function coreMap() {
 	map.addControl(defaultControls);
 	map.addControl(defaultSearch);
 	map.addControl(displayCoords);
+	
+	if (mapName != null) {
+		map.addLayer(worldsList[mapName]);
+		map.addLayer(currentMarkerList.list[currentMarkerList.default]);
+	}
 	
 	// Display the proper things when switching layers.
 	map.on('baselayerchange', function(i) { updateMap(map, i); });

@@ -4,6 +4,8 @@ var worldsConfig = [
 		"name":"Overworld",
 		"path":"worlds/overworld",
 		"type":"default",
+		"xsize":12000,
+		"ysize":12000,
 		"markers":[
 			{
 				"name":"Homes",
@@ -11,14 +13,9 @@ var worldsConfig = [
 				"default":true
 			},
 			{
-				"name":"WarpsRaw",
+				"name":"Warps",
 				"path":"/warps_raw.json",
 				"raw":true,
-				"default":false
-			},
-			{
-				"name":"Warps",
-				"path":"/warps.json",
 				"default":false
 			}],
 		"alter":{"Homes":["/time.json","/gone.json"]},
@@ -39,6 +36,8 @@ var worldsConfig = [
 		"name":"Nether",
 		"path":"worlds/nether",
 		"type":"other",
+		"xsize":10000,
+		"ysize":10000,
 		"markers":[
 			{
 				"name":"Homes",
@@ -62,11 +61,19 @@ var worldsConfig = [
 		"name":"Overworld October 2020",
 		"path":"worlds/overworldoct20",
 		"type":"archive",
+		"xsize":12000,
+		"ysize":12000,
 		"markers":[
 			{
 				"name":"Homes",
 				"path":"/homes.json",
 				"default":true
+			},
+			{
+				"name":"WarpsRaw",
+				"path":"/warps_raw.json",
+				"raw":true,
+				"default":false
 			},
 			{
 				"name":"Warps",

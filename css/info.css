@@ -1,0 +1,9 @@
+.info {
+	font-size: 0.8em;
+	color: rgba(0,0,0,0.5);
+}
+
+.label {
+	display: inline-block;
+	width: 30px;
+}
