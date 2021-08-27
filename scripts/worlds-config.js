@@ -14,7 +14,7 @@ var worldsConfig = [
 			},
 			{
 				"name":"Warps",
-				"path":"/warps_raw.json",
+				"path":"/warps.json",
 				"raw":true,
 				"default":false,
 				"color":"yellow"
@@ -33,18 +33,14 @@ var worldsConfig = [
 				"name":"Homes",
 				"path":"/homes.json",
 				"default":true
-			}],
-		"spawn":
+			},
 			{
-				"name":"Hub",
-				"x1":-44,
-				"y1":-44,
-				"x2":95,
-				"y2":95,
-				"color":"magenta",
-				"opacity":0.15,
-				"weight":1
-			}
+				"name":"Warps",
+				"path":"/warps.json",
+				"raw":true,
+				"default":false,
+				"color":"yellow"
+			}]
 	},
 	{
 		"id":2,

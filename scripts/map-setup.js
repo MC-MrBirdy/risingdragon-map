@@ -200,7 +200,7 @@ async function fillMarkers(worldData, list, markers, markersList = []) {
 						}
 				
 						if (shape[attr]) {
-							shape[attr] = (doEval) ? eval("shape[attr]+Math.sqrt(item[attrOrg])") : item[attr];
+							shape[attr] = (doEval) ? shape[attr]+Math.sqrt(item[attrOrg]) : item[attr];
 						}
 						break;
 				}

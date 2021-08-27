@@ -1,0 +1,123 @@
+{
+  "regions": {
+    "farm-fortressmobs": {
+      "min": {
+        "x": 335,
+        "y": 53,
+        "z": 605
+      },
+      "max": {
+        "x": 611,
+        "y": 105,
+        "z": 689
+      },
+      "members": {
+        "unique-ids": [
+          "3487cfbc-3eb3-498a-af8f-c1beb4a90476",
+          "8237a36c-d388-43a9-82d4-1c7a73a0b8e7"
+        ]
+      },
+      "flags": {
+        "enderpearl": "deny",
+        "use": "allow",
+        "mob-damage": "allow",
+        "greeting": "§3Community Fortress Mob Farm §8:: §6Built by §eSilentDemiseLF §6& §eZombiekats",
+        "chest-access": "allow"
+      },
+      "owners": {},
+      "type": "cuboid",
+      "priority": 0
+    },
+    "spawnnetherportal": {
+      "min": {
+        "x": -41,
+        "y": 19,
+        "z": -88
+      },
+      "max": {
+        "x": 84,
+        "y": 129,
+        "z": 37
+      },
+      "members": {
+        "unique-ids": [
+          "5e508e05-d6a8-4386-8fc5-fc4e004c063a",
+          "b586315a-cda6-4098-975f-d4beec32e57f"
+        ]
+      },
+      "flags": {
+        "greeting": "§6Welcome to the Nether! §eThis area is protected.",
+        "mob-spawning": "deny",
+        "farewell": "§8Now leaving protected spawn portal area ..."
+      },
+      "owners": {},
+      "type": "cuboid",
+      "priority": 0
+    },
+    "farm-magmacream": {
+      "min": {
+        "x": 1827,
+        "y": 9,
+        "z": -3734
+      },
+      "max": {
+        "x": 1871,
+        "y": 58,
+        "z": -3686
+      },
+      "members": {
+        "unique-ids": [
+          "3487cfbc-3eb3-498a-af8f-c1beb4a90476"
+        ]
+      },
+      "flags": {
+        "enderpearl": "deny",
+        "use": "allow",
+        "mob-damage": "allow",
+        "greeting": "§3Community Magma Cream Farm §8:: §6Built by §eZombiekats",
+        "chest-access": "allow"
+      },
+      "owners": {},
+      "type": "cuboid",
+      "priority": 0
+    },
+    "farm-blazingrods": {
+      "min": {
+        "x": 4443,
+        "y": 56,
+        "z": 4018
+      },
+      "max": {
+        "x": 4487,
+        "y": 78,
+        "z": 4053
+      },
+      "members": {
+        "unique-ids": [
+          "3487cfbc-3eb3-498a-af8f-c1beb4a90476"
+        ]
+      },
+      "flags": {
+        "enderpearl": "deny",
+        "use": "allow",
+        "greeting": "§3Community Blaze Farm §8:: §6Built by §eZombiekats",
+        "interact": "allow",
+        "chest-access": "allow"
+      },
+      "owners": {},
+      "type": "cuboid",
+      "priority": 0
+    },
+    "__global__": {
+      "members": {},
+      "flags": {
+        "greeting": "§8§k8§4§lHey!§8§k8§r §cGet here by portal? §6Make sure it is linked correctly! §e§n/portal-link",
+        "pvp": "deny",
+        "firework-damage": "deny"
+      },
+      "owners": {},
+      "type": "global",
+      "priority": 0
+    }
+  }
+}
