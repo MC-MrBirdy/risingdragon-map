@@ -18,6 +18,12 @@ var worldsConfig = [
 				"raw":true,
 				"default":false,
 				"color":"yellow"
+			},
+			{
+				"name":"Check",
+				"path":"/check.json",
+				"default":false,
+				"alter":true
 			}],
 		"alter":{"Homes":["/time.json","/gone.json"]}
 	},

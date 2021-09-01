@@ -34,6 +34,11 @@ var checkDebug = (new URL(window.location.href).searchParams.get("debug") == "tr
 var defaultMap = 0;
 var mapID = 0;
 
+var polygonInfo = [];
+var selArea = [];
+var selCount = 0;
+var lMap;
+
 /* ***************************************************
 // Simple function to get the JSON data.
 ****************************************************** */
@@ -229,11 +234,78 @@ async function fillMarkers(worldData, list, markers, markersList = []) {
 		markerGroup.addLayer(
 			lShape[0].bindTooltip(tooltip)
 			.bindPopup(popup)
+			.on('click', function(e) { showPolyPoints(this) })
 		);
 	};
 	
 	markers[list.name] = markerGroup;
 	return markers;
+}
+
+/* Drawing for the Deli */
+function showPolyPoints(myLittlePoly) {
+	if (!polygonInfo.includes(myLittlePoly.options.title) && checkShow)
+	{
+		// We want to show which Poly we got.
+		// Make sure to remember the poly.
+		console.log(myLittlePoly.options.title);
+		polygonInfo.push(myLittlePoly.options.title);
+		latlngs = myLittlePoly._latlngs[0];
+		
+		// Loop through all points so we can draw them on the map.
+		for (latlng in latlngs)
+		{
+			point = L.circle([latlngs[latlng].lat, latlngs[latlng].lng], { radius: 15 })
+				.bindPopup(Math.round(latlngs[latlng].lat*-1*coCor) + "," + Math.round(latlngs[latlng].lng*coCor))
+				.on('click', function (e){ drawSquare(this) });
+			point.addTo(lMap);
+		}
+	}
+}
+
+function drawSquare(polyPoint) {
+	latlng = polyPoint._latlng;
+	
+	if (selCount == 0){
+		selCount++;
+		selArea.push([latlng.lat, latlng.lng]);
+	}
+	else if (selCount == 1 && selArea[0][0] != latlng.lat && selArea[0][1] != latlng.lng)
+	{
+		selArea.push([latlng.lat, latlng.lng]);
+		L.rectangle([selArea]).addTo(lMap);
+		
+		// Set the proper order for Z
+		if (selArea[0][0] > selArea[1][0])
+		{
+			minZ = Math.round(selArea[0][0]*-1*coCor);
+			maxZ = Math.round(selArea[1][0]*-1*coCor);
+		}
+		else
+		{
+			minZ = Math.round(selArea[0][0]*-1*coCor);
+			maxZ = Math.round(selArea[1][0]*-1*coCor);
+		}
+		
+		// Set the proper order for X
+		if (selArea[0][1] > selArea[1][1])
+		{
+			minX = Math.round(selArea[0][1]*coCor);
+			maxX = Math.round(selArea[1][1]*coCor);
+		}
+		else
+		{
+			minX = Math.round(selArea[0][1]*coCor);
+			maxX = Math.round(selArea[1][1]*coCor);
+		}
+		
+		// Make sure we get a proper output.
+		console.log("WHERE x>=" + minX + " AND z>=" + minZ + " AND x<=" + maxX + " AND z<=" + maxZ);
+		
+		// Reset the selection.
+		selArea = [];
+		selCount = 0;
+	}
 }
 
 /* ***************************************************
@@ -377,13 +449,13 @@ async function processWorldData(worldData, map) {
 	
 	// Make sure we populate the markers.
 	// Not to forget define the default set to display.
-	for (const list of worldData.markers) {
-		if (list["raw"]) {
-			//if (checkShow) { 
-			markers = await convertRaw(worldData, list, markers);
-			//}
-		} else {
-			markers = await fillMarkers(worldData, list, markers);
+	for (const list of worldData.markers) {	
+		if ((list["alter"] == true && checkShow) || (list["alter"] != false && list["alter"] != true)) {
+			if (list["raw"]) {
+				markers = await convertRaw(worldData, list, markers);
+			} else {
+				markers = await fillMarkers(worldData, list, markers);
+			}
 		}
 		
 		markersDefault = (list.default) ? list.name : markersDefault;
@@ -449,7 +521,7 @@ async function coreMap() {
 
 // No need to repeat code...
 function getMap() {
-	return new L.Map('map', {
+	lMap = new L.Map('map', {
 		maxZoom: mapMaxZoom,
 		minZoom: mapMinZoom,
 		crs: crs
@@ -458,6 +530,8 @@ function getMap() {
 		crs.unproject(L.point(mapExtent[0], mapExtent[1]))
 	]);
 	//.setView([190,0], 4);
+	
+	return lMap
 }
 
 function addMapControls(currentMarkerList, map, mapName = null) {
