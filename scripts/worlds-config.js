@@ -78,5 +78,33 @@ var worldsConfig = [
 				"opacity":0.15,
 				"weight":1
 			}
+	},
+	{
+		"id":3,
+		"name":"Overworld August 2021",
+		"path":"worlds/overworldaug21",
+		"type":"archive",
+		"xsize":12000,
+		"ysize":12000,
+		"markers":[
+			{
+				"name":"Homes",
+				"path":"/homes.json",
+				"default":true
+			},
+			{
+				"name":"Warps",
+				"path":"/warps.json",
+				"raw":true,
+				"default":false,
+				"color":"yellow"
+			},
+			{
+				"name":"Check",
+				"path":"/check.json",
+				"default":false,
+				"alter":true
+			}],
+		"alter":{"Homes":["/time.json","/gone.json"]}
 	}
 ];

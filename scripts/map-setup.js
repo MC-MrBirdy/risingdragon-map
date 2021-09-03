@@ -278,8 +278,8 @@ function drawSquare(polyPoint) {
 		// Set the proper order for Z
 		if (selArea[0][0] > selArea[1][0])
 		{
-			minZ = Math.round(selArea[0][0]*-1*coCor);
-			maxZ = Math.round(selArea[1][0]*-1*coCor);
+			maxZ = Math.round(selArea[0][0]*-1*coCor);
+			minZ = Math.round(selArea[1][0]*-1*coCor);
 		}
 		else
 		{
@@ -290,8 +290,8 @@ function drawSquare(polyPoint) {
 		// Set the proper order for X
 		if (selArea[0][1] > selArea[1][1])
 		{
-			minX = Math.round(selArea[0][1]*coCor);
-			maxX = Math.round(selArea[1][1]*coCor);
+			maxX = Math.round(selArea[0][1]*coCor);
+			minX = Math.round(selArea[1][1]*coCor);
 		}
 		else
 		{
