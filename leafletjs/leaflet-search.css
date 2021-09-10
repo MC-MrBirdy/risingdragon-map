@@ -1,6 +1,5 @@
 .leaflet-container .leaflet-control-search {
 	position:relative;
-	float:left;
 	background:#fff;
 	color:#1978cf;
 	border: 2px solid rgba(0,0,0,0.2);

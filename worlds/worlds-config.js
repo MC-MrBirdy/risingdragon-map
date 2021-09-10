@@ -1,3 +1,11 @@
+var defaultConfig = {
+	"minZoom" : 3,
+	"maxZoom" : 6,
+	"mapResolution" : 1.00000000,
+	"mapExtent" : [-5120.00000000, -5120.00000000, 5120.00000000, 5120.00000000],
+	"defaultWorldID" : 0
+};
+
 var worldsConfig = [
 	{
 		"id":0,
@@ -15,15 +23,14 @@ var worldsConfig = [
 			{
 				"name":"Warps",
 				"path":"/warps.json",
-				"raw":true,
 				"default":false,
 				"color":"yellow"
 			},
 			{
-				"name":"Check",
-				"path":"/check.json",
+				"name":"Regen",
+				"path":"/regen.json",
 				"default":false,
-				"alter":true
+				"color":"lightblue"
 			}],
 		"alter":{"Homes":["/time.json","/gone.json"]}
 	},
@@ -43,7 +50,6 @@ var worldsConfig = [
 			{
 				"name":"Warps",
 				"path":"/warps.json",
-				"raw":true,
 				"default":false,
 				"color":"yellow"
 			}]
@@ -95,7 +101,6 @@ var worldsConfig = [
 			{
 				"name":"Warps",
 				"path":"/warps.json",
-				"raw":true,
 				"default":false,
 				"color":"yellow"
 			},
