@@ -1,6 +1,6 @@
 {
   "regions": {
-	"seventeenfreeze-se1": {
+	"1.17 regenerated SE": {
       "members": {},
       "flags": {
         "deny-message": "§cThis area has been frozen by staff. If you believe this to be an error, contact staff."
@@ -213,7 +213,7 @@
         }
       ]
     },
-	"seventeenfreeze-sw1": {
+	"1.17 regenerated SW": {
       "members": {},
       "flags": {},
       "owners": {},
@@ -684,7 +684,7 @@
         }
       ]
     },
-	"seventeenfreeze-ne1": {
+	"1.17 regenerated NE": {
       "members": {},
       "flags": {},
       "owners": {},
@@ -1091,7 +1091,7 @@
         }
       ]
     },
-	"seventeenfreeze-nw1": {
+	"1.17 regenerated NW": {
       "members": {},
       "flags": {},
       "owners": {},
