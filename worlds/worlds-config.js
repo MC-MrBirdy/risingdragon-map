@@ -3,7 +3,8 @@ var defaultConfig = {
 	"maxZoom" : 6,
 	"mapResolution" : 1.00000000,
 	"mapExtent" : [-5120.00000000, -5120.00000000, 5120.00000000, 5120.00000000],
-	"defaultWorldID" : 0
+	"defaultWorldID" : 0,
+	"coordCor" : 1.2
 };
 
 var worldsConfig = [
@@ -41,6 +42,7 @@ var worldsConfig = [
 		"type":"other",
 		"xsize":10000,
 		"ysize":10000,
+		"coordCor" : 1.1,
 		"markers":[
 			{
 				"name":"Homes",
@@ -56,6 +58,27 @@ var worldsConfig = [
 	},
 	{
 		"id":2,
+		"name":"End",
+		"path":"worlds/end",
+		"type":"other",
+		"xsize":10000,
+		"ysize":10000,
+		"coordCor" : 1.1,
+		"markers":[
+			{
+				"name":"Homes",
+				"path":"/homes.json",
+				"default":true
+			},
+			{
+				"name":"Warps",
+				"path":"/warps.json",
+				"default":false,
+				"color":"yellow"
+			}]
+	},
+	{
+		"id":3,
 		"name":"Overworld October 2020",
 		"path":"worlds/overworldoct20",
 		"type":"archive",
@@ -86,7 +109,7 @@ var worldsConfig = [
 			}
 	},
 	{
-		"id":3,
+		"id":4,
 		"name":"Overworld August 2021",
 		"path":"worlds/overworldaug21",
 		"type":"archive",

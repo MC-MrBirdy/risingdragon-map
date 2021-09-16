@@ -10,7 +10,7 @@ class Worlds {
 		this.minZoom = defaultConfig.minZoom;
 		this.maxZoom = defaultConfig.maxZoom;
 		this.mapExtent = defaultConfig.mapExtent;
-		this.coordCor = 1.2;
+		this.coordCor = defaultConfig.coordCor; //1.2
 		
 		// Set some extra options based on GET variables.
 		this.alterView = (new URL(window.location.href).searchParams.get("show") == "alter") ? true : false;
@@ -30,6 +30,8 @@ class Worlds {
 		this.shapePointLayer = {};
 		this.shapeRectangleCoords = [];
 		this.shapeRectangles = L.layerGroup([]);
+		this.defaultTileBounds = L.latLngBounds();
+		this.defaultCoordCor = this.coordCor;
 		
 		// Empty search marker.
 		this.searchMarker = new L.circleMarker();
@@ -71,7 +73,7 @@ class Worlds {
 		for (var config of this.worldsConfig) {
 			// First define the tile layer, using the proper path.
 			// The attribution is optional and defaults to ©MagnaRisa.
-			const currentWorld = L.tileLayer(config.path + '/{z}/{x}/{y}.png', {
+			var currentWorld = L.tileLayer(config.path + '/{z}/{x}/{y}.png', {
 				attribution: (config.attr) ? config.attr : '&copy;MagnaRisa',
 				id: config.id,
 				parent: this,
@@ -86,6 +88,11 @@ class Worlds {
 			// This so we can add the controls to switch worlds.
 			this.tilesList[config.name] = currentWorld;
 			this.worldsList[config.name] = config;
+			
+			this.coordCor = this.defaultCoordCor;
+			if (config.coordCor) {
+				this.coordCor = config.coordCor;
+			}
 			
 			// Generate the markers.
 			await this.processMarkers(config);
