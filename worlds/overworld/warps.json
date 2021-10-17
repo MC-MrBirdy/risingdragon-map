@@ -1,2390 +1,362 @@
 {
   "regions": {
-    "mg-snowmanspleef-break": {
-      "parent": "mg-snowmanspleef-pvp",
+    "qa-lostsoul": {
+      "min": {
+        "x": 863,
+        "y": 59,
+        "z": 29
+      },
+      "max": {
+        "x": 882,
+        "y": 72,
+        "z": 53
+      },
       "members": {},
       "flags": {
-        "block-break": "allow"
+        "sleep": "allow",
+        "vehicle-place": "allow",
+        "use": "allow",
+        "vehicle-destroy": "allow",
+        "interact": "allow",
+        "chest-access": "allow",
+        "ride": "allow"
+      },
+      "owners": {},
+      "type": "cuboid",
+      "priority": 0
+    },
+    "marketandfarms-interact": {
+      "members": {
+        "groups": [
+          "dragon"
+        ]
+      },
+      "flags": {
+        "block-break": "allow",
+        "block-place": "allow"
       },
       "owners": {},
       "type": "poly2d",
       "priority": 0,
-      "max-y": 83,
-      "min-y": 75,
+      "max-y": 70,
+      "min-y": 64,
       "points": [
         {
-          "x": -2319,
-          "z": 4055
+          "x": -260,
+          "z": 344
         },
         {
-          "x": -2318,
-          "z": 4055
+          "x": -256,
+          "z": 332
         },
         {
-          "x": -2318,
-          "z": 4053
+          "x": -249,
+          "z": 328
         },
         {
-          "x": -2317,
-          "z": 4053
+          "x": -236,
+          "z": 327
         },
         {
-          "x": -2317,
-          "z": 4051
+          "x": -217,
+          "z": 324
         },
         {
-          "x": -2316,
-          "z": 4051
+          "x": -213,
+          "z": 314
         },
         {
-          "x": -2316,
-          "z": 4050
+          "x": -181,
+          "z": 319
         },
         {
-          "x": -2315,
-          "z": 4050
+          "x": -181,
+          "z": 337
         },
         {
-          "x": -2315,
-          "z": 4049
+          "x": -163,
+          "z": 347
         },
         {
-          "x": -2314,
-          "z": 4049
+          "x": -156,
+          "z": 355
         },
         {
-          "x": -2313,
-          "z": 4049
+          "x": -159,
+          "z": 375
         },
         {
-          "x": -2313,
-          "z": 4048
+          "x": -170,
+          "z": 384
         },
         {
-          "x": -2311,
-          "z": 4048
+          "x": -189,
+          "z": 391
         },
         {
-          "x": -2311,
-          "z": 4047
+          "x": -208,
+          "z": 391
         },
         {
-          "x": -2301,
-          "z": 4047
+          "x": -228,
+          "z": 383
         },
         {
-          "x": -2301,
-          "z": 4048
+          "x": -244,
+          "z": 370
         },
         {
-          "x": -2299,
-          "z": 4048
-        },
-        {
-          "x": -2299,
-          "z": 4049
-        },
-        {
-          "x": -2297,
-          "z": 4049
-        },
-        {
-          "x": -2297,
-          "z": 4050
-        },
-        {
-          "x": -2296,
-          "z": 4050
-        },
-        {
-          "x": -2296,
-          "z": 4051
-        },
-        {
-          "x": -2295,
-          "z": 4051
-        },
-        {
-          "x": -2295,
-          "z": 4052
-        },
-        {
-          "x": -2295,
-          "z": 4053
-        },
-        {
-          "x": -2294,
-          "z": 4053
-        },
-        {
-          "x": -2294,
-          "z": 4055
-        },
-        {
-          "x": -2293,
-          "z": 4055
-        },
-        {
-          "x": -2293,
-          "z": 4065
-        },
-        {
-          "x": -2294,
-          "z": 4066
-        },
-        {
-          "x": -2294,
-          "z": 4067
-        },
-        {
-          "x": -2295,
-          "z": 4067
-        },
-        {
-          "x": -2295,
-          "z": 4068
-        },
-        {
-          "x": -2295,
-          "z": 4069
-        },
-        {
-          "x": -2296,
-          "z": 4069
-        },
-        {
-          "x": -2296,
-          "z": 4070
-        },
-        {
-          "x": -2297,
-          "z": 4070
-        },
-        {
-          "x": -2297,
-          "z": 4071
-        },
-        {
-          "x": -2299,
-          "z": 4071
-        },
-        {
-          "x": -2299,
-          "z": 4072
-        },
-        {
-          "x": -2301,
-          "z": 4072
-        },
-        {
-          "x": -2301,
-          "z": 4073
-        },
-        {
-          "x": -2311,
-          "z": 4073
-        },
-        {
-          "x": -2311,
-          "z": 4072
-        },
-        {
-          "x": -2313,
-          "z": 4072
-        },
-        {
-          "x": -2313,
-          "z": 4071
-        },
-        {
-          "x": -2315,
-          "z": 4071
-        },
-        {
-          "x": -2315,
-          "z": 4070
-        },
-        {
-          "x": -2316,
-          "z": 4070
-        },
-        {
-          "x": -2316,
-          "z": 4069
-        },
-        {
-          "x": -2317,
-          "z": 4069
-        },
-        {
-          "x": -2317,
-          "z": 4067
-        },
-        {
-          "x": -2318,
-          "z": 4067
-        },
-        {
-          "x": -2318,
-          "z": 4065
-        },
-        {
-          "x": -2319,
-          "z": 4065
+          "x": -249,
+          "z": 364
         }
       ]
     },
-    "holiday19-toy": {
-      "parent": "holiday19-main",
-      "members": {},
+    "spawnpvparena": {
+      "members": {
+        "groups": [
+          "dragon",
+          "mod"
+        ]
+      },
       "flags": {
-        "deny-message": "§cYou must rankup to participate!"
+        "use": "allow",
+        "greeting": "§cNow entering spawns §4§lPVP §carena",
+        "potion-splash": "allow",
+        "interact": "allow",
+        "damage-animals": "allow",
+        "lighter": "allow",
+        "pvp": "allow",
+        "farewell": "Back to safety"
       },
       "owners": {},
       "type": "poly2d",
       "priority": 0,
-      "max-y": 113,
+      "max-y": 69,
       "min-y": 63,
       "points": [
         {
-          "x": -445,
-          "z": -4224
+          "x": 211,
+          "z": -187
         },
         {
-          "x": -450,
-          "z": -4189
+          "x": 213,
+          "z": -188
         },
         {
-          "x": -450,
-          "z": -4140
+          "x": 215,
+          "z": -189
         },
         {
-          "x": -421,
-          "z": -4161
+          "x": 217,
+          "z": -190
         },
         {
-          "x": -415,
-          "z": -4188
+          "x": 218,
+          "z": -191
         },
         {
-          "x": -412,
-          "z": -4241
+          "x": 219,
+          "z": -192
         },
         {
-          "x": -405,
-          "z": -4272
+          "x": 220,
+          "z": -193
         },
         {
-          "x": -409,
-          "z": -4326
+          "x": 221,
+          "z": -195
         },
         {
-          "x": -438,
-          "z": -4337
+          "x": 222,
+          "z": -197
         },
         {
-          "x": -451,
-          "z": -4317
+          "x": 223,
+          "z": -200
         },
         {
-          "x": -452,
-          "z": -4269
+          "x": 223,
+          "z": -206
+        },
+        {
+          "x": 222,
+          "z": -209
+        },
+        {
+          "x": 221,
+          "z": -211
+        },
+        {
+          "x": 220,
+          "z": -213
+        },
+        {
+          "x": 219,
+          "z": -214
+        },
+        {
+          "x": 218,
+          "z": -215
+        },
+        {
+          "x": 217,
+          "z": -216
+        },
+        {
+          "x": 215,
+          "z": -217
+        },
+        {
+          "x": 213,
+          "z": -218
+        },
+        {
+          "x": 210,
+          "z": -219
+        },
+        {
+          "x": 203,
+          "z": -219
+        },
+        {
+          "x": 201,
+          "z": -218
+        },
+        {
+          "x": 199,
+          "z": -217
+        },
+        {
+          "x": 197,
+          "z": -216
+        },
+        {
+          "x": 196,
+          "z": -215
+        },
+        {
+          "x": 195,
+          "z": -214
+        },
+        {
+          "x": 194,
+          "z": -213
+        },
+        {
+          "x": 193,
+          "z": -211
+        },
+        {
+          "x": 192,
+          "z": -209
+        },
+        {
+          "x": 191,
+          "z": -206
+        },
+        {
+          "x": 191,
+          "z": -199
+        },
+        {
+          "x": 192,
+          "z": -197
+        },
+        {
+          "x": 193,
+          "z": -195
+        },
+        {
+          "x": 194,
+          "z": -193
+        },
+        {
+          "x": 195,
+          "z": -192
+        },
+        {
+          "x": 196,
+          "z": -191
+        },
+        {
+          "x": 197,
+          "z": -190
+        },
+        {
+          "x": 199,
+          "z": -189
+        },
+        {
+          "x": 201,
+          "z": -188
+        },
+        {
+          "x": 203,
+          "z": -187
         }
       ]
     },
-    "aquaticdeepmain": {
+    "spawnsouth": {
       "min": {
-        "x": -1221,
-        "y": 38,
-        "z": 4580
+        "x": -159,
+        "y": 29,
+        "z": 581
       },
       "max": {
-        "x": -958,
-        "y": 255,
-        "z": 4810
+        "x": -77,
+        "y": 123,
+        "z": 619
       },
       "members": {},
       "flags": {
-        "deny-message": "§2The ship may set sail again, but for now this event has concluded!",
+        "sleep": "allow",
         "use": "allow",
-        "feed-amount": 20,
-        "greeting": "§bBrave sailor, beware, 'cause a big 'uns a-brewin'\n§3Mysterious fathoms below!",
-        "feed-delay": 30,
         "interact": "allow",
-        "damage-animals": "allow",
-        "chest-access": "allow",
-        "greeting-title": "§6Welcome aboard, §3landlubbers!",
-        "mob-spawning": "deny",
-        "farewell": "§8The salt on your skin And the wind in your hair \n§9Come back sailor, soon please I hope!"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "mg-wintermazerobo": {
-      "min": {
-        "x": -2463,
-        "y": 54,
-        "z": 4266
-      },
-      "max": {
-        "x": -2390,
-        "y": 88,
-        "z": 4356
-      },
-      "members": {},
-      "flags": {
-        "enderpearl": "deny",
-        "build": "deny",
-        "feed-amount": 20,
-        "feed-delay": 30,
-        "mob-damage": "deny",
         "mob-spawning": "deny"
       },
       "owners": {},
       "type": "cuboid",
       "priority": 0
     },
-    "holiday20-build": {
-      "parent": "holiday20-main",
+    "spawnportal": {
       "min": {
-        "x": -508,
-        "y": 55,
-        "z": -4699
-      },
-      "max": {
-        "x": -416,
-        "y": 165,
-        "z": -4607
-      },
-      "members": {},
-      "flags": {
-        "deny-message": "§cYou must rankup to participate in this event",
-        "use": "allow",
-        "interact": "allow",
-        "chest-access": "allow"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "farm-poundofflesh": {
-      "min": {
-        "x": 5487,
-        "y": 22,
-        "z": 1497
-      },
-      "max": {
-        "x": 5515,
-        "y": 58,
-        "z": 1523
-      },
-      "members": {
-        "unique-ids": [
-          "3487cfbc-3eb3-498a-af8f-c1beb4a90476"
-        ]
-      },
-      "flags": {
-        "enderpearl": "deny",
-        "use": "allow",
-        "greeting": "§3Community Zombie Farm §8:: §6Built by §eZombiekats",
-        "interact": "allow",
-        "chest-access": "allow"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "spookyvillagemain": {
-      "min": {
-        "x": -1678,
-        "y": 32,
-        "z": -274
-      },
-      "max": {
-        "x": -1327,
-        "y": 160,
-        "z": 78
-      },
-      "members": {},
-      "flags": {
-        "deny-message": "§2You spooked us! No touching! This event has already ended. Come spook again next year!",
-        "enderpearl": "deny",
-        "use": "allow",
-        "feed-amount": 20,
-        "greeting": "§fBoo! §7Boo! §eBoo! §8Boo! §6Boo!",
-        "feed-delay": 30,
-        "mob-damage": "allow",
-        "interact": "allow",
-        "chest-access": "allow",
-        "greeting-title": "§6Welcome, Spooks!",
-        "mob-spawning": "deny",
-        "farewell": "§8Come back to spooky another day!"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "farm-ghastoverworld": {
-      "min": {
-        "x": 4631,
-        "y": 220,
-        "z": -3870
-      },
-      "max": {
-        "x": 4672,
-        "y": 255,
-        "z": -3826
-      },
-      "members": {
-        "unique-ids": [
-          "358d0d11-c1ec-4514-8b5f-6fbf16c52b98",
-          "2790c631-6d80-44bd-a5a9-20ffdecb2e9e"
-        ]
-      },
-      "flags": {
-        "enderpearl": "deny",
-        "build": "deny",
-        "mob-damage": "allow",
-        "greeting": "§3Community Ghast Farm §7:: §6Built by §eCitric_Acid_ & Oatmealmonkey"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "farm-sub03-guardiananvil": {
-      "parent": "farm-guardianxp",
-      "min": {
-        "x": -4912,
-        "y": 24,
-        "z": 3907
-      },
-      "max": {
-        "x": -4912,
-        "y": 27,
-        "z": 3907
-      },
-      "members": {},
-      "flags": {
-        "block-place": "allow"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "farm-witchfarm": {
-      "min": {
-        "x": -198,
-        "y": 40,
-        "z": 4843
-      },
-      "max": {
-        "x": -119,
-        "y": 179,
-        "z": 4923
-      },
-      "members": {
-        "unique-ids": [
-          "bb6dffd8-9f36-41b1-82ae-3c8bdfa8562a"
-        ]
-      },
-      "flags": {
-        "enderpearl": "deny",
-        "use": "allow",
-        "greeting": "§3Community Witch Farm §7:: §6Built by §ered336",
-        "interact": "allow",
-        "chest-access": "allow"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "holiday18main": {
-      "min": {
-        "x": -2602,
-        "y": 16,
-        "z": 3978
-      },
-      "max": {
-        "x": -2186,
-        "y": 160,
-        "z": 4364
-      },
-      "members": {},
-      "flags": {
-        "deny-message": "§cEvent has concluded, be sure to collect your gifts!",
-        "enderpearl": "deny",
-        "use": "allow",
-        "feed-amount": 20,
-        "greeting": "§bLet it snow, §flet it snow, §7let it snow!",
-        "feed-delay": 30,
-        "snow-fall": "deny",
-        "chest-access": "allow",
-        "mob-spawning": "deny",
-        "farewell": "§8There's /snow/ place like home ..."
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "frozengardenmain": {
-      "members": {},
-      "flags": {
-        "deny-message": "§cSorry, you must rankup to participate!",
-        "use": "allow",
-        "feed-amount": 20,
-        "greeting": "§bFreezing ... §3Frozen ... §9Garden!",
-        "ice-melt": "deny",
-        "interact": "allow",
-        "chest-access": "allow",
-        "deny-spawn": [
-          "minecraft:cow",
-          "minecraft:chicken",
-          "minecraft:pig",
-          "minecraft:wolf",
-          "minecraft:llama",
-          "minecraft:horse",
-          "minecraft:mule"
-        ],
-        "mob-spawning": "deny",
-        "enderpearl": "deny",
-        "feed-delay": 30,
-        "snow-melt": "deny",
-        "farewell": "§8Freeze again another day!"
-      },
-      "owners": {},
-      "type": "poly2d",
-      "priority": 0,
-      "max-y": 255,
-      "min-y": 0,
-      "points": [
-        {
-          "x": -1190,
-          "z": 3416
-        },
-        {
-          "x": -1153,
-          "z": 3442
-        },
-        {
-          "x": -1082,
-          "z": 3328
-        },
-        {
-          "x": -1104,
-          "z": 3303
-        },
-        {
-          "x": -1125,
-          "z": 3317
-        },
-        {
-          "x": -1159,
-          "z": 3299
-        },
-        {
-          "x": -1182,
-          "z": 3199
-        },
-        {
-          "x": -1290,
-          "z": 3194
-        },
-        {
-          "x": -1364,
-          "z": 3218
-        },
-        {
-          "x": -1400,
-          "z": 3261
-        },
-        {
-          "x": -1397,
-          "z": 3362
-        },
-        {
-          "x": -1354,
-          "z": 3418
-        },
-        {
-          "x": -1380,
-          "z": 3454
-        },
-        {
-          "x": -1362,
-          "z": 3482
-        },
-        {
-          "x": -1310,
-          "z": 3471
-        },
-        {
-          "x": -1275,
-          "z": 3500
-        },
-        {
-          "x": -1258,
-          "z": 3463
-        },
-        {
-          "x": -1204,
-          "z": 3410
-        }
-      ]
-    },
-    "mg-winterspeakpark": {
-      "min": {
-        "x": -2294,
-        "y": 37,
-        "z": 4147
-      },
-      "max": {
-        "x": -2215,
-        "y": 102,
-        "z": 4224
-      },
-      "members": {},
-      "flags": {
-        "enderpearl": "deny",
-        "build": "deny",
-        "feed-amount": 20,
-        "feed-delay": 30,
-        "mob-spawning": "deny"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "swampbingo-warp-sw": {
-      "parent": "swampbingo-warp",
-      "min": {
-        "x": 2011,
+        "x": 20,
         "y": 68,
-        "z": -383
+        "z": -260
       },
       "max": {
-        "x": 2031,
-        "y": 69,
-        "z": -371
-      },
-      "members": {},
-      "flags": {
-        "build": "allow",
-        "build-group": "MEMBERS"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "mg-cactusmaze": {
-      "min": {
-        "x": -2300,
-        "y": 63,
-        "z": 3676
-      },
-      "max": {
-        "x": -2218,
-        "y": 93,
-        "z": 3758
-      },
-      "members": {},
-      "flags": {
-        "enderpearl": "deny",
-        "mob-spawning": "deny"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "mg-gardenlabrinth": {
-      "min": {
-        "x": -2201,
-        "y": 64,
-        "z": 3670
-      },
-      "max": {
-        "x": -2051,
+        "x": 67,
         "y": 94,
-        "z": 3818
+        "z": -220
       },
       "members": {},
       "flags": {
-        "enderpearl": "deny",
-        "feed-amount": 20,
-        "feed-delay": 30,
-        "mob-spawning": "deny"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "flowercombuildmain": {
-      "members": {},
-      "flags": {
-        "deny-message": "§cThis event has ended. Feel free to tour the amazing results!",
-        "enderpearl": "deny",
+        "mycelium-spread": "deny",
         "use": "allow",
-        "feed-amount": 20,
-        "greeting": "§fDaisies §7& §eLilies§7 & §cRoses§7, §6Oh My!",
-        "feed-delay": 30,
         "interact": "allow",
         "chest-access": "allow",
-        "greeting-title": "§6Flower §dPower§7!",
-        "deny-spawn": [
-          "minecraft:cow",
-          "minecraft:chicken",
-          "minecraft:donkey",
-          "minecraft:pig",
-          "minecraft:llama",
-          "minecraft:horse",
-          "minecraft:sheep",
-          "minecraft:mule"
-        ],
-        "mob-spawning": "deny",
-        "farewell": "§8Come again next Thyme!"
-      },
-      "owners": {},
-      "type": "poly2d",
-      "priority": 0,
-      "max-y": 255,
-      "min-y": 0,
-      "points": [
-        {
-          "x": -1000,
-          "z": 2946
-        },
-        {
-          "x": -932,
-          "z": 2938
-        },
-        {
-          "x": -889,
-          "z": 3005
-        },
-        {
-          "x": -917,
-          "z": 3053
-        },
-        {
-          "x": -936,
-          "z": 3129
-        },
-        {
-          "x": -936,
-          "z": 3190
-        },
-        {
-          "x": -910,
-          "z": 3232
-        },
-        {
-          "x": -930,
-          "z": 3264
-        },
-        {
-          "x": -970,
-          "z": 3286
-        },
-        {
-          "x": -1014,
-          "z": 3320
-        },
-        {
-          "x": -1083,
-          "z": 3322
-        },
-        {
-          "x": -1106,
-          "z": 3309
-        },
-        {
-          "x": -1126,
-          "z": 3316
-        },
-        {
-          "x": -1156,
-          "z": 3303
-        },
-        {
-          "x": -1172,
-          "z": 3250
-        },
-        {
-          "x": -1184,
-          "z": 3200
-        },
-        {
-          "x": -1183,
-          "z": 3149
-        },
-        {
-          "x": -1171,
-          "z": 3089
-        },
-        {
-          "x": -1140,
-          "z": 3040
-        },
-        {
-          "x": -1107,
-          "z": 2995
-        },
-        {
-          "x": -1092,
-          "z": 2969
-        },
-        {
-          "x": -1052,
-          "z": 2983
-        },
-        {
-          "x": -1013,
-          "z": 2970
-        }
-      ]
-    },
-    "guest_spawn_rooms": {
-      "min": {
-        "x": 211,
-        "y": 102,
-        "z": -278
-      },
-      "max": {
-        "x": 245,
-        "y": 116,
-        "z": -239
-      },
-      "members": {},
-      "flags": {
-        "item-drop": "deny",
-        "send-chat": "deny",
-        "allowed-cmds": [
-          "/faq",
-          "/faqrules",
-          "/rules",
-          "/rg bypass",
-          "/discord",
-          "/guest"
-        ]
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "farm-raidhero": {
-      "min": {
-        "x": 1944,
-        "y": 50,
-        "z": 743
-      },
-      "max": {
-        "x": 2056,
-        "y": 93,
-        "z": 808
-      },
-      "members": {
-        "unique-ids": [
-          "3487cfbc-3eb3-498a-af8f-c1beb4a90476"
-        ]
-      },
-      "flags": {
-        "enderpearl": "deny",
-        "use": "allow",
-        "greeting": "§3Community Raid Farm §8:: §6Built by §eZombiekats",
-        "interact": "allow",
-        "chest-access": "allow",
-        "deny-spawn": [
-          "minecraft:cat",
-          "minecraft:bat",
-          "minecraft:parrot",
-          "minecraft:cow",
-          "minecraft:donkey",
-          "minecraft:horse",
-          "minecraft:turtle",
-          "minecraft:sheep",
-          "minecraft:rabbit",
-          "minecraft:skeleton_horse",
-          "minecraft:mule"
-        ]
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "lunarnewyear-warp": {
-      "parent": "lunarnewyear-main",
-      "min": {
-        "x": 1903,
-        "y": 58,
-        "z": -1273
-      },
-      "max": {
-        "x": 1957,
-        "y": 118,
-        "z": -1219
-      },
-      "members": {},
-      "flags": {
-        "build": "deny"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "farm-spiderfarm": {
-      "min": {
-        "x": 2525,
-        "y": 15,
-        "z": 1218
-      },
-      "max": {
-        "x": 2559,
-        "y": 32,
-        "z": 1237
-      },
-      "members": {
-        "unique-ids": [
-          "3487cfbc-3eb3-498a-af8f-c1beb4a90476"
-        ]
-      },
-      "flags": {
-        "enderpearl": "deny",
-        "use": "allow",
-        "greeting": "§3Community Spider Farm §7:: §6Buillt by §eZombiekats",
-        "interact": "allow",
-        "damage-animals": "allow",
-        "chest-access": "allow"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "ksa-dranontowermain": {
-      "members": {},
-      "flags": {
-        "mob-spawning": "deny"
+        "grass-growth": "deny",
+        "mushroom-growth": "deny",
+        "crop-growth": "deny"
       },
       "owners": {
         "unique-ids": [
-          "38ffa074-5e25-438d-9fef-1daff37a1f2b"
+          "2def415a-beeb-42a5-8222-f48e80a83915"
         ]
       },
-      "type": "poly2d",
-      "priority": 0,
-      "max-y": 255,
-      "min-y": 0,
-      "points": [
-        {
-          "x": 1247,
-          "z": -4096
-        },
-        {
-          "x": 1232,
-          "z": -4096
-        },
-        {
-          "x": 1232,
-          "z": -4032
-        },
-        {
-          "x": 1216,
-          "z": -4032
-        },
-        {
-          "x": 1216,
-          "z": -3969
-        },
-        {
-          "x": 1263,
-          "z": -3969
-        },
-        {
-          "x": 1263,
-          "z": -4032
-        },
-        {
-          "x": 1247,
-          "z": -4032
-        }
-      ]
+      "type": "cuboid",
+      "priority": 0
     },
-    "spawnprotection": {
-      "min": {
-        "x": -327,
-        "y": 0,
-        "z": -702
-      },
-      "max": {
-        "x": 673,
-        "y": 255,
-        "z": 298
-      },
+    "marketandfarms": {
       "members": {},
       "flags": {
-        "use": "allow",
-        "feed-amount": 20,
-        "greeting": "§6Welcome to the future spawn town!\\n§eWalk or teleport out to build.",
-        "vehicle-destroy": "deny",
-        "chest-access": "allow",
-        "deny-spawn": [
-          "minecraft:chicken",
-          "minecraft:skeleton_horse"
-        ],
-        "mob-spawning": "deny",
         "sleep": "allow",
-        "enderpearl": "deny",
-        "vehicle-place": "deny",
-        "build": "deny",
-        "feed-delay": 30,
-        "mob-damage": "allow",
-        "farewell": "§8Now leaving future spawn town ..."
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "aquaticdeepwarp": {
-      "parent": "aquaticdeepmain",
-      "min": {
-        "x": -1105,
-        "y": 26,
-        "z": 4676
-      },
-      "max": {
-        "x": -1093,
-        "y": 72,
-        "z": 4708
-      },
-      "members": {},
-      "flags": {
-        "build": "deny"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "desertvillagebingo-main": {
-      "min": {
-        "x": 2711,
-        "y": 37,
-        "z": -364
-      },
-      "max": {
-        "x": 2970,
-        "y": 138,
-        "z": -126
-      },
-      "members": {},
-      "flags": {
-        "deny-message": "§2Khajiit may have wares, but this event has concluded. Sorry!",
-        "use": "allow",
-        "feed-amount": 20,
-        "greeting": "§dKhajiit §5has wares if you have coin§8!",
-        "interact": "allow",
-        "chest-access": "allow",
-        "ride": "allow",
-        "mob-spawning": "deny",
-        "vine-growth": "deny",
-        "feed-delay": 30,
-        "damage-animals": "allow",
-        "greeting-title": "§eWelcome§8, §6Traveler§8!",
-        "farewell": "§8Now Leaving: §7Community Desert Village"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "yearparkour21build": {
-      "parent": "yearminigameseventarea",
-      "members": {},
-      "flags": {},
-      "owners": {},
-      "type": "poly2d",
-      "priority": 0,
-      "max-y": 95,
-      "min-y": 61,
-      "points": [
-        {
-          "x": -1029,
-          "z": 4191
-        },
-        {
-          "x": -994,
-          "z": 4191
-        },
-        {
-          "x": -994,
-          "z": 4231
-        },
-        {
-          "x": -1104,
-          "z": 4231
-        },
-        {
-          "x": -1104,
-          "z": 4191
-        },
-        {
-          "x": -1069,
-          "z": 4191
-        },
-        {
-          "x": -1069,
-          "z": 4061
-        },
-        {
-          "x": -1104,
-          "z": 4061
-        },
-        {
-          "x": -1104,
-          "z": 4020
-        },
-        {
-          "x": -1063,
-          "z": 4020
-        },
-        {
-          "x": -1029,
-          "z": 4054
-        }
-      ]
-    },
-    "ksa-tobiki": {
-      "members": {
-        "unique-ids": [
-          "0b214b77-47a4-4ee2-bec8-25b32ffc69c7"
-        ]
-      },
-      "flags": {
-        "use": "allow",
-        "interact": "allow",
-        "chest-access": "allow",
-        "mob-spawning": "deny"
-      },
-      "owners": {
-        "unique-ids": [
-          "8607a2bd-a3f6-40e3-86cf-7bb436ad1902"
-        ]
-      },
-      "type": "poly2d",
-      "priority": 0,
-      "max-y": 255,
-      "min-y": 0,
-      "points": [
-        {
-          "x": 4399,
-          "z": 3648
-        },
-        {
-          "x": 4415,
-          "z": 3648
-        },
-        {
-          "x": 4415,
-          "z": 3695
-        },
-        {
-          "x": 4400,
-          "z": 3695
-        },
-        {
-          "x": 4400,
-          "z": 3679
-        },
-        {
-          "x": 4352,
-          "z": 3679
-        },
-        {
-          "x": 4352,
-          "z": 3631
-        },
-        {
-          "x": 4336,
-          "z": 3631
-        },
-        {
-          "x": 4336,
-          "z": 3584
-        },
-        {
-          "x": 4351,
-          "z": 3584
-        },
-        {
-          "x": 4351,
-          "z": 3616
-        },
-        {
-          "x": 4367,
-          "z": 3616
-        },
-        {
-          "x": 4367,
-          "z": 3632
-        },
-        {
-          "x": 4399,
-          "z": 3632
-        }
-      ]
-    },
-    "qt-sanjuandeulua-main": {
-      "min": {
-        "x": 1705,
-        "y": 1,
-        "z": -230
-      },
-      "max": {
-        "x": 1921,
-        "y": 151,
-        "z": -77
-      },
-      "members": {},
-      "flags": {
-        "lightning": "deny",
-        "ice-form": "deny",
-        "use": "allow",
-        "greeting": "§eHola§7, §6have you come to save us§7?",
-        "snow-fall": "deny",
-        "ice-melt": "deny",
-        "interact": "allow",
-        "vehicle-destroy": "deny",
-        "chest-access": "deny",
-        "ride": "allow",
-        "mob-spawning": "deny",
-        "sleep": "allow",
-        "enderpearl": "deny",
-        "vehicle-place": "deny",
-        "vine-growth": "deny",
-        "item-frame-rotation": "deny",
-        "potion-splash": "allow",
-        "snow-melt": "deny",
-        "greeting-title": "§eBienvenidos a §6San Juan de Ulúa",
-        "farewell": "§8We need your help! Come back soon!"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "ksa-wraithsmagetower": {
-      "members": {},
-      "flags": {
-        "use": "allow",
-        "interact": "allow",
-        "chest-access": "allow"
-      },
-      "owners": {
-        "unique-ids": [
-          "5c321ae7-e081-4c09-b479-f4e30a431a90"
-        ]
-      },
-      "type": "poly2d",
-      "priority": 0,
-      "max-y": 255,
-      "min-y": 0,
-      "points": [
-        {
-          "x": 320,
-          "z": 1760
-        },
-        {
-          "x": 320,
-          "z": 1775
-        },
-        {
-          "x": 368,
-          "z": 1775
-        },
-        {
-          "x": 368,
-          "z": 1807
-        },
-        {
-          "x": 399,
-          "z": 1807
-        },
-        {
-          "x": 399,
-          "z": 1775
-        },
-        {
-          "x": 448,
-          "z": 1775
-        },
-        {
-          "x": 448,
-          "z": 1791
-        },
-        {
-          "x": 527,
-          "z": 1791
-        },
-        {
-          "x": 527,
-          "z": 1728
-        },
-        {
-          "x": 448,
-          "z": 1728
-        },
-        {
-          "x": 448,
-          "z": 1760
-        }
-      ]
-    },
-    "yearminigameseventarea": {
-      "min": {
-        "x": -1608,
-        "y": 39,
-        "z": 3994
-      },
-      "max": {
-        "x": -959,
-        "y": 255,
-        "z": 4257
-      },
-      "members": {},
-      "flags": {
-        "use": "allow",
-        "feed-amount": 20,
-        "greeting": "§6Celebrate the passing of time with minigames!",
-        "ice-melt": "deny",
-        "interact": "allow",
-        "deny-spawn": [
-          "minecraft:donkey",
-          "minecraft:fox",
-          "minecraft:pig",
-          "minecraft:llama",
-          "minecraft:tropical_fish",
-          "minecraft:sheep",
-          "minecraft:mule",
-          "minecraft:cow",
-          "minecraft:dolphin",
-          "minecraft:chicken",
-          "minecraft:wolf",
-          "minecraft:horse",
-          "minecraft:rabbit"
-        ],
-        "mob-spawning": "deny",
-        "enderpearl": "deny",
-        "coral-fade": "deny",
-        "soil-dry": "deny",
-        "vine-growth": "deny",
-        "fall-damage": "deny",
-        "feed-delay": 30,
-        "snow-melt": "deny",
-        "farewell": "§8See you next year!"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "holiday19-main": {
-      "min": {
-        "x": -740,
-        "y": 20,
-        "z": -4366
-      },
-      "max": {
-        "x": -377,
-        "y": 172,
-        "z": -4039
-      },
-      "members": {},
-      "flags": {
-        "deny-message": "§2Ho ho ho! You're too late to participate I'm afraid. This event has ended.",
+        "deny-message": "Sorry, but you can't %what% here, this is a reserved space for markets and farms.",
+        "item-drop": "allow",
         "vehicle-place": "allow",
         "use": "allow",
-        "greeting": "§cHo §fHo §cHo §fHo §cHo!",
-        "snow-fall": "deny",
-        "interact": "allow",
+        "item-pickup": "allow",
         "vehicle-destroy": "allow",
-        "chest-access": "allow",
-        "ride": "allow",
-        "mob-spawning": "deny",
-        "farewell": "§8Don't be a Grinch. Come back and enjoy the holidays!"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "fantasyfootballmain": {
-      "min": {
-        "x": 2575,
-        "y": 64,
-        "z": -190
-      },
-      "max": {
-        "x": 2616,
-        "y": 102,
-        "z": -164
-      },
-      "members": {},
-      "flags": {
-        "greeting": "§cHut §6Hut ... §eHIKE!",
-        "chest-access": "allow"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "farm-icefarm": {
-      "min": {
-        "x": -4885,
-        "y": 59,
-        "z": 3541
-      },
-      "max": {
-        "x": -4755,
-        "y": 90,
-        "z": 3702
-      },
-      "members": {
-        "unique-ids": [
-          "2790c631-6d80-44bd-a5a9-20ffdecb2e9e",
-          "6e4f9466-e39e-45db-8d55-8842ec421321"
-        ]
-      },
-      "flags": {
-        "sleep": "allow",
-        "enderpearl": "deny",
-        "use": "allow",
-        "greeting": "§3Community Ice Farm §7:: §6Build by §eOatmealmonkey & Cytrom_",
-        "interact": "allow",
-        "mob-spawning": "deny"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "holiday19-build": {
-      "parent": "holiday19-main",
-      "members": {},
-      "flags": {
-        "deny-message": "§cYou must rankup to participate!"
-      },
-      "owners": {},
-      "type": "poly2d",
-      "priority": 0,
-      "max-y": 162,
-      "min-y": 70,
-      "points": [
-        {
-          "x": -493,
-          "z": -4199
-        },
-        {
-          "x": -492,
-          "z": -4168
-        },
-        {
-          "x": -509,
-          "z": -4144
-        },
-        {
-          "x": -546,
-          "z": -4128
-        },
-        {
-          "x": -597,
-          "z": -4124
-        },
-        {
-          "x": -628,
-          "z": -4138
-        },
-        {
-          "x": -641,
-          "z": -4171
-        },
-        {
-          "x": -647,
-          "z": -4211
-        },
-        {
-          "x": -644,
-          "z": -4261
-        },
-        {
-          "x": -617,
-          "z": -4297
-        },
-        {
-          "x": -567,
-          "z": -4308
-        },
-        {
-          "x": -505,
-          "z": -4302
-        },
-        {
-          "x": -490,
-          "z": -4284
-        }
-      ]
-    },
-    "mg-snowmanspleef-pvp": {
-      "members": {},
-      "flags": {
-        "pvp": "allow"
-      },
-      "owners": {},
-      "type": "poly2d",
-      "priority": 2,
-      "max-y": 88,
-      "min-y": 68,
-      "points": [
-        {
-          "x": -2319,
-          "z": 4055
-        },
-        {
-          "x": -2318,
-          "z": 4055
-        },
-        {
-          "x": -2318,
-          "z": 4053
-        },
-        {
-          "x": -2317,
-          "z": 4053
-        },
-        {
-          "x": -2317,
-          "z": 4051
-        },
-        {
-          "x": -2316,
-          "z": 4051
-        },
-        {
-          "x": -2316,
-          "z": 4050
-        },
-        {
-          "x": -2315,
-          "z": 4050
-        },
-        {
-          "x": -2315,
-          "z": 4049
-        },
-        {
-          "x": -2314,
-          "z": 4049
-        },
-        {
-          "x": -2313,
-          "z": 4049
-        },
-        {
-          "x": -2313,
-          "z": 4048
-        },
-        {
-          "x": -2311,
-          "z": 4048
-        },
-        {
-          "x": -2311,
-          "z": 4047
-        },
-        {
-          "x": -2301,
-          "z": 4047
-        },
-        {
-          "x": -2301,
-          "z": 4048
-        },
-        {
-          "x": -2299,
-          "z": 4048
-        },
-        {
-          "x": -2299,
-          "z": 4049
-        },
-        {
-          "x": -2297,
-          "z": 4049
-        },
-        {
-          "x": -2297,
-          "z": 4050
-        },
-        {
-          "x": -2296,
-          "z": 4050
-        },
-        {
-          "x": -2296,
-          "z": 4051
-        },
-        {
-          "x": -2295,
-          "z": 4051
-        },
-        {
-          "x": -2295,
-          "z": 4052
-        },
-        {
-          "x": -2295,
-          "z": 4053
-        },
-        {
-          "x": -2294,
-          "z": 4053
-        },
-        {
-          "x": -2294,
-          "z": 4055
-        },
-        {
-          "x": -2293,
-          "z": 4055
-        },
-        {
-          "x": -2293,
-          "z": 4065
-        },
-        {
-          "x": -2294,
-          "z": 4066
-        },
-        {
-          "x": -2294,
-          "z": 4067
-        },
-        {
-          "x": -2295,
-          "z": 4067
-        },
-        {
-          "x": -2295,
-          "z": 4068
-        },
-        {
-          "x": -2295,
-          "z": 4069
-        },
-        {
-          "x": -2296,
-          "z": 4069
-        },
-        {
-          "x": -2296,
-          "z": 4070
-        },
-        {
-          "x": -2297,
-          "z": 4070
-        },
-        {
-          "x": -2297,
-          "z": 4071
-        },
-        {
-          "x": -2299,
-          "z": 4071
-        },
-        {
-          "x": -2299,
-          "z": 4072
-        },
-        {
-          "x": -2301,
-          "z": 4072
-        },
-        {
-          "x": -2301,
-          "z": 4073
-        },
-        {
-          "x": -2311,
-          "z": 4073
-        },
-        {
-          "x": -2311,
-          "z": 4072
-        },
-        {
-          "x": -2313,
-          "z": 4072
-        },
-        {
-          "x": -2313,
-          "z": 4071
-        },
-        {
-          "x": -2315,
-          "z": 4071
-        },
-        {
-          "x": -2315,
-          "z": 4070
-        },
-        {
-          "x": -2316,
-          "z": 4070
-        },
-        {
-          "x": -2316,
-          "z": 4069
-        },
-        {
-          "x": -2317,
-          "z": 4069
-        },
-        {
-          "x": -2317,
-          "z": 4067
-        },
-        {
-          "x": -2318,
-          "z": 4067
-        },
-        {
-          "x": -2318,
-          "z": 4065
-        },
-        {
-          "x": -2319,
-          "z": 4065
-        }
-      ]
-    },
-    "hauntedhousemain": {
-      "min": {
-        "x": -2903,
-        "y": 13,
-        "z": 3769
-      },
-      "max": {
-        "x": -2741,
-        "y": 113,
-        "z": 3931
-      },
-      "members": {},
-      "flags": {
-        "deny-message": "§2Sorry, this event has ended! The haunted house is for looking only!",
-        "enderpearl": "deny",
-        "vine-growth": "deny",
-        "feed-amount": 20,
-        "feed-delay": 30,
-        "mob-spawning": "deny"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "mg-prisonmaze": {
-      "min": {
-        "x": -2441,
-        "y": 49,
-        "z": 3695
-      },
-      "max": {
-        "x": -2326,
-        "y": 81,
-        "z": 3741
-      },
-      "members": {},
-      "flags": {
-        "sleep": "deny",
-        "enderpearl": "deny",
-        "chorus-fruit-teleport": "deny",
-        "use": "allow",
-        "feed-amount": 20,
-        "feed-delay": 30,
-        "interact": "allow",
-        "mob-spawning": "deny"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "diycountrymain": {
-      "members": {},
-      "flags": {
-        "deny-message": "§2The winners have already been picked! Sorry, this event has ended!",
-        "enderpearl": "deny",
-        "use": "allow",
-        "feed-amount": 20,
-        "greeting": "§bCome to claim part of my §3fortune §bhave you§8?",
-        "feed-delay": 30,
-        "interact": "allow",
-        "chest-access": "allow",
-        "greeting-title": "§3Greetings, §bCitizens§8!",
-        "deny-spawn": [
-          "minecraft:phantom",
-          "minecraft:cow",
-          "minecraft:chicken",
-          "minecraft:donkey",
-          "minecraft:pig",
-          "minecraft:horse",
-          "minecraft:sheep",
-          "minecraft:mule"
-        ],
-        "mob-spawning": "deny",
-        "farewell": "§8Where are you going? Get back to work!"
-      },
-      "owners": {},
-      "type": "poly2d",
-      "priority": 0,
-      "max-y": 255,
-      "min-y": 0,
-      "points": [
-        {
-          "x": -1340,
-          "z": -858
-        },
-        {
-          "x": -1367,
-          "z": -854
-        },
-        {
-          "x": -1395,
-          "z": -838
-        },
-        {
-          "x": -1445,
-          "z": -817
-        },
-        {
-          "x": -1483,
-          "z": -783
-        },
-        {
-          "x": -1483,
-          "z": -729
-        },
-        {
-          "x": -1431,
-          "z": -669
-        },
-        {
-          "x": -1325,
-          "z": -665
-        },
-        {
-          "x": -1303,
-          "z": -617
-        },
-        {
-          "x": -1254,
-          "z": -619
-        },
-        {
-          "x": -1194,
-          "z": -684
-        },
-        {
-          "x": -1166,
-          "z": -727
-        },
-        {
-          "x": -1163,
-          "z": -766
-        },
-        {
-          "x": -1182,
-          "z": -803
-        },
-        {
-          "x": -1187,
-          "z": -847
-        },
-        {
-          "x": -1228,
-          "z": -900
-        },
-        {
-          "x": -1220,
-          "z": -934
-        },
-        {
-          "x": -1238,
-          "z": -970
-        },
-        {
-          "x": -1266,
-          "z": -982
-        },
-        {
-          "x": -1306,
-          "z": -980
-        },
-        {
-          "x": -1334,
-          "z": -949
-        },
-        {
-          "x": -1328,
-          "z": -914
-        },
-        {
-          "x": -1329,
-          "z": -868
-        },
-        {
-          "x": -1363,
-          "z": -860
-        }
-      ]
-    },
-    "rhodedesign2020-warp": {
-      "parent": "rhodedesign2020-main",
-      "min": {
-        "x": -617,
-        "y": 62,
-        "z": 2792
-      },
-      "max": {
-        "x": -595,
-        "y": 117,
-        "z": 2829
-      },
-      "members": {},
-      "flags": {
-        "build": "deny"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "yearmaze21build": {
-      "parent": "yearminigameseventarea",
-      "members": {},
-      "flags": {},
-      "owners": {},
-      "type": "poly2d",
-      "priority": 0,
-      "max-y": 83,
-      "min-y": 62,
-      "points": [
-        {
-          "x": -1268,
-          "z": 4060
-        },
-        {
-          "x": -1268,
-          "z": 4022
-        },
-        {
-          "x": -1180,
-          "z": 4022
-        },
-        {
-          "x": -1144,
-          "z": 4057
-        },
-        {
-          "x": -1144,
-          "z": 4110
-        },
-        {
-          "x": -1178,
-          "z": 4146
-        },
-        {
-          "x": -1230,
-          "z": 4146
-        },
-        {
-          "x": -1229,
-          "z": 4146
-        },
-        {
-          "x": -1229,
-          "z": 4191
-        },
-        {
-          "x": -1144,
-          "z": 4191
-        },
-        {
-          "x": -1144,
-          "z": 4231
-        },
-        {
-          "x": -1233,
-          "z": 4231
-        },
-        {
-          "x": -1269,
-          "z": 4195
-        },
-        {
-          "x": -1269,
-          "z": 4141
-        },
-        {
-          "x": -1234,
-          "z": 4106
-        },
-        {
-          "x": -1184,
-          "z": 4106
-        },
-        {
-          "x": -1184,
-          "z": 4061
-        }
-      ]
-    },
-    "mg-clovermaze": {
-      "min": {
-        "x": -2268,
-        "y": 4,
-        "z": 3405
-      },
-      "max": {
-        "x": -2069,
-        "y": 255,
-        "z": 3636
-      },
-      "members": {},
-      "flags": {
-        "enderpearl": "deny",
-        "feed-amount": 20,
-        "feed-delay": 30,
-        "snow-fall": "deny",
-        "mob-spawning": "deny"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "mg-haymaze": {
-      "min": {
-        "x": -2447,
-        "y": 47,
-        "z": 3742
-      },
-      "max": {
-        "x": -2351,
-        "y": 93,
-        "z": 3825
-      },
-      "members": {},
-      "flags": {
-        "enderpearl": "deny",
-        "mob-spawning": "deny"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "rhodedesign2020-main": {
-      "members": {},
-      "flags": {
-        "deny-message": "§cYou need to rankup to participate!",
-        "use": "allow",
-        "interact": "allow",
-        "damage-animals": "deny",
-        "chest-access": "allow",
-        "deny-spawn": [
-          "minecraft:cow",
-          "minecraft:chicken",
-          "minecraft:donkey",
-          "minecraft:fox",
-          "minecraft:pig",
-          "minecraft:wolf",
-          "minecraft:horse",
-          "minecraft:sheep",
-          "minecraft:mule",
-          "minecraft:skeleton_horse"
-        ],
-        "mob-spawning": "deny"
-      },
-      "owners": {},
-      "type": "poly2d",
-      "priority": 0,
-      "max-y": 255,
-      "min-y": 0,
-      "points": [
-        {
-          "x": -754,
-          "z": 2827
-        },
-        {
-          "x": -750,
-          "z": 2761
-        },
-        {
-          "x": -708,
-          "z": 2741
-        },
-        {
-          "x": -635,
-          "z": 2712
-        },
-        {
-          "x": -547,
-          "z": 2717
-        },
-        {
-          "x": -504,
-          "z": 2791
-        },
-        {
-          "x": -504,
-          "z": 2842
-        },
-        {
-          "x": -530,
-          "z": 2907
-        },
-        {
-          "x": -595,
-          "z": 2943
-        },
-        {
-          "x": -663,
-          "z": 2942
-        },
-        {
-          "x": -720,
-          "z": 2901
-        },
-        {
-          "x": -744,
-          "z": 2868
-        }
-      ]
-    },
-    "farm-skeleton-flower2": {
-      "parent": "farm-skeleton",
-      "min": {
-        "x": 973,
-        "y": 21,
-        "z": -2056
-      },
-      "max": {
-        "x": 974,
-        "y": 22,
-        "z": -2056
-      },
-      "members": {},
-      "flags": {
-        "build": "allow",
-        "block-place": "allow"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "desertvillagebingo-warp": {
-      "parent": "desertvillagebingo-main",
-      "min": {
-        "x": 2849,
-        "y": 39,
-        "z": -288
-      },
-      "max": {
-        "x": 2911,
-        "y": 129,
-        "z": -199
-      },
-      "members": {},
-      "flags": {
-        "build": "deny"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "farm-skeleton-flower1": {
-      "parent": "farm-skeleton",
-      "min": {
-        "x": 968,
-        "y": 21,
-        "z": -2056
-      },
-      "max": {
-        "x": 969,
-        "y": 22,
-        "z": -2056
-      },
-      "members": {},
-      "flags": {
-        "build": "allow",
-        "block-place": "allow"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "swampbingo-warp-se": {
-      "parent": "swampbingo-warp",
-      "min": {
-        "x": 2061,
-        "y": 68,
-        "z": -383
-      },
-      "max": {
-        "x": 2081,
-        "y": 69,
-        "z": -371
-      },
-      "members": {},
-      "flags": {
-        "build": "allow",
-        "build-group": "MEMBERS"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "diycountrywarp": {
-      "parent": "diycountrymain",
-      "min": {
-        "x": -1390,
-        "y": 68,
-        "z": -765
-      },
-      "max": {
-        "x": -1332,
-        "y": 103,
-        "z": -706
-      },
-      "members": {},
-      "flags": {
-        "build": "deny"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "farm-sub04-guardiananvil": {
-      "parent": "farm-guardianxp",
-      "min": {
-        "x": -4912,
-        "y": 24,
-        "z": 3900
-      },
-      "max": {
-        "x": -4912,
-        "y": 27,
-        "z": 3900
-      },
-      "members": {},
-      "flags": {
-        "block-place": "allow"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "spookyvillagewarp": {
-      "parent": "spookyvillagemain",
-      "min": {
-        "x": -1497,
-        "y": 59,
-        "z": -148
-      },
-      "max": {
-        "x": -1413,
-        "y": 109,
-        "z": -31
-      },
-      "members": {},
-      "flags": {
-        "enderpearl": "deny",
-        "build": "deny",
-        "use": "allow",
-        "feed-amount": 20,
-        "feed-delay": 30,
-        "interact": "allow",
-        "chest-access": "allow",
-        "mob-spawning": "deny"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "farm-skeleton": {
-      "min": {
-        "x": 962,
-        "y": 12,
-        "z": -2070
-      },
-      "max": {
-        "x": 978,
-        "y": 47,
-        "z": -2044
-      },
-      "members": {
-        "unique-ids": [
-          "2790c631-6d80-44bd-a5a9-20ffdecb2e9e"
-        ]
-      },
-      "flags": {
-        "enderpearl": "deny",
-        "use": "allow",
-        "mob-damage": "allow",
-        "chest-access": "allow"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "farm-plainsflowerfarm": {
-      "min": {
-        "x": -396,
-        "y": 60,
-        "z": -1454
-      },
-      "max": {
-        "x": -303,
-        "y": 131,
-        "z": -1353
-      },
-      "members": {
-        "unique-ids": [
-          "bb6dffd8-9f36-41b1-82ae-3c8bdfa8562a"
-        ]
-      },
-      "flags": {
-        "enderpearl": "deny",
-        "use": "allow",
-        "greeting": "§3Community Plains Flower Farm §8:: §6Built by §ered336",
-        "item-frame-rotation": "deny",
-        "damage-animals": "allow",
-        "chest-access": "allow",
-        "mob-spawning": "deny"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "farm-ironfarm": {
-      "min": {
-        "x": 1450,
-        "y": 69,
-        "z": -2420
-      },
-      "max": {
-        "x": 1492,
-        "y": 119,
-        "z": -2379
-      },
-      "members": {
-        "unique-ids": [
-          "b586315a-cda6-4098-975f-d4beec32e57f",
-          "00a9a247-802c-4ced-8f46-227b2b7f4eaa"
-        ]
-      },
-      "flags": {
-        "enderpearl": "deny",
-        "use": "allow",
-        "greeting": "§3Community Iron Farm §8:: §6Built by §eRecks_ §6& §eSirDump",
         "interact": "allow",
         "chest-access": "allow",
         "deny-spawn": [
@@ -2394,2372 +366,256 @@
           "minecraft:witch",
           "minecraft:spider",
           "minecraft:zombie",
-          "minecraft:creeper"
-        ]
+          "minecraft:creeper",
+          "minecraft:drowned",
+          "minecraft:zombie_villager"
+        ],
+        "ride": "allow",
+        "use-anvil": "allow"
       },
       "owners": {},
-      "type": "cuboid",
-      "priority": 0
+      "type": "poly2d",
+      "priority": 0,
+      "max-y": 255,
+      "min-y": 0,
+      "points": [
+        {
+          "x": -352,
+          "z": -96
+        },
+        {
+          "x": -352,
+          "z": 111
+        },
+        {
+          "x": -320,
+          "z": 143
+        },
+        {
+          "x": -320,
+          "z": 303
+        },
+        {
+          "x": -336,
+          "z": 319
+        },
+        {
+          "x": -336,
+          "z": 383
+        },
+        {
+          "x": -272,
+          "z": 447
+        },
+        {
+          "x": -161,
+          "z": 447
+        },
+        {
+          "x": -65,
+          "z": 351
+        },
+        {
+          "x": -65,
+          "z": 320
+        },
+        {
+          "x": -49,
+          "z": 304
+        },
+        {
+          "x": -49,
+          "z": 160
+        },
+        {
+          "x": -113,
+          "z": 96
+        },
+        {
+          "x": -113,
+          "z": 32
+        },
+        {
+          "x": -241,
+          "z": -96
+        }
+      ]
     },
-    "mg-kaleidoscopemaze": {
-      "min": {
-        "x": -2495,
-        "y": 41,
-        "z": 3704
-      },
-      "max": {
-        "x": -2445,
-        "y": 83,
-        "z": 3754
-      },
+    "spawn": {
       "members": {},
-      "flags": {
-        "enderpearl": "deny",
-        "chorus-fruit-teleport": "deny",
-        "use": "allow",
-        "feed-amount": 20,
-        "feed-delay": 30,
-        "interact": "allow",
-        "mob-spawning": "deny"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "farm-sub01-coralfarm": {
-      "parent": "farm-coralfarm",
-      "min": {
-        "x": -2207,
-        "y": 63,
-        "z": 1783
-      },
-      "max": {
-        "x": -2204,
-        "y": 64,
-        "z": 1789
-      },
-      "members": {},
-      "flags": {
-        "block-break": "allow"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "ma-saguinemain": {
-      "min": {
-        "x": -2636,
-        "y": 31,
-        "z": 3773
-      },
-      "max": {
-        "x": -2572,
-        "y": 135,
-        "z": 3855
-      },
-      "members": {},
-      "flags": {
-        "potion-splash": "allow",
-        "damage-animals": "allow"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "newbiequesttown": {
-      "min": {
-        "x": 96,
-        "y": 0,
-        "z": -890
-      },
-      "max": {
-        "x": 377,
-        "y": 255,
-        "z": -704
-      },
-      "members": {
-        "groups": [
-          "mantaray"
-        ]
-      },
-      "flags": {},
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "cottagecontestmain": {
-      "min": {
-        "x": -1966,
-        "y": 48,
-        "z": 3951
-      },
-      "max": {
-        "x": -1665,
-        "y": 136,
-        "z": 4292
-      },
-      "members": {},
-      "flags": {
-        "deny-message": "§2Woah, you can't do that here m8! Find a better place to build!",
-        "use": "allow",
-        "feed-amount": 20,
-        "greeting": "§2What a lucky time to show up! We need your help!",
-        "ice-melt": "deny",
-        "interact": "allow",
-        "chest-access": "allow",
-        "mob-spawning": "deny",
-        "coral-fade": "deny",
-        "soil-dry": "deny",
-        "vine-growth": "deny",
-        "feed-delay": 30,
-        "snow-melt": "deny",
-        "farewell": "§8A bit unlucky to leave like that!"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "farm-inkfarm": {
-      "min": {
-        "x": -3877,
-        "y": 18,
-        "z": -5602
-      },
-      "max": {
-        "x": -3803,
-        "y": 212,
-        "z": -5533
-      },
-      "members": {
-        "unique-ids": [
-          "b89d9ae8-baa2-4b62-92da-e9ed6c1a632d",
-          "6fe3aed4-8a62-4e45-b128-f89bed9a3759"
-        ]
-      },
-      "flags": {
-        "enderpearl": "deny",
-        "use": "allow",
-        "greeting": "§3Community Ink Farm §8:: §6Built by §eKaizoziak §6& §eKyrAmaya",
-        "chest-access": "allow"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "farm-sub01-sheerwool": {
-      "min": {
-        "x": 2099,
-        "y": 63,
-        "z": 637
-      },
-      "max": {
-        "x": 2101,
-        "y": 197,
-        "z": 639
-      },
-      "members": {},
-      "flags": {},
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "farm-coralfarm": {
-      "min": {
-        "x": -2240,
-        "y": 41,
-        "z": 1760
-      },
-      "max": {
-        "x": -2177,
-        "y": 72,
-        "z": 1823
-      },
-      "members": {
-        "unique-ids": [
-          "20484e65-0782-4c85-aa2f-531bc41648e7",
-          "2def415a-beeb-42a5-8222-f48e80a83915"
-        ]
-      },
       "flags": {
         "frosted-ice-form": "deny",
         "use": "allow",
-        "greeting": "§3Community Coral Farm §8:: §6Built by §eRinda_Ryuu §6& §eMrBirdy",
-        "interact": "allow",
-        "chest-access": "allow",
-        "mob-spawning": "deny"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "mg-snowmanspleef": {
-      "min": {
-        "x": -2341,
-        "y": 34,
-        "z": 4025
-      },
-      "max": {
-        "x": -2272,
-        "y": 169,
-        "z": 4095
-      },
-      "members": {},
-      "flags": {
-        "feed-amount": 20,
-        "feed-delay": 30
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "treehousecontest": {
-      "members": {},
-      "flags": {
-        "deny-message": "§cWoah there, this event has ended! No more building, sorry.",
-        "ice-form": "deny",
-        "use": "allow",
-        "feed-amount": 20,
-        "greeting": "§eBop to the treetop!",
-        "snow-fall": "deny",
-        "leaf-decay": "deny",
-        "ice-melt": "deny",
+        "greeting": "Welcome to spawn",
         "interact": "allow",
         "chest-access": "allow",
         "deny-spawn": [
-          "minecraft:cow",
-          "minecraft:chicken",
+          "minecraft:skeleton",
+          "minecraft:phantom",
+          "minecraft:zombified_piglin",
+          "minecraft:witch",
           "minecraft:donkey",
-          "minecraft:fox",
           "minecraft:pig",
-          "minecraft:llama",
-          "minecraft:wolf",
-          "minecraft:horse",
           "minecraft:sheep",
-          "minecraft:rabbit",
-          "minecraft:mule",
-          "minecraft:skeleton_horse"
-        ],
-        "mob-spawning": "deny",
-        "enderpearl": "deny",
-        "coral-fade": "deny",
-        "soil-dry": "deny",
-        "vine-growth": "deny",
-        "feed-delay": 30,
-        "snow-melt": "deny",
-        "farewell": "§7No wait, come back! Society wasn't re-built in a day!"
-      },
-      "owners": {
-        "unique-ids": [
-          "5703cc6b-ee8e-4664-9cd9-1ef09efb6e6a"
-        ]
-      },
-      "type": "poly2d",
-      "priority": 0,
-      "max-y": 255,
-      "min-y": 0,
-      "points": [
-        {
-          "x": -965,
-          "z": 2938
-        },
-        {
-          "x": -905,
-          "z": 3034
-        },
-        {
-          "x": -838,
-          "z": 3054
-        },
-        {
-          "x": -743,
-          "z": 3064
-        },
-        {
-          "x": -731,
-          "z": 2991
-        },
-        {
-          "x": -751,
-          "z": 2901
-        },
-        {
-          "x": -779,
-          "z": 2782
-        },
-        {
-          "x": -835,
-          "z": 2693
-        },
-        {
-          "x": -902,
-          "z": 2712
-        },
-        {
-          "x": -951,
-          "z": 2777
-        },
-        {
-          "x": -972,
-          "z": 2829
-        },
-        {
-          "x": -946,
-          "z": 2871
-        }
-      ]
-    },
-    "ksa-pbpyramid": {
-      "members": {},
-      "flags": {
-        "use": "allow",
-        "interact": "allow",
-        "chest-access": "allow"
-      },
-      "owners": {
-        "unique-ids": [
-          "6138eef5-1fec-44a7-95f1-5a57a540f1da"
-        ]
-      },
-      "type": "poly2d",
-      "priority": 0,
-      "max-y": 255,
-      "min-y": 0,
-      "points": [
-        {
-          "x": 1487,
-          "z": 3104
-        },
-        {
-          "x": 1487,
-          "z": 3151
-        },
-        {
-          "x": 1408,
-          "z": 3151
-        },
-        {
-          "x": 1408,
-          "z": 3135
-        },
-        {
-          "x": 1392,
-          "z": 3135
-        },
-        {
-          "x": 1392,
-          "z": 3120
-        },
-        {
-          "x": 1408,
-          "z": 3120
-        },
-        {
-          "x": 1408,
-          "z": 3104
-        }
-      ]
-    },
-    "farm-guardianxp": {
-      "min": {
-        "x": -4921,
-        "y": 4,
-        "z": 3875
-      },
-      "max": {
-        "x": -4836,
-        "y": 94,
-        "z": 3918
-      },
-      "members": {
-        "unique-ids": [
-          "2790c631-6d80-44bd-a5a9-20ffdecb2e9e"
-        ]
-      },
-      "flags": {
-        "enderpearl": "deny",
-        "use": "allow",
-        "greeting": "§3Community Guardian Farm §7:: §6Built by §eOatmealmonkey",
-        "mob-damage": "allow",
-        "interact": "allow",
-        "chest-access": "allow"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "qt-crystalcaverns-main": {
-      "min": {
-        "x": 1713,
-        "y": 0,
-        "z": -375
-      },
-      "max": {
-        "x": 1817,
-        "y": 255,
-        "z": -278
-      },
-      "members": {},
-      "flags": {
-        "enderpearl": "deny",
-        "vine-growth": "deny",
-        "use": "allow",
-        "greeting": "§3Welcome to the §dCrystal Caverns §5Quest Town!",
-        "ice-melt": "deny",
-        "interact": "allow",
-        "snow-melt": "deny",
-        "chest-access": "allow",
-        "mob-spawning": "deny",
-        "use-anvil": "deny"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "ksa-ojpagoda": {
-      "members": {},
-      "flags": {
-        "deny-spawn": [
-          "minecraft:slime"
-        ]
-      },
-      "owners": {
-        "unique-ids": [
-          "5234cb4f-4ade-45ae-adea-ab52e605b90f"
-        ]
-      },
-      "type": "poly2d",
-      "priority": 0,
-      "max-y": 255,
-      "min-y": 0,
-      "points": [
-        {
-          "x": -2241,
-          "z": 160
-        },
-        {
-          "x": -2241,
-          "z": 192
-        },
-        {
-          "x": -2225,
-          "z": 192
-        },
-        {
-          "x": -2225,
-          "z": 208
-        },
-        {
-          "x": -2193,
-          "z": 208
-        },
-        {
-          "x": -2193,
-          "z": 223
-        },
-        {
-          "x": -2225,
-          "z": 223
-        },
-        {
-          "x": -2225,
-          "z": 239
-        },
-        {
-          "x": -2241,
-          "z": 239
-        },
-        {
-          "x": -2241,
-          "z": 255
-        },
-        {
-          "x": -2256,
-          "z": 255
-        },
-        {
-          "x": -2256,
-          "z": 239
-        },
-        {
-          "x": -2272,
-          "z": 239
-        },
-        {
-          "x": -2272,
-          "z": 223
-        },
-        {
-          "x": -2304,
-          "z": 223
-        },
-        {
-          "x": -2304,
-          "z": 208
-        },
-        {
-          "x": -2272,
-          "z": 208
-        },
-        {
-          "x": -2272,
-          "z": 192
-        },
-        {
-          "x": -2256,
-          "z": 192
-        },
-        {
-          "x": -2256,
-          "z": 160
-        }
-      ]
-    },
-    "farm-sub02-guardiananvil": {
-      "parent": "farm-guardianxp",
-      "min": {
-        "x": -4897,
-        "y": 24,
-        "z": 3907
-      },
-      "max": {
-        "x": -4897,
-        "y": 27,
-        "z": 3907
-      },
-      "members": {},
-      "flags": {
-        "block-place": "allow"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "zoobuildmain": {
-      "members": {},
-      "flags": {
-        "deny-message": "§cSorry, this event has ended. Feel free to look around!",
-        "enderpearl": "deny",
-        "vine-growth": "deny",
-        "use": "allow",
-        "feed-amount": 20,
-        "greeting": "§2Hiss §6woof §ewoof §bmeow!",
-        "feed-delay": 30,
-        "chest-access": "allow",
-        "deny-spawn": [
+          "minecraft:ghast",
           "minecraft:cow",
+          "minecraft:enderman",
+          "minecraft:stray",
           "minecraft:chicken",
-          "minecraft:donkey",
-          "minecraft:llama",
-          "minecraft:pig",
-          "minecraft:wolf",
-          "minecraft:horse",
-          "minecraft:sheep",
-          "minecraft:skeleton_horse",
-          "minecraft:mule"
+          "minecraft:spider",
+          "minecraft:zombie",
+          "minecraft:creeper",
+          "minecraft:drowned",
+          "minecraft:zombie_villager",
+          "minecraft:horse"
         ],
-        "mob-spawning": "deny",
-        "farewell": "§8*Sad zoo noises*"
-      },
-      "owners": {},
-      "type": "poly2d",
-      "priority": 0,
-      "max-y": 183,
-      "min-y": 6,
-      "points": [
-        {
-          "x": -1415,
-          "z": -663
-        },
-        {
-          "x": -1441,
-          "z": -511
-        },
-        {
-          "x": -1516,
-          "z": -461
-        },
-        {
-          "x": -1636,
-          "z": -486
-        },
-        {
-          "x": -1706,
-          "z": -649
-        },
-        {
-          "x": -1766,
-          "z": -720
-        },
-        {
-          "x": -1797,
-          "z": -789
-        },
-        {
-          "x": -1795,
-          "z": -848
-        },
-        {
-          "x": -1755,
-          "z": -933
-        },
-        {
-          "x": -1743,
-          "z": -999
-        },
-        {
-          "x": -1640,
-          "z": -1021
-        },
-        {
-          "x": -1543,
-          "z": -1018
-        },
-        {
-          "x": -1481,
-          "z": -1051
-        },
-        {
-          "x": -1427,
-          "z": -1057
-        },
-        {
-          "x": -1326,
-          "z": -1006
-        },
-        {
-          "x": -1323,
-          "z": -970
-        },
-        {
-          "x": -1335,
-          "z": -936
-        },
-        {
-          "x": -1313,
-          "z": -899
-        },
-        {
-          "x": -1331,
-          "z": -859
-        },
-        {
-          "x": -1364,
-          "z": -855
-        },
-        {
-          "x": -1398,
-          "z": -835
-        },
-        {
-          "x": -1396,
-          "z": -790
-        },
-        {
-          "x": -1414,
-          "z": -791
-        },
-        {
-          "x": -1438,
-          "z": -820
-        },
-        {
-          "x": -1454,
-          "z": -810
-        },
-        {
-          "x": -1453,
-          "z": -792
-        },
-        {
-          "x": -1472,
-          "z": -791
-        },
-        {
-          "x": -1481,
-          "z": -781
-        },
-        {
-          "x": -1477,
-          "z": -755
-        },
-        {
-          "x": -1469,
-          "z": -736
-        },
-        {
-          "x": -1438,
-          "z": -721
-        },
-        {
-          "x": -1426,
-          "z": -700
-        },
-        {
-          "x": -1426,
-          "z": -674
-        }
-      ]
-    },
-    "mg-darkspleef-pvp": {
-      "parent": "mg-darkspleef",
-      "min": {
-        "x": -2343,
-        "y": 59,
-        "z": 3638
-      },
-      "max": {
-        "x": -2304,
-        "y": 69,
-        "z": 3677
-      },
-      "members": {},
-      "flags": {
-        "block-break": "allow",
-        "pvp": "allow"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "frozengardenwarp": {
-      "parent": "frozengardenmain",
-      "members": {},
-      "flags": {
-        "build": "deny"
-      },
-      "owners": {},
-      "type": "poly2d",
-      "priority": 0,
-      "max-y": 89,
-      "min-y": 63,
-      "points": [
-        {
-          "x": -1275,
-          "z": 3348
-        },
-        {
-          "x": -1279,
-          "z": 3341
-        },
-        {
-          "x": -1276,
-          "z": 3336
-        },
-        {
-          "x": -1271,
-          "z": 3330
-        },
-        {
-          "x": -1263,
-          "z": 3321
-        },
-        {
-          "x": -1255,
-          "z": 3317
-        },
-        {
-          "x": -1249,
-          "z": 3320
-        },
-        {
-          "x": -1244,
-          "z": 3327
-        },
-        {
-          "x": -1241,
-          "z": 3334
-        },
-        {
-          "x": -1237,
-          "z": 3343
-        },
-        {
-          "x": -1237,
-          "z": 3350
-        },
-        {
-          "x": -1240,
-          "z": 3355
-        },
-        {
-          "x": -1245,
-          "z": 3358
-        },
-        {
-          "x": -1254,
-          "z": 3364
-        },
-        {
-          "x": -1258,
-          "z": 3368
-        },
-        {
-          "x": -1265,
-          "z": 3367
-        },
-        {
-          "x": -1269,
-          "z": 3362
-        },
-        {
-          "x": -1271,
-          "z": 3354
-        }
-      ]
-    },
-    "swampbingo-warp-ne": {
-      "parent": "swampbingo-warp",
-      "min": {
-        "x": 2061,
-        "y": 68,
-        "z": -413
-      },
-      "max": {
-        "x": 2081,
-        "y": 69,
-        "z": -401
-      },
-      "members": {},
-      "flags": {
-        "build": "allow",
-        "build-group": "MEMBERS"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "farm-sub01-guardiananvil": {
-      "parent": "farm-guardianxp",
-      "min": {
-        "x": -4897,
-        "y": 24,
-        "z": 3900
-      },
-      "max": {
-        "x": -4897,
-        "y": 27,
-        "z": 3900
-      },
-      "members": {},
-      "flags": {
-        "use": "allow",
-        "interact": "allow",
-        "block-place": "allow"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "ksa-resondiaharbor": {
-      "min": {
-        "x": 352,
-        "y": 0,
-        "z": 4384
-      },
-      "max": {
-        "x": 415,
-        "y": 255,
-        "z": 4447
-      },
-      "members": {
-        "unique-ids": [
-          "cb14cf94-a1f8-42f3-a747-1f41d12e6e91"
-        ]
-      },
-      "flags": {
-        "enderpearl": "deny",
         "vine-growth": "deny",
-        "chest-access-group": "NON_MEMBERS",
-        "use": "allow",
-        "interact": "allow",
-        "chest-access": "deny",
-        "mob-spawning": "deny"
+        "item-frame-rotation": "deny",
+        "entity-painting-destroy": "deny",
+        "entity-item-frame-destroy": "deny",
+        "heal-amount": 1,
+        "heal-delay": 10,
+        "farewell": "Leaving spawn..."
       },
       "owners": {
-        "unique-ids": [
-          "6ace1d34-6a41-4d62-a6d4-10ba9d5f5b64"
-        ]
-      },
-      "type": "cuboid",
-      "priority": 0
-    },
-    "lunarnewyear-main": {
-      "min": {
-        "x": 1782,
-        "y": 40,
-        "z": -1390
-      },
-      "max": {
-        "x": 2054,
-        "y": 255,
-        "z": -1099
-      },
-      "members": {},
-      "flags": {
-        "ice-form": "deny",
-        "use": "allow",
-        "feed-amount": 20,
-        "greeting": "§eWelcome! §6We are celebrating the year of the Ox!",
-        "snow-fall": "deny",
-        "ice-melt": "deny",
-        "interact": "allow",
-        "chest-access": "allow",
-        "mob-spawning": "deny",
-        "enderpearl": "deny",
-        "coral-fade": "deny",
-        "vine-growth": "deny",
-        "feed-delay": 30,
-        "snow-melt": "deny",
-        "greeting-title": "§eNi hao!\n§cWelcome to the Celebration!",
-        "farewell": "§7Bai bai la! §8Bye, come back soon!"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "mg-christmashope": {
-      "min": {
-        "x": -2572,
-        "y": 48,
-        "z": 4038
-      },
-      "max": {
-        "x": -2498,
-        "y": 177,
-        "z": 4112
-      },
-      "members": {},
-      "flags": {
-        "enderpearl": "deny",
-        "build": "deny",
-        "feed-amount": 20,
-        "feed-delay": 30,
-        "mob-spawning": "deny"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "mg-fourbiomesmaze": {
-      "min": {
-        "x": -2329,
-        "y": 52,
-        "z": 3737
-      },
-      "max": {
-        "x": -2224,
-        "y": 103,
-        "z": 3842
-      },
-      "members": {},
-      "flags": {
-        "enderpearl": "deny",
-        "use": "allow",
-        "mob-spawning": "deny"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "holiday20-main": {
-      "min": {
-        "x": -612,
-        "y": 40,
-        "z": -4814
-      },
-      "max": {
-        "x": -295,
-        "y": 255,
-        "z": -4513
-      },
-      "members": {},
-      "flags": {
-        "enderpearl": "deny",
-        "use": "allow",
-        "feed-amount": 20,
-        "feed-delay": 30,
-        "snow-fall": "deny",
-        "ice-melt": "deny",
-        "interact": "allow",
-        "snow-melt": "deny",
-        "deny-spawn": [
-          "minecraft:cow",
-          "minecraft:chicken",
-          "minecraft:fox",
-          "minecraft:pig",
-          "minecraft:llama",
-          "minecraft:wolf",
-          "minecraft:horse",
-          "minecraft:sheep",
-          "minecraft:rabbit",
-          "minecraft:skeleton_horse"
-        ],
-        "mob-spawning": "deny"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "farm-flowers": {
-      "min": {
-        "x": -501,
-        "y": 30,
-        "z": 9
-      },
-      "max": {
-        "x": -457,
-        "y": 64,
-        "z": 77
-      },
-      "members": {
         "unique-ids": [
           "2def415a-beeb-42a5-8222-f48e80a83915"
         ]
       },
-      "flags": {
-        "enderpearl": "deny",
-        "use": "allow",
-        "greeting": "§3Community Flower Farm §8:: §6Built by §eOatmealmonkey §6& §eMrBirdy",
-        "interact": "allow",
-        "chest-access": "allow"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "mg-hauntedmansion": {
-      "min": {
-        "x": -2541,
-        "y": 54,
-        "z": 3758
-      },
-      "max": {
-        "x": -2458,
-        "y": 100,
-        "z": 3841
-      },
-      "members": {},
-      "flags": {
-        "enderpearl": "deny",
-        "use": "allow",
-        "feed-amount": 20,
-        "feed-delay": 30,
-        "mob-spawning": "deny"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "farm-breadbasket-build": {
-      "parent": "farm-breadbasket",
-      "members": {
-        "groups": [
-          "rank1"
-        ]
-      },
-      "flags": {},
-      "owners": {},
-      "type": "poly2d",
-      "priority": 0,
-      "max-y": 65,
-      "min-y": 61,
-      "points": [
-        {
-          "x": 4435,
-          "z": 3460
-        },
-        {
-          "x": 4435,
-          "z": 3533
-        },
-        {
-          "x": 4466,
-          "z": 3533
-        },
-        {
-          "x": 4475,
-          "z": 3547
-        },
-        {
-          "x": 4484,
-          "z": 3552
-        },
-        {
-          "x": 4501,
-          "z": 3552
-        },
-        {
-          "x": 4511,
-          "z": 3545
-        },
-        {
-          "x": 4521,
-          "z": 3550
-        },
-        {
-          "x": 4529,
-          "z": 3560
-        },
-        {
-          "x": 4530,
-          "z": 3569
-        },
-        {
-          "x": 4519,
-          "z": 3585
-        },
-        {
-          "x": 4519,
-          "z": 3589
-        },
-        {
-          "x": 4545,
-          "z": 3589
-        },
-        {
-          "x": 4545,
-          "z": 3460
-        }
-      ]
-    },
-    "swampbingo-main": {
-      "min": {
-        "x": 1909,
-        "y": 34,
-        "z": -631
-      },
-      "max": {
-        "x": 2217,
-        "y": 255,
-        "z": -179
-      },
-      "members": {},
-      "flags": {
-        "deny-message": "§cWhoops! You have to rankup to participate in this event!",
-        "use": "allow",
-        "feed-amount": 20,
-        "greeting": "§6Let §2the §dgood §6times §2roll§d!",
-        "ice-melt": "deny",
-        "interact": "allow",
-        "vehicle-destroy": "allow",
-        "chest-access": "allow",
-        "deny-spawn": [
-          "minecraft:cow",
-          "minecraft:chicken",
-          "minecraft:donkey",
-          "minecraft:fox",
-          "minecraft:pig",
-          "minecraft:wolf",
-          "minecraft:llama",
-          "minecraft:horse",
-          "minecraft:sheep",
-          "minecraft:squid",
-          "minecraft:mule"
-        ],
-        "ride": "allow",
-        "mob-spawning": "deny",
-        "coral-fade": "deny",
-        "soil-dry": "deny",
-        "vehicle-place": "allow",
-        "vine-growth": "deny",
-        "chest-access-group": "NON_MEMBERS",
-        "feed-delay": 30,
-        "snow-melt": "deny",
-        "greeting-title": "§6Bienvenue!\n§2Welcome §dto §2our §dswamp §2town§d!",
-        "farewell": "§8Rarr! Stay out of me swamp!"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "newbierules": {
-      "min": {
-        "x": 144,
-        "y": 7,
-        "z": -232
-      },
-      "max": {
-        "x": 213,
-        "y": 54,
-        "z": -162
-      },
-      "members": {},
-      "flags": {
-        "enderpearl": "deny",
-        "item-drop": "deny",
-        "send-chat": "deny",
-        "vine-growth": "deny",
-        "build": "deny",
-        "fall-damage": "deny",
-        "use": "deny",
-        "feed-amount": 20,
-        "feed-delay": 30,
-        "mob-spawning": "deny",
-        "grass-growth": "deny",
-        "allowed-cmds": [
-          "/faq",
-          "/faqrules",
-          "/rules",
-          "/discord"
-        ]
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "flowercombuildwarp": {
-      "parent": "flowercombuildmain",
-      "members": {},
-      "flags": {
-        "build": "deny"
-      },
-      "owners": {},
-      "type": "poly2d",
-      "priority": 0,
-      "max-y": 103,
-      "min-y": 58,
-      "points": [
-        {
-          "x": -1048,
-          "z": 3137
-        },
-        {
-          "x": -1048,
-          "z": 3129
-        },
-        {
-          "x": -1041,
-          "z": 3118
-        },
-        {
-          "x": -1034,
-          "z": 3113
-        },
-        {
-          "x": -1023,
-          "z": 3111
-        },
-        {
-          "x": -1013,
-          "z": 3112
-        },
-        {
-          "x": -1005,
-          "z": 3116
-        },
-        {
-          "x": -998,
-          "z": 3122
-        },
-        {
-          "x": -998,
-          "z": 3133
-        },
-        {
-          "x": -997,
-          "z": 3141
-        },
-        {
-          "x": -999,
-          "z": 3150
-        },
-        {
-          "x": -1004,
-          "z": 3157
-        },
-        {
-          "x": -1010,
-          "z": 3163
-        },
-        {
-          "x": -1016,
-          "z": 3165
-        },
-        {
-          "x": -1026,
-          "z": 3165
-        },
-        {
-          "x": -1033,
-          "z": 3163
-        },
-        {
-          "x": -1040,
-          "z": 3159
-        },
-        {
-          "x": -1044,
-          "z": 3153
-        },
-        {
-          "x": -1046,
-          "z": 3147
-        },
-        {
-          "x": -1048,
-          "z": 3143
-        }
-      ]
-    },
-    "ksa-moodon": {
-      "members": {},
-      "flags": {
-        "mob-spawning": "deny"
-      },
-      "owners": {
-        "unique-ids": [
-          "5ef2522b-4530-4693-872f-fae133e90ec9"
-        ]
-      },
       "type": "poly2d",
       "priority": 0,
       "max-y": 255,
       "min-y": 0,
       "points": [
         {
-          "x": -913,
-          "z": -1984
+          "x": 431,
+          "z": 75
         },
         {
-          "x": -913,
-          "z": -1937
+          "x": 271,
+          "z": 207
         },
         {
-          "x": -945,
-          "z": -1937
+          "x": 64,
+          "z": 207
         },
         {
-          "x": -945,
-          "z": -1921
+          "x": -320,
+          "z": -177
         },
         {
-          "x": -960,
-          "z": -1921
+          "x": -320,
+          "z": -384
         },
         {
-          "x": -960,
-          "z": -1937
+          "x": -144,
+          "z": -560
         },
         {
-          "x": -992,
-          "z": -1937
+          "x": 287,
+          "z": -560
         },
         {
-          "x": -992,
-          "z": -1984
+          "x": 431,
+          "z": -416
         }
       ]
     },
-    "farm-icefarm-build": {
-      "parent": "farm-icefarm",
-      "members": {},
-      "flags": {
-        "block-break": "allow"
-      },
-      "owners": {},
-      "type": "poly2d",
-      "priority": 0,
-      "max-y": 68,
-      "min-y": 68,
-      "points": [
-        {
-          "x": -4776,
-          "z": 3551
-        },
-        {
-          "x": -4844,
-          "z": 3551
-        },
-        {
-          "x": -4845,
-          "z": 3551
-        },
-        {
-          "x": -4847,
-          "z": 3577
-        },
-        {
-          "x": -4876,
-          "z": 3577
-        },
-        {
-          "x": -4876,
-          "z": 3682
-        },
-        {
-          "x": -4776,
-          "z": 3682
-        }
-      ]
-    },
-    "mg-stairscimaze": {
+    "spawneast": {
       "min": {
-        "x": -2327,
-        "y": 34,
-        "z": 3824
-      },
-      "max": {
-        "x": -2224,
-        "y": 145,
-        "z": 3927
-      },
-      "members": {},
-      "flags": {
-        "enderpearl": "deny",
-        "mob-spawning": "deny"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "swampbingo-warp-nw": {
-      "parent": "swampbingo-warp",
-      "min": {
-        "x": 2011,
-        "y": 68,
-        "z": -413
-      },
-      "max": {
-        "x": 2031,
-        "y": 69,
-        "z": -401
-      },
-      "members": {},
-      "flags": {
-        "build": "allow",
-        "build-group": "MEMBERS"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "farm-sub02-sheerwool": {
-      "min": {
-        "x": 2101,
-        "y": 191,
-        "z": 639
-      },
-      "max": {
-        "x": 2107,
-        "y": 194,
-        "z": 661
-      },
-      "members": {},
-      "flags": {},
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "farm-drowned": {
-      "min": {
-        "x": 586,
-        "y": 185,
-        "z": 3745
-      },
-      "max": {
-        "x": 651,
-        "y": 260,
-        "z": 3810
-      },
-      "members": {
-        "unique-ids": [
-          "2790c631-6d80-44bd-a5a9-20ffdecb2e9e"
-        ]
-      },
-      "flags": {
-        "enderpearl": "deny",
-        "use": "allow",
-        "mob-damage": "allow",
-        "greeting": "§3Community Drowned Farm §8:: §6Built by §eOatmealmonkey",
-        "chest-access": "allow"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "swampbingo-warp": {
-      "parent": "swampbingo-main",
-      "min": {
-        "x": 1938,
-        "y": 56,
-        "z": -420
-      },
-      "max": {
-        "x": 2109,
-        "y": 96,
-        "z": -361
-      },
-      "members": {},
-      "flags": {
-        "build": "deny",
-        "chest-access": "allow"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "pit_region": {
-      "min": {
-        "x": 242,
-        "y": 120,
-        "z": -259
-      },
-      "max": {
-        "x": 252,
-        "y": 133,
-        "z": -249
-      },
-      "members": {
-        "groups": [
-          "active"
-        ]
-      },
-      "flags": {
-        "allowed-cmds": [
-          "/ban",
-          "/rg bypass",
-          "/thru",
-          "/tp",
-          "/m"
-        ]
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "mg-darkspleef": {
-      "min": {
-        "x": -2350,
-        "y": 61,
-        "z": 3631
-      },
-      "max": {
-        "x": -2300,
-        "y": 98,
-        "z": 3682
-      },
-      "members": {},
-      "flags": {
-        "enderpearl": "deny",
-        "chorus-fruit-teleport": "deny",
-        "feed-amount": 20,
-        "feed-delay": 30,
-        "mob-spawning": "deny"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "holiday20-paintball": {
-      "parent": "holiday20-main",
-      "members": {},
-      "flags": {
-        "pvp": "allow"
-      },
-      "owners": {},
-      "type": "poly2d",
-      "priority": 0,
-      "max-y": 93,
-      "min-y": 66,
-      "points": [
-        {
-          "x": -548,
-          "z": -4642
-        },
-        {
-          "x": -541,
-          "z": -4642
-        },
-        {
-          "x": -540,
-          "z": -4643
-        },
-        {
-          "x": -539,
-          "z": -4644
-        },
-        {
-          "x": -531,
-          "z": -4644
-        },
-        {
-          "x": -530,
-          "z": -4646
-        },
-        {
-          "x": -521,
-          "z": -4646
-        },
-        {
-          "x": -520,
-          "z": -4645
-        },
-        {
-          "x": -519,
-          "z": -4645
-        },
-        {
-          "x": -519,
-          "z": -4633
-        },
-        {
-          "x": -520,
-          "z": -4633
-        },
-        {
-          "x": -521,
-          "z": -4632
-        },
-        {
-          "x": -521,
-          "z": -4624
-        },
-        {
-          "x": -520,
-          "z": -4623
-        },
-        {
-          "x": -519,
-          "z": -4622
-        },
-        {
-          "x": -519,
-          "z": -4614
-        },
-        {
-          "x": -518,
-          "z": -4613
-        },
-        {
-          "x": -517,
-          "z": -4612
-        },
-        {
-          "x": -517,
-          "z": -4600
-        },
-        {
-          "x": -516,
-          "z": -4600
-        },
-        {
-          "x": -515,
-          "z": -4599
-        },
-        {
-          "x": -515,
-          "z": -4598
-        },
-        {
-          "x": -507,
-          "z": -4598
-        },
-        {
-          "x": -506,
-          "z": -4599
-        },
-        {
-          "x": -505,
-          "z": -4600
-        },
-        {
-          "x": -499,
-          "z": -4600
-        },
-        {
-          "x": -498,
-          "z": -4599
-        },
-        {
-          "x": -497,
-          "z": -4598
-        },
-        {
-          "x": -489,
-          "z": -4598
-        },
-        {
-          "x": -488,
-          "z": -4599
-        },
-        {
-          "x": -487,
-          "z": -4600
-        },
-        {
-          "x": -479,
-          "z": -4600
-        },
-        {
-          "x": -478,
-          "z": -4599
-        },
-        {
-          "x": -477,
-          "z": -4598
-        },
-        {
-          "x": -477,
-          "z": -4584
-        },
-        {
-          "x": -478,
-          "z": -4583
-        },
-        {
-          "x": -479,
-          "z": -4582
-        },
-        {
-          "x": -491,
-          "z": -4582
-        },
-        {
-          "x": -492,
-          "z": -4582
-        },
-        {
-          "x": -492,
-          "z": -4581
-        },
-        {
-          "x": -493,
-          "z": -4580
-        },
-        {
-          "x": -501,
-          "z": -4580
-        },
-        {
-          "x": -501,
-          "z": -4578
-        },
-        {
-          "x": -502,
-          "z": -4577
-        },
-        {
-          "x": -503,
-          "z": -4576
-        },
-        {
-          "x": -505,
-          "z": -4576
-        },
-        {
-          "x": -505,
-          "z": -4566
-        },
-        {
-          "x": -506,
-          "z": -4565
-        },
-        {
-          "x": -507,
-          "z": -4564
-        },
-        {
-          "x": -507,
-          "z": -4554
-        },
-        {
-          "x": -508,
-          "z": -4553
-        },
-        {
-          "x": -509,
-          "z": -4552
-        },
-        {
-          "x": -509,
-          "z": -4542
-        },
-        {
-          "x": -510,
-          "z": -4541
-        },
-        {
-          "x": -511,
-          "z": -4540
-        },
-        {
-          "x": -512,
-          "z": -4539
-        },
-        {
-          "x": -521,
-          "z": -4539
-        },
-        {
-          "x": -521,
-          "z": -4537
-        },
-        {
-          "x": -522,
-          "z": -4536
-        },
-        {
-          "x": -534,
-          "z": -4536
-        },
-        {
-          "x": -534,
-          "z": -4535
-        },
-        {
-          "x": -535,
-          "z": -4534
-        },
-        {
-          "x": -546,
-          "z": -4534
-        },
-        {
-          "x": -547,
-          "z": -4534
-        },
-        {
-          "x": -548,
-          "z": -4533
-        },
-        {
-          "x": -560,
-          "z": -4533
-        },
-        {
-          "x": -561,
-          "z": -4534
-        },
-        {
-          "x": -562,
-          "z": -4535
-        },
-        {
-          "x": -562,
-          "z": -4545
-        },
-        {
-          "x": -563,
-          "z": -4546
-        },
-        {
-          "x": -564,
-          "z": -4547
-        },
-        {
-          "x": -564,
-          "z": -4555
-        },
-        {
-          "x": -565,
-          "z": -4556
-        },
-        {
-          "x": -566,
-          "z": -4556
-        },
-        {
-          "x": -567,
-          "z": -4557
-        },
-        {
-          "x": -567,
-          "z": -4567
-        },
-        {
-          "x": -569,
-          "z": -4567
-        },
-        {
-          "x": -570,
-          "z": -4568
-        },
-        {
-          "x": -571,
-          "z": -4569
-        },
-        {
-          "x": -571,
-          "z": -4571
-        },
-        {
-          "x": -581,
-          "z": -4571
-        },
-        {
-          "x": -582,
-          "z": -4572
-        },
-        {
-          "x": -583,
-          "z": -4573
-        },
-        {
-          "x": -591,
-          "z": -4573
-        },
-        {
-          "x": -592,
-          "z": -4574
-        },
-        {
-          "x": -593,
-          "z": -4575
-        },
-        {
-          "x": -599,
-          "z": -4575
-        },
-        {
-          "x": -600,
-          "z": -4576
-        },
-        {
-          "x": -601,
-          "z": -4577
-        },
-        {
-          "x": -601,
-          "z": -4587
-        },
-        {
-          "x": -600,
-          "z": -4588
-        },
-        {
-          "x": -599,
-          "z": -4589
-        },
-        {
-          "x": -591,
-          "z": -4589
-        },
-        {
-          "x": -590,
-          "z": -4590
-        },
-        {
-          "x": -589,
-          "z": -4591
-        },
-        {
-          "x": -579,
-          "z": -4591
-        },
-        {
-          "x": -578,
-          "z": -4592
-        },
-        {
-          "x": -578,
-          "z": -4593
-        },
-        {
-          "x": -571,
-          "z": -4593
-        },
-        {
-          "x": -570,
-          "z": -4594
-        },
-        {
-          "x": -569,
-          "z": -4595
-        },
-        {
-          "x": -568,
-          "z": -4596
-        },
-        {
-          "x": -567,
-          "z": -4597
-        },
-        {
-          "x": -566,
-          "z": -4598
-        },
-        {
-          "x": -565,
-          "z": -4599
-        },
-        {
-          "x": -564,
-          "z": -4600
-        },
-        {
-          "x": -563,
-          "z": -4601
-        },
-        {
-          "x": -562,
-          "z": -4602
-        },
-        {
-          "x": -561,
-          "z": -4603
-        },
-        {
-          "x": -561,
-          "z": -4611
-        },
-        {
-          "x": -560,
-          "z": -4612
-        },
-        {
-          "x": -559,
-          "z": -4613
-        },
-        {
-          "x": -559,
-          "z": -4621
-        },
-        {
-          "x": -558,
-          "z": -4622
-        },
-        {
-          "x": -557,
-          "z": -4623
-        },
-        {
-          "x": -557,
-          "z": -4632
-        },
-        {
-          "x": -556,
-          "z": -4633
-        },
-        {
-          "x": -551,
-          "z": -4633
-        },
-        {
-          "x": -550,
-          "z": -4634
-        },
-        {
-          "x": -549,
-          "z": -4635
-        },
-        {
-          "x": -549,
-          "z": -4641
-        }
-      ]
-    },
-    "farm-breadbasket": {
-      "min": {
-        "x": 4424,
-        "y": 55,
-        "z": 3448
-      },
-      "max": {
-        "x": 4558,
-        "y": 97,
-        "z": 3611
-      },
-      "members": {
-        "unique-ids": [
-          "8607a2bd-a3f6-40e3-86cf-7bb436ad1902",
-          "0b214b77-47a4-4ee2-bec8-25b32ffc69c7"
-        ]
-      },
-      "flags": {
-        "enderpearl": "deny",
-        "use": "allow",
-        "mob-damage": "deny",
-        "greeting": "§3Community Breadbasket Farm §8:: §6Built by §eTraenae & Yazeemax",
-        "chest-access": "allow"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "farm-sheerwool": {
-      "min": {
-        "x": 2099,
-        "y": 53,
-        "z": 637
-      },
-      "max": {
-        "x": 2132,
-        "y": 197,
-        "z": 664
-      },
-      "members": {
-        "unique-ids": [
-          "3487cfbc-3eb3-498a-af8f-c1beb4a90476"
-        ]
-      },
-      "flags": {
-        "enderpearl": "deny",
-        "chorus-fruit-teleport": "deny",
-        "greeting": "§3Community Wool Farm §8:: §6Built by §eZombiekats",
-        "interact": "allow",
-        "damage-animals": "deny",
-        "damage-animals-group": "NON_MEMBERS",
-        "chest-access": "allow",
-        "allow-shop": "allow"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "spawnwoodland": {
-      "min": {
-        "x": 378,
-        "y": 32,
-        "z": -976
-      },
-      "max": {
-        "x": 602,
-        "y": 169,
-        "z": -730
-      },
-      "members": {},
-      "flags": {
-        "enderpearl": "deny",
-        "deny-message": "Begone, this is the mystical woodland mansion!",
-        "build": "deny",
-        "mob-damage": "deny"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "mg-biomejumpingpark": {
-      "min": {
-        "x": -2521,
-        "y": 0,
-        "z": 4198
-      },
-      "max": {
-        "x": -2494,
-        "y": 255,
-        "z": 4225
-      },
-      "members": {},
-      "flags": {
-        "enderpearl": "deny",
-        "vine-growth": "deny",
-        "build": "deny",
-        "feed-amount": 20,
-        "feed-delay": 30,
-        "mob-spawning": "deny"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "treehousecontestwarp": {
-      "parent": "treehousecontest",
-      "min": {
-        "x": -869,
-        "y": 60,
-        "z": 2858
-      },
-      "max": {
-        "x": -844,
-        "y": 92,
-        "z": 2888
-      },
-      "members": {},
-      "flags": {
-        "deny-message": "§cYou cannot break blocks in the warp area! §6:o",
-        "build": "deny"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "qt-crystalcaverns-water": {
-      "parent": "qt-crystalcaverns-main",
-      "min": {
-        "x": 1733,
-        "y": 32,
-        "z": -314
-      },
-      "max": {
-        "x": 1751,
-        "y": 56,
-        "z": -294
-      },
-      "members": {},
-      "flags": {
-        "use": "deny",
-        "interact": "deny"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 0
-    },
-    "cottagecontestwarp": {
-      "parent": "cottagecontestmain",
-      "members": {},
-      "flags": {
-        "build": "deny"
-      },
-      "owners": {},
-      "type": "poly2d",
-      "priority": 0,
-      "max-y": 110,
-      "min-y": 41,
-      "points": [
-        {
-          "x": -1748,
-          "z": 4043
-        },
-        {
-          "x": -1740,
-          "z": 4070
-        },
-        {
-          "x": -1730,
-          "z": 4107
-        },
-        {
-          "x": -1753,
-          "z": 4130
-        },
-        {
-          "x": -1752,
-          "z": 4150
-        },
-        {
-          "x": -1729,
-          "z": 4157
-        },
-        {
-          "x": -1731,
-          "z": 4175
-        },
-        {
-          "x": -1766,
-          "z": 4181
-        },
-        {
-          "x": -1784,
-          "z": 4203
-        },
-        {
-          "x": -1799,
-          "z": 4207
-        },
-        {
-          "x": -1804,
-          "z": 4171
-        },
-        {
-          "x": -1815,
-          "z": 4143
-        },
-        {
-          "x": -1837,
-          "z": 4142
-        },
-        {
-          "x": -1858,
-          "z": 4159
-        },
-        {
-          "x": -1852,
-          "z": 4185
-        },
-        {
-          "x": -1845,
-          "z": 4198
-        },
-        {
-          "x": -1856,
-          "z": 4212
-        },
-        {
-          "x": -1869,
-          "z": 4211
-        },
-        {
-          "x": -1871,
-          "z": 4192
-        },
-        {
-          "x": -1863,
-          "z": 4181
-        },
-        {
-          "x": -1878,
-          "z": 4156
-        },
-        {
-          "x": -1873,
-          "z": 4137
-        },
-        {
-          "x": -1860,
-          "z": 4123
-        },
-        {
-          "x": -1855,
-          "z": 4111
-        },
-        {
-          "x": -1855,
-          "z": 4080
-        },
-        {
-          "x": -1875,
-          "z": 4076
-        },
-        {
-          "x": -1875,
-          "z": 4047
-        },
-        {
-          "x": -1844,
-          "z": 4043
-        },
-        {
-          "x": -1820,
-          "z": 4041
-        },
-        {
-          "x": -1815,
-          "z": 4024
-        },
-        {
-          "x": -1801,
-          "z": 4024
-        },
-        {
-          "x": -1792,
-          "z": 4040
-        },
-        {
-          "x": -1779,
-          "z": 4047
-        },
-        {
-          "x": -1764,
-          "z": 4042
-        }
-      ]
-    },
-    "hauntedhousebuild": {
-      "parent": "hauntedhousemain",
-      "min": {
-        "x": -2883,
+        "x": 794,
         "y": 43,
-        "z": 3789
+        "z": -54
       },
       "max": {
-        "x": -2761,
-        "y": 57,
-        "z": 3911
+        "x": 832,
+        "y": 123,
+        "z": 28
       },
       "members": {},
       "flags": {
+        "sleep": "allow",
+        "vine-growth": "deny",
         "use": "allow",
-        "interact": "allow"
+        "interact": "allow",
+        "chest-access": "allow",
+        "mob-spawning": "deny"
+      },
+      "owners": {},
+      "type": "cuboid",
+      "priority": 0
+    },
+    "spawnnorth": {
+      "min": {
+        "x": 105,
+        "y": 41,
+        "z": -814
+      },
+      "max": {
+        "x": 187,
+        "y": 123,
+        "z": -776
+      },
+      "members": {},
+      "flags": {
+        "sleep": "allow",
+        "use": "allow",
+        "interact": "allow",
+        "mob-spawning": "deny"
+      },
+      "owners": {},
+      "type": "cuboid",
+      "priority": 0
+    },
+    "spawnjail": {
+      "min": {
+        "x": 21,
+        "y": 49,
+        "z": -198
+      },
+      "max": {
+        "x": 29,
+        "y": 59,
+        "z": -192
+      },
+      "members": {},
+      "flags": {
+        "chorus-fruit-teleport": "deny",
+        "invincible": "allow",
+        "use": "deny",
+        "feed-amount": 10,
+        "greeting": "You've been jailed it seems, perhaps you got a /mail to read!!",
+        "interact": "deny",
+        "chest-access": "deny",
+        "enderpearl": "deny",
+        "item-drop": "deny",
+        "item-pickup": "deny",
+        "feed-delay": 0,
+        "heal-amount": 10,
+        "heal-delay": 0,
+        "farewell": "You've served your time, good luck and have fun."
+      },
+      "owners": {},
+      "type": "cuboid",
+      "priority": 0
+    },
+    "spawnwest": {
+      "min": {
+        "x": -809,
+        "y": 32,
+        "z": -99
+      },
+      "max": {
+        "x": -771,
+        "y": 123,
+        "z": -17
+      },
+      "members": {},
+      "flags": {
+        "sleep": "allow",
+        "use": "allow",
+        "interact": "allow",
+        "mob-spawning": "deny"
       },
       "owners": {},
       "type": "cuboid",
@@ -4768,9 +624,13 @@
     "__global__": {
       "members": {},
       "flags": {
+        "other-explosion": "deny",
+        "lava-fire": "deny",
+        "enderman-grief": "deny",
+        "ravager-grief": "deny",
         "pvp": "deny",
-        "firework-damage": "deny",
-        "respawn-anchors": "deny"
+        "fire-spread": "deny",
+        "enderdragon-block-damage": "deny"
       },
       "owners": {},
       "type": "global",

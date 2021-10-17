@@ -72,9 +72,9 @@ class Worlds {
 		// Itherate through the config to generate the tile layers.
 		for (var config of this.worldsConfig) {
 			// First define the tile layer, using the proper path.
-			// The attribution is optional and defaults to ©MagnaRisa.
+			// The attribution is optional and defaults to ©RisingDragon.
 			var currentWorld = L.tileLayer(config.path + '/{z}/{x}/{y}.png', {
-				attribution: (config.attr) ? config.attr : '&copy;MagnaRisa',
+				attribution: (config.attr) ? config.attr : '&copy;RisingDragon',
 				id: config.id,
 				parent: this,
 				minZoom: this.minZoom,
