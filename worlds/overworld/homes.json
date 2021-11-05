@@ -92,16 +92,4 @@
 {"name":"vkgundersen","description":"1","latlng":[335.96,-1818.12],"color":"red"},
 {"name":"vkgundersen","description":"bed","latlng":[335.48,-1813.84],"color":"red"},
 {"name":"vkgundersen","description":"geode","latlng":[279.83,-1755.55],"color":"red"},
-{"name":"vkgundersen","description":"mine","latlng":[322.46,-1771.41],"color":"red"},
-{"name":"Innocent_Creeper","description":"b","latlng":[-10.57,-201.98],"color":"purple"},
-{"name":"Nikonknight","description":"blaze","latlng":[1148.51,1185.47],"color":"red"},
-{"name":"Nikonknight","description":"roof","latlng":[581.16,1079.04],"color":"red"},
-{"name":"ParPika321","description":"Chu","latlng":[271.43,116.41],"color":"purple"},
-{"name":"Verniqua","description":"n","latlng":[34.61,-45.45],"color":"purple"},
-{"name":"Zombiekats","description":"dig","latlng":[-339.9,2793.46],"color":"purple"},
-{"name":"__XxMasterxX__","description":"nether","latlng":[196.73,40.55],"color":"red"},
-{"name":"Cytometry","description":"b","latlng":[-9.37,-2.49],"color":"red"},
-{"name":"Motorm","description":"cave","latlng":[2943.3,-595.16],"color":"red"},
-{"name":"Nikonknight","description":"end","latlng":[2940.86,1464.69],"color":"red"},
-{"name":"Verniqua","description":"e","latlng":[65.61,-1169.3],"color":"purple"},
-{"name":"Zombiekats","description":"return","latlng":[-1883.66,-1246.55],"color":"purple"}]
+{"name":"vkgundersen","description":"mine","latlng":[322.46,-1771.41],"color":"red"}]
