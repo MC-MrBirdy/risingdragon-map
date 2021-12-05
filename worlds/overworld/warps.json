@@ -1705,7 +1705,7 @@
         ]
       },
       "type": "cuboid",
-      "priority": 1
+      "priority": 2
     },
     "spawn": {
       "members": {},
@@ -1887,7 +1887,7 @@
       },
       "owners": {},
       "type": "cuboid",
-      "priority": 2
+      "priority": 1
     },
     "marketandfarms-wheat": {
       "parent": "marketandfarms",

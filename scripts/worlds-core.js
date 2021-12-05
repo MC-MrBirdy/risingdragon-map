@@ -281,6 +281,9 @@ class Worlds {
 			var latlngs = [[],[]];
 			var latlng = [];
 			
+			if (region["priority"] > 1)
+				continue;
+			
 			// Skip the region if it has a parent or when players can't chat.
 			if (region["parent"]
 				|| region["type"] == "global"
