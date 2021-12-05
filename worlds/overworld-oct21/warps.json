@@ -1,0 +1,640 @@
+{
+  "regions": {
+    "qa-lostsoul": {
+      "min": {
+        "x": 863,
+        "y": 59,
+        "z": 29
+      },
+      "max": {
+        "x": 882,
+        "y": 72,
+        "z": 53
+      },
+      "members": {},
+      "flags": {
+        "sleep": "allow",
+        "vehicle-place": "allow",
+        "use": "allow",
+        "vehicle-destroy": "allow",
+        "interact": "allow",
+        "chest-access": "allow",
+        "ride": "allow"
+      },
+      "owners": {},
+      "type": "cuboid",
+      "priority": 0
+    },
+    "marketandfarms-interact": {
+      "members": {
+        "groups": [
+          "dragon"
+        ]
+      },
+      "flags": {
+        "block-break": "allow",
+        "block-place": "allow"
+      },
+      "owners": {},
+      "type": "poly2d",
+      "priority": 0,
+      "max-y": 70,
+      "min-y": 64,
+      "points": [
+        {
+          "x": -260,
+          "z": 344
+        },
+        {
+          "x": -256,
+          "z": 332
+        },
+        {
+          "x": -249,
+          "z": 328
+        },
+        {
+          "x": -236,
+          "z": 327
+        },
+        {
+          "x": -217,
+          "z": 324
+        },
+        {
+          "x": -213,
+          "z": 314
+        },
+        {
+          "x": -181,
+          "z": 319
+        },
+        {
+          "x": -181,
+          "z": 337
+        },
+        {
+          "x": -163,
+          "z": 347
+        },
+        {
+          "x": -156,
+          "z": 355
+        },
+        {
+          "x": -159,
+          "z": 375
+        },
+        {
+          "x": -170,
+          "z": 384
+        },
+        {
+          "x": -189,
+          "z": 391
+        },
+        {
+          "x": -208,
+          "z": 391
+        },
+        {
+          "x": -228,
+          "z": 383
+        },
+        {
+          "x": -244,
+          "z": 370
+        },
+        {
+          "x": -249,
+          "z": 364
+        }
+      ]
+    },
+    "spawnpvparena": {
+      "members": {
+        "groups": [
+          "dragon",
+          "mod"
+        ]
+      },
+      "flags": {
+        "use": "allow",
+        "greeting": "§cNow entering spawns §4§lPVP §carena",
+        "potion-splash": "allow",
+        "interact": "allow",
+        "damage-animals": "allow",
+        "lighter": "allow",
+        "pvp": "allow",
+        "farewell": "Back to safety"
+      },
+      "owners": {},
+      "type": "poly2d",
+      "priority": 0,
+      "max-y": 69,
+      "min-y": 63,
+      "points": [
+        {
+          "x": 211,
+          "z": -187
+        },
+        {
+          "x": 213,
+          "z": -188
+        },
+        {
+          "x": 215,
+          "z": -189
+        },
+        {
+          "x": 217,
+          "z": -190
+        },
+        {
+          "x": 218,
+          "z": -191
+        },
+        {
+          "x": 219,
+          "z": -192
+        },
+        {
+          "x": 220,
+          "z": -193
+        },
+        {
+          "x": 221,
+          "z": -195
+        },
+        {
+          "x": 222,
+          "z": -197
+        },
+        {
+          "x": 223,
+          "z": -200
+        },
+        {
+          "x": 223,
+          "z": -206
+        },
+        {
+          "x": 222,
+          "z": -209
+        },
+        {
+          "x": 221,
+          "z": -211
+        },
+        {
+          "x": 220,
+          "z": -213
+        },
+        {
+          "x": 219,
+          "z": -214
+        },
+        {
+          "x": 218,
+          "z": -215
+        },
+        {
+          "x": 217,
+          "z": -216
+        },
+        {
+          "x": 215,
+          "z": -217
+        },
+        {
+          "x": 213,
+          "z": -218
+        },
+        {
+          "x": 210,
+          "z": -219
+        },
+        {
+          "x": 203,
+          "z": -219
+        },
+        {
+          "x": 201,
+          "z": -218
+        },
+        {
+          "x": 199,
+          "z": -217
+        },
+        {
+          "x": 197,
+          "z": -216
+        },
+        {
+          "x": 196,
+          "z": -215
+        },
+        {
+          "x": 195,
+          "z": -214
+        },
+        {
+          "x": 194,
+          "z": -213
+        },
+        {
+          "x": 193,
+          "z": -211
+        },
+        {
+          "x": 192,
+          "z": -209
+        },
+        {
+          "x": 191,
+          "z": -206
+        },
+        {
+          "x": 191,
+          "z": -199
+        },
+        {
+          "x": 192,
+          "z": -197
+        },
+        {
+          "x": 193,
+          "z": -195
+        },
+        {
+          "x": 194,
+          "z": -193
+        },
+        {
+          "x": 195,
+          "z": -192
+        },
+        {
+          "x": 196,
+          "z": -191
+        },
+        {
+          "x": 197,
+          "z": -190
+        },
+        {
+          "x": 199,
+          "z": -189
+        },
+        {
+          "x": 201,
+          "z": -188
+        },
+        {
+          "x": 203,
+          "z": -187
+        }
+      ]
+    },
+    "spawnsouth": {
+      "min": {
+        "x": -159,
+        "y": 29,
+        "z": 581
+      },
+      "max": {
+        "x": -77,
+        "y": 123,
+        "z": 619
+      },
+      "members": {},
+      "flags": {
+        "sleep": "allow",
+        "use": "allow",
+        "interact": "allow",
+        "mob-spawning": "deny"
+      },
+      "owners": {},
+      "type": "cuboid",
+      "priority": 0
+    },
+    "spawnportal": {
+      "min": {
+        "x": 20,
+        "y": 68,
+        "z": -260
+      },
+      "max": {
+        "x": 67,
+        "y": 94,
+        "z": -220
+      },
+      "members": {},
+      "flags": {
+        "mycelium-spread": "deny",
+        "use": "allow",
+        "interact": "allow",
+        "chest-access": "allow",
+        "grass-growth": "deny",
+        "mushroom-growth": "deny",
+        "crop-growth": "deny"
+      },
+      "owners": {
+        "unique-ids": [
+          "2def415a-beeb-42a5-8222-f48e80a83915"
+        ]
+      },
+      "type": "cuboid",
+      "priority": 0
+    },
+    "marketandfarms": {
+      "members": {},
+      "flags": {
+        "sleep": "allow",
+        "deny-message": "Sorry, but you can't %what% here, this is a reserved space for markets and farms.",
+        "item-drop": "allow",
+        "vehicle-place": "allow",
+        "use": "allow",
+        "item-pickup": "allow",
+        "vehicle-destroy": "allow",
+        "interact": "allow",
+        "chest-access": "allow",
+        "deny-spawn": [
+          "minecraft:skeleton",
+          "minecraft:phantom",
+          "minecraft:enderman",
+          "minecraft:witch",
+          "minecraft:spider",
+          "minecraft:zombie",
+          "minecraft:creeper",
+          "minecraft:drowned",
+          "minecraft:zombie_villager"
+        ],
+        "ride": "allow",
+        "use-anvil": "allow"
+      },
+      "owners": {},
+      "type": "poly2d",
+      "priority": 0,
+      "max-y": 255,
+      "min-y": 0,
+      "points": [
+        {
+          "x": -352,
+          "z": -96
+        },
+        {
+          "x": -352,
+          "z": 111
+        },
+        {
+          "x": -320,
+          "z": 143
+        },
+        {
+          "x": -320,
+          "z": 303
+        },
+        {
+          "x": -336,
+          "z": 319
+        },
+        {
+          "x": -336,
+          "z": 383
+        },
+        {
+          "x": -272,
+          "z": 447
+        },
+        {
+          "x": -161,
+          "z": 447
+        },
+        {
+          "x": -65,
+          "z": 351
+        },
+        {
+          "x": -65,
+          "z": 320
+        },
+        {
+          "x": -49,
+          "z": 304
+        },
+        {
+          "x": -49,
+          "z": 160
+        },
+        {
+          "x": -113,
+          "z": 96
+        },
+        {
+          "x": -113,
+          "z": 32
+        },
+        {
+          "x": -241,
+          "z": -96
+        }
+      ]
+    },
+    "spawn": {
+      "members": {},
+      "flags": {
+        "frosted-ice-form": "deny",
+        "use": "allow",
+        "greeting": "Welcome to spawn",
+        "interact": "allow",
+        "chest-access": "allow",
+        "deny-spawn": [
+          "minecraft:skeleton",
+          "minecraft:phantom",
+          "minecraft:zombified_piglin",
+          "minecraft:witch",
+          "minecraft:donkey",
+          "minecraft:pig",
+          "minecraft:sheep",
+          "minecraft:ghast",
+          "minecraft:cow",
+          "minecraft:enderman",
+          "minecraft:stray",
+          "minecraft:chicken",
+          "minecraft:spider",
+          "minecraft:zombie",
+          "minecraft:creeper",
+          "minecraft:drowned",
+          "minecraft:zombie_villager",
+          "minecraft:horse"
+        ],
+        "vine-growth": "deny",
+        "item-frame-rotation": "deny",
+        "entity-painting-destroy": "deny",
+        "entity-item-frame-destroy": "deny",
+        "heal-amount": 1,
+        "heal-delay": 10,
+        "farewell": "Leaving spawn..."
+      },
+      "owners": {
+        "unique-ids": [
+          "2def415a-beeb-42a5-8222-f48e80a83915"
+        ]
+      },
+      "type": "poly2d",
+      "priority": 0,
+      "max-y": 255,
+      "min-y": 0,
+      "points": [
+        {
+          "x": 431,
+          "z": 75
+        },
+        {
+          "x": 271,
+          "z": 207
+        },
+        {
+          "x": 64,
+          "z": 207
+        },
+        {
+          "x": -320,
+          "z": -177
+        },
+        {
+          "x": -320,
+          "z": -384
+        },
+        {
+          "x": -144,
+          "z": -560
+        },
+        {
+          "x": 287,
+          "z": -560
+        },
+        {
+          "x": 431,
+          "z": -416
+        }
+      ]
+    },
+    "spawneast": {
+      "min": {
+        "x": 794,
+        "y": 43,
+        "z": -54
+      },
+      "max": {
+        "x": 832,
+        "y": 123,
+        "z": 28
+      },
+      "members": {},
+      "flags": {
+        "sleep": "allow",
+        "vine-growth": "deny",
+        "use": "allow",
+        "interact": "allow",
+        "chest-access": "allow",
+        "mob-spawning": "deny"
+      },
+      "owners": {},
+      "type": "cuboid",
+      "priority": 0
+    },
+    "spawnnorth": {
+      "min": {
+        "x": 105,
+        "y": 41,
+        "z": -814
+      },
+      "max": {
+        "x": 187,
+        "y": 123,
+        "z": -776
+      },
+      "members": {},
+      "flags": {
+        "sleep": "allow",
+        "use": "allow",
+        "interact": "allow",
+        "mob-spawning": "deny"
+      },
+      "owners": {},
+      "type": "cuboid",
+      "priority": 0
+    },
+    "spawnjail": {
+      "min": {
+        "x": 21,
+        "y": 49,
+        "z": -198
+      },
+      "max": {
+        "x": 29,
+        "y": 59,
+        "z": -192
+      },
+      "members": {},
+      "flags": {
+        "chorus-fruit-teleport": "deny",
+        "invincible": "allow",
+        "use": "deny",
+        "feed-amount": 10,
+        "greeting": "You've been jailed it seems, perhaps you got a /mail to read!!",
+        "interact": "deny",
+        "chest-access": "deny",
+        "enderpearl": "deny",
+        "item-drop": "deny",
+        "item-pickup": "deny",
+        "feed-delay": 0,
+        "heal-amount": 10,
+        "heal-delay": 0,
+        "farewell": "You've served your time, good luck and have fun."
+      },
+      "owners": {},
+      "type": "cuboid",
+      "priority": 0
+    },
+    "spawnwest": {
+      "min": {
+        "x": -809,
+        "y": 32,
+        "z": -99
+      },
+      "max": {
+        "x": -771,
+        "y": 123,
+        "z": -17
+      },
+      "members": {},
+      "flags": {
+        "sleep": "allow",
+        "use": "allow",
+        "interact": "allow",
+        "mob-spawning": "deny"
+      },
+      "owners": {},
+      "type": "cuboid",
+      "priority": 0
+    },
+    "__global__": {
+      "members": {},
+      "flags": {
+        "other-explosion": "deny",
+        "lava-fire": "deny",
+        "enderman-grief": "deny",
+        "ravager-grief": "deny",
+        "pvp": "deny",
+        "fire-spread": "deny",
+        "enderdragon-block-damage": "deny"
+      },
+      "owners": {},
+      "type": "global",
+      "priority": 0
+    }
+  }
+}

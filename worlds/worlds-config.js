@@ -27,5 +27,25 @@ var worldsConfig = [
 				"default":false,
 				"color":"yellow"
 			}]
+	},
+	{
+		"id":10,
+		"name":"Overworld Oct.21",
+		"path":"worlds/overworld-oct21",
+		"type":"default",
+		"xsize":20000,
+		"ysize":20000,
+		"markers":[
+			{
+				"name":"Homes",
+				"path":"/homes.json",
+				"default":true
+			},
+			{
+				"name":"Warps",
+				"path":"/warps.json",
+				"default":false,
+				"color":"yellow"
+			}]
 	}
 ];
