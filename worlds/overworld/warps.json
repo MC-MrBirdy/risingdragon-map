@@ -29,9 +29,9 @@
         "use": "allow",
         "greeting": "§cNow entering spawns §4§lPVP §carena",
         "potion-splash": "allow",
-        "interact": "allow",
         "damage-animals": "allow",
         "lighter": "allow",
+        "interact": "allow",
         "pvp": "allow",
         "farewell": "§aBack to safety"
       },
@@ -387,6 +387,194 @@
       "type": "cuboid",
       "priority": 2
     },
+    "cropfarms": {
+      "members": {
+        "unique-ids": [
+          "1ba56b40-b924-4e44-ab87-4eea8605ca7e"
+        ]
+      },
+      "flags": {
+        "sleep": "allow",
+        "vehicle-place": "allow",
+        "use": "allow",
+        "potion-splash": "allow",
+        "damage-animals": "allow",
+        "interact": "allow",
+        "vehicle-destroy": "allow",
+        "chest-access": "allow",
+        "deny-spawn": [
+          "minecraft:pillager",
+          "minecraft:skeleton",
+          "minecraft:wandering_trader",
+          "minecraft:bat",
+          "minecraft:phantom",
+          "minecraft:zoglin",
+          "minecraft:zombified_piglin",
+          "minecraft:witch",
+          "minecraft:ravager",
+          "minecraft:ghast",
+          "minecraft:enderman",
+          "minecraft:stray",
+          "minecraft:vindicator",
+          "minecraft:spider",
+          "minecraft:zombie",
+          "minecraft:creeper",
+          "minecraft:drowned",
+          "minecraft:zombie_villager",
+          "minecraft:evoker",
+          "minecraft:slime"
+        ],
+        "ride": "allow",
+        "use-anvil": "allow"
+      },
+      "owners": {},
+      "type": "poly2d",
+      "priority": 1,
+      "max-y": 187,
+      "min-y": -64,
+      "points": [
+        {
+          "x": -9549,
+          "z": 4022
+        },
+        {
+          "x": -9541,
+          "z": 4018
+        },
+        {
+          "x": -9530,
+          "z": 3999
+        },
+        {
+          "x": -9523,
+          "z": 3994
+        },
+        {
+          "x": -9512,
+          "z": 3984
+        },
+        {
+          "x": -9502,
+          "z": 3983
+        },
+        {
+          "x": -9496,
+          "z": 3976
+        },
+        {
+          "x": -9494,
+          "z": 3971
+        },
+        {
+          "x": -9495,
+          "z": 3965
+        },
+        {
+          "x": -9498,
+          "z": 3957
+        },
+        {
+          "x": -9500,
+          "z": 3953
+        },
+        {
+          "x": -9504,
+          "z": 3947
+        },
+        {
+          "x": -9515,
+          "z": 3944
+        },
+        {
+          "x": -9522,
+          "z": 3941
+        },
+        {
+          "x": -9524,
+          "z": 3933
+        },
+        {
+          "x": -9522,
+          "z": 3923
+        },
+        {
+          "x": -9514,
+          "z": 3916
+        },
+        {
+          "x": -9514,
+          "z": 3887
+        },
+        {
+          "x": -9612,
+          "z": 3887
+        },
+        {
+          "x": -9612,
+          "z": 3899
+        },
+        {
+          "x": -9616,
+          "z": 3905
+        },
+        {
+          "x": -9623,
+          "z": 3915
+        },
+        {
+          "x": -9625,
+          "z": 3924
+        },
+        {
+          "x": -9628,
+          "z": 3933
+        },
+        {
+          "x": -9633,
+          "z": 3938
+        },
+        {
+          "x": -9635,
+          "z": 3946
+        },
+        {
+          "x": -9632,
+          "z": 3952
+        },
+        {
+          "x": -9620,
+          "z": 3966
+        },
+        {
+          "x": -9615,
+          "z": 3973
+        },
+        {
+          "x": -9608,
+          "z": 3977
+        },
+        {
+          "x": -9594,
+          "z": 3984
+        },
+        {
+          "x": -9587,
+          "z": 3992
+        },
+        {
+          "x": -9572,
+          "z": 3997
+        },
+        {
+          "x": -9570,
+          "z": 4012
+        },
+        {
+          "x": -9565,
+          "z": 4021
+        }
+      ]
+    },
     "marketandfarms-shop11": {
       "parent": "marketandfarms",
       "min": {
@@ -455,7 +643,11 @@
       },
       "members": {},
       "flags": {},
-      "owners": {},
+      "owners": {
+        "unique-ids": [
+          "777f1413-8158-4a45-9b9d-1913653c930d"
+        ]
+      },
       "type": "cuboid",
       "priority": 2
     },
@@ -641,9 +833,9 @@
         "sleep": "allow",
         "use": "allow",
         "potion-splash": "allow",
-        "interact": "allow",
         "damage-animals": "allow",
         "lighter": "allow",
+        "interact": "allow",
         "chest-access": "allow",
         "firework-damage": "allow",
         "use-anvil": "allow"
@@ -720,9 +912,80 @@
       },
       "members": {},
       "flags": {},
-      "owners": {},
+      "owners": {
+        "unique-ids": [
+          "35331d78-6d18-4d2a-8c57-49e899efcaed"
+        ]
+      },
       "type": "cuboid",
       "priority": 2
+    },
+    "vernitopia": {
+      "members": {
+        "unique-ids": [
+          "2b0593ac-1810-49dc-bf46-4ac3bc7be60f"
+        ]
+      },
+      "flags": {
+        "sleep": "allow",
+        "vehicle-place": "allow",
+        "use": "allow",
+        "interact": "allow",
+        "vehicle-destroy": "allow",
+        "chest-access": "allow",
+        "ride": "allow"
+      },
+      "owners": {},
+      "type": "poly2d",
+      "priority": 128,
+      "max-y": 319,
+      "min-y": -64,
+      "points": [
+        {
+          "x": -1137,
+          "z": 1855
+        },
+        {
+          "x": -1137,
+          "z": 1775
+        },
+        {
+          "x": -1041,
+          "z": 1775
+        },
+        {
+          "x": -1041,
+          "z": 1616
+        },
+        {
+          "x": -1137,
+          "z": 1616
+        },
+        {
+          "x": -1137,
+          "z": 1536
+        },
+        {
+          "x": -1408,
+          "z": 1536
+        },
+        {
+          "x": -1408,
+          "z": 1663
+        },
+        {
+          "x": -1376,
+          "z": 1695
+        },
+        {
+          "x": -1376,
+          "z": 1807
+        },
+        {
+          "x": -1328,
+          "z": 1855
+        }
+      ]
     },
     "marketandfarms-shop16": {
       "parent": "marketandfarms",
@@ -780,7 +1043,7 @@
       "owners": {},
       "type": "poly2d",
       "priority": 1,
-      "max-y": 255,
+      "max-y": 319,
       "min-y": 57,
       "points": [
         {
@@ -889,6 +1152,48 @@
         }
       ]
     },
+    "cropfarms-cpb": {
+      "parent": "cropfarms",
+      "min": {
+        "x": -9552,
+        "y": 68,
+        "z": 3952
+      },
+      "max": {
+        "x": -9539,
+        "y": 71,
+        "z": 3985
+      },
+      "members": {
+        "groups": [
+          "dragon"
+        ]
+      },
+      "flags": {},
+      "owners": {},
+      "type": "cuboid",
+      "priority": 2
+    },
+    "drownedfarm-bait": {
+      "parent": "drownedfarm",
+      "min": {
+        "x": -4668,
+        "y": 34,
+        "z": 5168
+      },
+      "max": {
+        "x": -4654,
+        "y": 49,
+        "z": 5182
+      },
+      "members": {},
+      "flags": {
+        "entry": "deny"
+      },
+      "owners": {},
+      "type": "cuboid",
+      "priority": 2
+    },
     "marketandfarms-smallshop20": {
       "parent": "marketandfarms",
       "min": {
@@ -992,15 +1297,26 @@
         "vehicle-destroy": "allow",
         "chest-access": "allow",
         "deny-spawn": [
+          "minecraft:pillager",
           "minecraft:skeleton",
+          "minecraft:wandering_trader",
+          "minecraft:bat",
           "minecraft:phantom",
-          "minecraft:enderman",
+          "minecraft:zoglin",
+          "minecraft:zombified_piglin",
           "minecraft:witch",
+          "minecraft:ravager",
+          "minecraft:ghast",
+          "minecraft:enderman",
+          "minecraft:stray",
+          "minecraft:vindicator",
           "minecraft:spider",
           "minecraft:zombie",
           "minecraft:creeper",
           "minecraft:drowned",
-          "minecraft:zombie_villager"
+          "minecraft:zombie_villager",
+          "minecraft:evoker",
+          "minecraft:slime"
         ],
         "ride": "allow",
         "sleep": "allow",
@@ -1013,8 +1329,8 @@
       "owners": {},
       "type": "poly2d",
       "priority": 1,
-      "max-y": 255,
-      "min-y": 0,
+      "max-y": 319,
+      "min-y": -64,
       "points": [
         {
           "x": -352,
@@ -1388,6 +1704,28 @@
       "type": "cuboid",
       "priority": 2
     },
+    "cropfarms-other": {
+      "parent": "cropfarms",
+      "min": {
+        "x": -9574,
+        "y": 68,
+        "z": 3917
+      },
+      "max": {
+        "x": -9539,
+        "y": 85,
+        "z": 3944
+      },
+      "members": {
+        "groups": [
+          "dragon"
+        ]
+      },
+      "flags": {},
+      "owners": {},
+      "type": "cuboid",
+      "priority": 2
+    },
     "marketandfarms-smallshop30": {
       "parent": "marketandfarms",
       "min": {
@@ -1405,6 +1743,37 @@
       "owners": {},
       "type": "cuboid",
       "priority": 2
+    },
+    "ua-academia": {
+      "min": {
+        "x": -273,
+        "y": 0,
+        "z": 3762
+      },
+      "max": {
+        "x": 276,
+        "y": 255,
+        "z": 4427
+      },
+      "members": {
+        "unique-ids": [
+          "20484e65-0782-4c85-aa2f-531bc41648e7"
+        ]
+      },
+      "flags": {
+        "sleep": "allow",
+        "vehicle-place": "allow",
+        "use": "allow",
+        "damage-animals": "allow",
+        "interact": "allow",
+        "vehicle-destroy": "allow",
+        "chest-access": "allow",
+        "ride": "allow",
+        "use-anvil": "allow"
+      },
+      "owners": {},
+      "type": "cuboid",
+      "priority": 10
     },
     "spawnnorth": {
       "min": {
@@ -1534,8 +1903,8 @@
       "members": {},
       "flags": {
         "chorus-fruit-teleport": "deny",
-        "use": "deny",
         "invincible": "allow",
+        "use": "deny",
         "feed-amount": 10,
         "greeting": "You've been jailed it seems, perhaps you got a /mail to read!!",
         "interact": "deny",
@@ -1642,6 +2011,28 @@
       "type": "cuboid",
       "priority": 2
     },
+    "cropfarms-wheat": {
+      "parent": "cropfarms",
+      "min": {
+        "x": -9574,
+        "y": 68,
+        "z": 3968
+      },
+      "max": {
+        "x": -9556,
+        "y": 71,
+        "z": 3985
+      },
+      "members": {
+        "groups": [
+          "dragon"
+        ]
+      },
+      "flags": {},
+      "owners": {},
+      "type": "cuboid",
+      "priority": 2
+    },
     "marketandfarms-interactc1": {
       "parent": "marketandfarms-interact",
       "min": {
@@ -1678,7 +2069,55 @@
       "type": "cuboid",
       "priority": 2
     },
+    "prismarinefarm": {
+      "min": {
+        "x": -1933,
+        "y": 0,
+        "z": 1027
+      },
+      "max": {
+        "x": -1844,
+        "y": 163,
+        "z": 1116
+      },
+      "members": {
+        "unique-ids": [
+          "2b0593ac-1810-49dc-bf46-4ac3bc7be60f"
+        ]
+      },
+      "flags": {
+        "use": "allow",
+        "interact": "allow",
+        "chest-access": "allow",
+        "deny-spawn": [
+          "minecraft:pillager",
+          "minecraft:skeleton",
+          "minecraft:wandering_trader",
+          "minecraft:bat",
+          "minecraft:phantom",
+          "minecraft:zoglin",
+          "minecraft:zombified_piglin",
+          "minecraft:witch",
+          "minecraft:ravager",
+          "minecraft:ghast",
+          "minecraft:enderman",
+          "minecraft:stray",
+          "minecraft:vindicator",
+          "minecraft:spider",
+          "minecraft:zombie",
+          "minecraft:creeper",
+          "minecraft:drowned",
+          "minecraft:zombie_villager",
+          "minecraft:evoker",
+          "minecraft:slime"
+        ]
+      },
+      "owners": {},
+      "type": "cuboid",
+      "priority": 1
+    },
     "spawnportal": {
+      "parent": "spawn",
       "min": {
         "x": 20,
         "y": 68,
@@ -1695,8 +2134,8 @@
         "use": "allow",
         "interact": "allow",
         "chest-access": "allow",
-        "grass-growth": "deny",
         "mushroom-growth": "deny",
+        "grass-growth": "deny",
         "crop-growth": "deny"
       },
       "owners": {
@@ -1713,6 +2152,7 @@
         "frosted-ice-form": "deny",
         "use": "allow",
         "greeting": "Welcome to spawn",
+        "ice-melt": "deny",
         "interact": "allow",
         "vehicle-destroy": "allow",
         "chest-access": "allow",
@@ -1748,6 +2188,7 @@
         "vehicle-place": "allow",
         "vine-growth": "deny",
         "item-frame-rotation": "deny",
+        "snow-melt": "deny",
         "entity-painting-destroy": "deny",
         "entity-item-frame-destroy": "deny",
         "heal-amount": 1,
@@ -1757,8 +2198,8 @@
       "owners": {},
       "type": "poly2d",
       "priority": 1,
-      "max-y": 255,
-      "min-y": 0,
+      "max-y": 319,
+      "min-y": -64,
       "points": [
         {
           "x": 431,
@@ -1801,7 +2242,15 @@
         "chorus-fruit-teleport": "deny",
         "use": "allow",
         "interact": "allow",
-        "chest-access": "allow"
+        "chest-access": "allow",
+        "deny-spawn": [
+          "minecraft:cat",
+          "minecraft:cow",
+          "minecraft:chicken",
+          "minecraft:pig",
+          "minecraft:sheep",
+          "minecraft:evoker"
+        ]
       },
       "owners": {},
       "type": "poly2d",
@@ -1828,6 +2277,52 @@
         {
           "x": 504,
           "z": 3786
+        }
+      ]
+    },
+    "birdland": {
+      "members": {},
+      "flags": {
+        "damage-animals": "deny",
+        "interact": "allow"
+      },
+      "owners": {
+        "unique-ids": [
+          "2def415a-beeb-42a5-8222-f48e80a83915"
+        ]
+      },
+      "type": "poly2d",
+      "priority": 128,
+      "max-y": 319,
+      "min-y": -64,
+      "points": [
+        {
+          "x": -353,
+          "z": -208
+        },
+        {
+          "x": -544,
+          "z": -208
+        },
+        {
+          "x": -544,
+          "z": -177
+        },
+        {
+          "x": -672,
+          "z": -49
+        },
+        {
+          "x": -672,
+          "z": 47
+        },
+        {
+          "x": -608,
+          "z": 111
+        },
+        {
+          "x": -353,
+          "z": 111
         }
       ]
     },
@@ -1953,8 +2448,8 @@
         "other-explosion": "deny",
         "lava-fire": "deny",
         "enderman-grief": "deny",
-        "ravager-grief": "deny",
         "pvp": "deny",
+        "ravager-grief": "deny",
         "fire-spread": "deny",
         "enderdragon-block-damage": "deny"
       },
