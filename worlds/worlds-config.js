@@ -48,10 +48,7 @@ var worldsConfig = [
 				"default":false,
 				"color":"yellow"
 			}]
-	}
-];
-
-/*,
+	},
 	{
 		"id":10,
 		"name":"Overworld Oct.21 (1.17)",
@@ -73,4 +70,7 @@ var worldsConfig = [
 				"color":"yellow"
 			}]
 	}
+];
+
+/*
 */
