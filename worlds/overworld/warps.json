@@ -9,7 +9,7 @@
       },
       "max": {
         "x": -219,
-        "y": 82,
+        "y": 83,
         "z": 292
       },
       "members": {},
@@ -17,6 +17,1421 @@
       "owners": {},
       "type": "cuboid",
       "priority": 2
+    },
+    "maf-sprucetrees": {
+      "parent": "marketandfarms",
+      "min": {
+        "x": -235,
+        "y": 86,
+        "z": -38
+      },
+      "max": {
+        "x": -207,
+        "y": 122,
+        "z": 23
+      },
+      "members": {
+        "groups": [
+          "dragon"
+        ]
+      },
+      "flags": {
+        "block-break": "allow",
+        "block-place": "allow"
+      },
+      "owners": {},
+      "type": "cuboid",
+      "priority": 2
+    },
+    "maf-mushbrowntrees": {
+      "parent": "marketandfarms",
+      "min": {
+        "x": -205,
+        "y": 91,
+        "z": -30
+      },
+      "max": {
+        "x": -191,
+        "y": 111,
+        "z": 8
+      },
+      "members": {
+        "groups": [
+          "dragon"
+        ]
+      },
+      "flags": {
+        "block-break": "allow",
+        "block-place": "allow"
+      },
+      "owners": {},
+      "type": "cuboid",
+      "priority": 2
+    },
+    "kelpfarm": {
+      "min": {
+        "x": -444,
+        "y": 61,
+        "z": -1180
+      },
+      "max": {
+        "x": -394,
+        "y": 101,
+        "z": -1136
+      },
+      "members": {},
+      "flags": {
+        "enderpearl": "deny",
+        "chorus-fruit-teleport": "deny",
+        "use": "allow",
+        "interact": "allow",
+        "chest-access": "allow",
+        "mob-spawning": "deny"
+      },
+      "owners": {},
+      "type": "cuboid",
+      "priority": 1
+    },
+    "marketandfarms-shop19": {
+      "parent": "marketandfarms",
+      "min": {
+        "x": -229,
+        "y": 77,
+        "z": 298
+      },
+      "max": {
+        "x": -219,
+        "y": 83,
+        "z": 308
+      },
+      "members": {},
+      "flags": {},
+      "owners": {},
+      "type": "cuboid",
+      "priority": 2
+    },
+    "marketandfarms-shop18": {
+      "parent": "marketandfarms",
+      "min": {
+        "x": -182,
+        "y": 77,
+        "z": 298
+      },
+      "max": {
+        "x": -172,
+        "y": 83,
+        "z": 308
+      },
+      "members": {},
+      "flags": {},
+      "owners": {},
+      "type": "cuboid",
+      "priority": 2
+    },
+    "marketandfarms-shop9": {
+      "parent": "marketandfarms",
+      "min": {
+        "x": -229,
+        "y": 67,
+        "z": 266
+      },
+      "max": {
+        "x": -219,
+        "y": 73,
+        "z": 276
+      },
+      "members": {},
+      "flags": {},
+      "owners": {
+        "unique-ids": [
+          "20484e65-0782-4c85-aa2f-531bc41648e7"
+        ]
+      },
+      "type": "cuboid",
+      "priority": 2
+    },
+    "slimefarm": {
+      "min": {
+        "x": 648,
+        "y": -20,
+        "z": -664
+      },
+      "max": {
+        "x": 695,
+        "y": 183,
+        "z": -617
+      },
+      "members": {},
+      "flags": {
+        "sleep": "allow",
+        "enderpearl": "deny",
+        "chorus-fruit-teleport": "deny",
+        "use": "allow",
+        "interact": "allow",
+        "chest-access": "allow",
+        "deny-spawn": [
+          "minecraft:skeleton",
+          "minecraft:enderman",
+          "minecraft:witch",
+          "minecraft:spider",
+          "minecraft:zombie",
+          "minecraft:creeper",
+          "minecraft:drowned"
+        ]
+      },
+      "owners": {},
+      "type": "cuboid",
+      "priority": 1
+    },
+    "cropfarms": {
+      "members": {},
+      "flags": {
+        "sleep": "allow",
+        "vehicle-place": "allow",
+        "use": "allow",
+        "block-trampling": "deny",
+        "potion-splash": "allow",
+        "vehicle-destroy": "allow",
+        "interact": "allow",
+        "damage-animals": "allow",
+        "chest-access": "allow",
+        "deny-spawn": [
+          "minecraft:pillager",
+          "minecraft:skeleton",
+          "minecraft:wandering_trader",
+          "minecraft:bat",
+          "minecraft:phantom",
+          "minecraft:zoglin",
+          "minecraft:zombified_piglin",
+          "minecraft:witch",
+          "minecraft:ravager",
+          "minecraft:ghast",
+          "minecraft:enderman",
+          "minecraft:stray",
+          "minecraft:vindicator",
+          "minecraft:spider",
+          "minecraft:zombie",
+          "minecraft:creeper",
+          "minecraft:drowned",
+          "minecraft:zombie_villager",
+          "minecraft:evoker",
+          "minecraft:slime"
+        ],
+        "ride": "allow",
+        "use-anvil": "allow"
+      },
+      "owners": {},
+      "type": "poly2d",
+      "priority": 1,
+      "max-y": 319,
+      "min-y": 34,
+      "points": [
+        {
+          "x": -9552,
+          "z": 4031
+        },
+        {
+          "x": -9489,
+          "z": 3968
+        },
+        {
+          "x": -9489,
+          "z": 3952
+        },
+        {
+          "x": -9505,
+          "z": 3935
+        },
+        {
+          "x": -9505,
+          "z": 3888
+        },
+        {
+          "x": -9616,
+          "z": 3888
+        },
+        {
+          "x": -9616,
+          "z": 3903
+        },
+        {
+          "x": -9632,
+          "z": 3919
+        },
+        {
+          "x": -9632,
+          "z": 3951
+        },
+        {
+          "x": -9617,
+          "z": 3967
+        },
+        {
+          "x": -9617,
+          "z": 3999
+        },
+        {
+          "x": -9600,
+          "z": 3999
+        },
+        {
+          "x": -9569,
+          "z": 4031
+        }
+      ]
+    },
+    "marketandfarms-shop3": {
+      "parent": "marketandfarms",
+      "min": {
+        "x": -182,
+        "y": 67,
+        "z": 250
+      },
+      "max": {
+        "x": -172,
+        "y": 73,
+        "z": 260
+      },
+      "members": {},
+      "flags": {},
+      "owners": {
+        "unique-ids": [
+          "3487cfbc-3eb3-498a-af8f-c1beb4a90476"
+        ]
+      },
+      "type": "cuboid",
+      "priority": 2
+    },
+    "marketandfarms-shop11": {
+      "parent": "marketandfarms",
+      "min": {
+        "x": -229,
+        "y": 67,
+        "z": 234
+      },
+      "max": {
+        "x": -219,
+        "y": 73,
+        "z": 244
+      },
+      "members": {},
+      "flags": {},
+      "owners": {},
+      "type": "cuboid",
+      "priority": 2
+    },
+    "marketandfarms-shop4": {
+      "parent": "marketandfarms",
+      "min": {
+        "x": -182,
+        "y": 67,
+        "z": 266
+      },
+      "max": {
+        "x": -172,
+        "y": 73,
+        "z": 276
+      },
+      "members": {},
+      "flags": {},
+      "owners": {
+        "unique-ids": [
+          "239465d5-1725-4358-9e01-702a7608c8bf"
+        ]
+      },
+      "type": "cuboid",
+      "priority": 2
+    },
+    "marketandfarms-shop10": {
+      "parent": "marketandfarms",
+      "min": {
+        "x": -229,
+        "y": 67,
+        "z": 250
+      },
+      "max": {
+        "x": -219,
+        "y": 73,
+        "z": 260
+      },
+      "members": {},
+      "flags": {},
+      "owners": {
+        "unique-ids": [
+          "777f1413-8158-4a45-9b9d-1913653c930d"
+        ]
+      },
+      "type": "cuboid",
+      "priority": 2
+    },
+    "marketandfarms-shop1": {
+      "parent": "marketandfarms",
+      "min": {
+        "x": -182,
+        "y": 67,
+        "z": 218
+      },
+      "max": {
+        "x": -172,
+        "y": 73,
+        "z": 228
+      },
+      "members": {},
+      "flags": {},
+      "owners": {},
+      "type": "cuboid",
+      "priority": 2
+    },
+    "marketandfarms-shop13": {
+      "parent": "marketandfarms",
+      "min": {
+        "x": -182,
+        "y": 77,
+        "z": 218
+      },
+      "max": {
+        "x": -172,
+        "y": 83,
+        "z": 228
+      },
+      "members": {},
+      "flags": {},
+      "owners": {
+        "unique-ids": [
+          "2def415a-beeb-42a5-8222-f48e80a83915"
+        ]
+      },
+      "type": "cuboid",
+      "priority": 2
+    },
+    "marketandfarms-shop12": {
+      "parent": "marketandfarms",
+      "min": {
+        "x": -229,
+        "y": 67,
+        "z": 218
+      },
+      "max": {
+        "x": -219,
+        "y": 73,
+        "z": 228
+      },
+      "members": {},
+      "flags": {},
+      "owners": {},
+      "type": "cuboid",
+      "priority": 2
+    },
+    "marketandfarms-shop2": {
+      "parent": "marketandfarms",
+      "min": {
+        "x": -182,
+        "y": 67,
+        "z": 234
+      },
+      "max": {
+        "x": -172,
+        "y": 73,
+        "z": 244
+      },
+      "members": {},
+      "flags": {},
+      "owners": {},
+      "type": "cuboid",
+      "priority": 2
+    },
+    "marketandfarms-shop15": {
+      "parent": "marketandfarms",
+      "min": {
+        "x": -182,
+        "y": 77,
+        "z": 250
+      },
+      "max": {
+        "x": -172,
+        "y": 83,
+        "z": 260
+      },
+      "members": {},
+      "flags": {},
+      "owners": {},
+      "type": "cuboid",
+      "priority": 2
+    },
+    "marketandfarms-shop7": {
+      "parent": "marketandfarms",
+      "min": {
+        "x": -229,
+        "y": 67,
+        "z": 298
+      },
+      "max": {
+        "x": -219,
+        "y": 73,
+        "z": 308
+      },
+      "members": {},
+      "flags": {},
+      "owners": {
+        "unique-ids": [
+          "d03979b1-d712-49fd-b68f-e7a4e39b45a6"
+        ]
+      },
+      "type": "cuboid",
+      "priority": 2
+    },
+    "marketandfarms-shop14": {
+      "parent": "marketandfarms",
+      "min": {
+        "x": -182,
+        "y": 77,
+        "z": 234
+      },
+      "max": {
+        "x": -172,
+        "y": 83,
+        "z": 244
+      },
+      "members": {},
+      "flags": {},
+      "owners": {},
+      "type": "cuboid",
+      "priority": 2
+    },
+    "marketandfarms-shop8": {
+      "parent": "marketandfarms",
+      "min": {
+        "x": -229,
+        "y": 67,
+        "z": 282
+      },
+      "max": {
+        "x": -219,
+        "y": 73,
+        "z": 292
+      },
+      "members": {},
+      "flags": {},
+      "owners": {
+        "unique-ids": [
+          "c565a983-4e73-4ac1-a1e2-745a468fb3e3"
+        ]
+      },
+      "type": "cuboid",
+      "priority": 2
+    },
+    "marketandfarms-shop5": {
+      "parent": "marketandfarms",
+      "min": {
+        "x": -182,
+        "y": 67,
+        "z": 282
+      },
+      "max": {
+        "x": -172,
+        "y": 73,
+        "z": 292
+      },
+      "members": {},
+      "flags": {},
+      "owners": {
+        "unique-ids": [
+          "35331d78-6d18-4d2a-8c57-49e899efcaed"
+        ]
+      },
+      "type": "cuboid",
+      "priority": 2
+    },
+    "marketandfarms-shop17": {
+      "parent": "marketandfarms",
+      "min": {
+        "x": -182,
+        "y": 77,
+        "z": 282
+      },
+      "max": {
+        "x": -172,
+        "y": 83,
+        "z": 292
+      },
+      "members": {},
+      "flags": {},
+      "owners": {},
+      "type": "cuboid",
+      "priority": 2
+    },
+    "marketandfarms-shop16": {
+      "parent": "marketandfarms",
+      "min": {
+        "x": -182,
+        "y": 77,
+        "z": 266
+      },
+      "max": {
+        "x": -172,
+        "y": 83,
+        "z": 276
+      },
+      "members": {},
+      "flags": {},
+      "owners": {},
+      "type": "cuboid",
+      "priority": 2
+    },
+    "marketandfarms-shop6": {
+      "parent": "marketandfarms",
+      "min": {
+        "x": -182,
+        "y": 67,
+        "z": 298
+      },
+      "max": {
+        "x": -172,
+        "y": 73,
+        "z": 308
+      },
+      "members": {},
+      "flags": {},
+      "owners": {
+        "unique-ids": [
+          "1ba56b40-b924-4e44-ab87-4eea8605ca7e"
+        ]
+      },
+      "type": "cuboid",
+      "priority": 2
+    },
+    "creeperfarm": {
+      "members": {},
+      "flags": {
+        "sleep": "allow",
+        "enderpearl": "deny",
+        "chorus-fruit-teleport": "deny",
+        "vehicle-place": "allow",
+        "use": "allow",
+        "potion-splash": "allow",
+        "vehicle-destroy": "allow",
+        "interact": "allow",
+        "chest-access": "allow",
+        "ride": "allow",
+        "use-anvil": "allow"
+      },
+      "owners": {},
+      "type": "poly2d",
+      "priority": 1,
+      "max-y": 319,
+      "min-y": 57,
+      "points": [
+        {
+          "x": 1752,
+          "z": 3543
+        },
+        {
+          "x": 1780,
+          "z": 3572
+        },
+        {
+          "x": 1752,
+          "z": 3601
+        },
+        {
+          "x": 1723,
+          "z": 3572
+        }
+      ]
+    },
+    "amethystfarm-floor": {
+      "parent": "amethystfarm",
+      "min": {
+        "x": -9104,
+        "y": 26,
+        "z": -8752
+      },
+      "max": {
+        "x": -9099,
+        "y": 28,
+        "z": -8746
+      },
+      "members": {
+        "groups": [
+          "dragon"
+        ]
+      },
+      "flags": {
+        "block-break": "allow",
+        "block-place": "deny"
+      },
+      "owners": {},
+      "type": "cuboid",
+      "priority": 2
+    },
+    "clovermaze": {
+      "min": {
+        "x": -1183,
+        "y": -64,
+        "z": 1102
+      },
+      "max": {
+        "x": -959,
+        "y": 319,
+        "z": 1355
+      },
+      "members": {},
+      "flags": {
+        "deny-spawn": [
+          "minecraft:pillager",
+          "minecraft:skeleton",
+          "minecraft:zoglin",
+          "minecraft:donkey",
+          "minecraft:ravager",
+          "minecraft:squid",
+          "minecraft:ghast",
+          "minecraft:glow_squid",
+          "minecraft:vindicator",
+          "minecraft:cow",
+          "minecraft:spider",
+          "minecraft:creeper",
+          "minecraft:horse",
+          "minecraft:evoker",
+          "minecraft:slime",
+          "minecraft:wandering_trader",
+          "minecraft:bat",
+          "minecraft:phantom",
+          "minecraft:zombified_piglin",
+          "minecraft:witch",
+          "minecraft:pig",
+          "minecraft:sheep",
+          "minecraft:enderman",
+          "minecraft:stray",
+          "minecraft:chicken",
+          "minecraft:zombie",
+          "minecraft:drowned",
+          "minecraft:zombie_villager"
+        ]
+      },
+      "owners": {},
+      "type": "cuboid",
+      "priority": 2
+    },
+    "spawneast": {
+      "min": {
+        "x": 794,
+        "y": 43,
+        "z": -54
+      },
+      "max": {
+        "x": 832,
+        "y": 123,
+        "z": 28
+      },
+      "members": {},
+      "flags": {
+        "sleep": "allow",
+        "vine-growth": "deny",
+        "use": "allow",
+        "interact": "allow",
+        "chest-access": "allow",
+        "mob-spawning": "deny"
+      },
+      "owners": {},
+      "type": "cuboid",
+      "priority": 1
+    },
+    "pumpkinmelonfarm": {
+      "min": {
+        "x": -11,
+        "y": 20,
+        "z": -1453
+      },
+      "max": {
+        "x": 12,
+        "y": 65,
+        "z": -1420
+      },
+      "members": {},
+      "flags": {
+        "enderpearl": "deny",
+        "chorus-fruit-teleport": "deny",
+        "use": "allow",
+        "interact": "allow",
+        "chest-access": "allow"
+      },
+      "owners": {},
+      "type": "cuboid",
+      "priority": 2
+    },
+    "marketandfarms-shop22": {
+      "parent": "marketandfarms",
+      "min": {
+        "x": -229,
+        "y": 77,
+        "z": 250
+      },
+      "max": {
+        "x": -219,
+        "y": 83,
+        "z": 260
+      },
+      "members": {},
+      "flags": {},
+      "owners": {},
+      "type": "cuboid",
+      "priority": 2
+    },
+    "marketandfarms-shop21": {
+      "parent": "marketandfarms",
+      "min": {
+        "x": -229,
+        "y": 77,
+        "z": 266
+      },
+      "max": {
+        "x": -219,
+        "y": 83,
+        "z": 276
+      },
+      "members": {},
+      "flags": {},
+      "owners": {},
+      "type": "cuboid",
+      "priority": 2
+    },
+    "marketandfarms-shop24": {
+      "parent": "marketandfarms",
+      "min": {
+        "x": -229,
+        "y": 77,
+        "z": 218
+      },
+      "max": {
+        "x": -219,
+        "y": 83,
+        "z": 228
+      },
+      "members": {},
+      "flags": {},
+      "owners": {},
+      "type": "cuboid",
+      "priority": 2
+    },
+    "marketandfarms-potatoes": {
+      "parent": "marketandfarms",
+      "members": {
+        "groups": [
+          "dragon"
+        ]
+      },
+      "flags": {},
+      "owners": {},
+      "type": "poly2d",
+      "priority": 2,
+      "max-y": 74,
+      "min-y": 70,
+      "points": [
+        {
+          "x": -142,
+          "z": 248
+        },
+        {
+          "x": -149,
+          "z": 248
+        },
+        {
+          "x": -149,
+          "z": 239
+        },
+        {
+          "x": -159,
+          "z": 239
+        },
+        {
+          "x": -159,
+          "z": 222
+        },
+        {
+          "x": -142,
+          "z": 222
+        },
+        {
+          "x": -142,
+          "z": 231
+        },
+        {
+          "x": -133,
+          "z": 231
+        },
+        {
+          "x": -133,
+          "z": 239
+        },
+        {
+          "x": -142,
+          "z": 239
+        }
+      ]
+    },
+    "marketandfarms-shop23": {
+      "parent": "marketandfarms",
+      "min": {
+        "x": -229,
+        "y": 77,
+        "z": 234
+      },
+      "max": {
+        "x": -219,
+        "y": 83,
+        "z": 244
+      },
+      "members": {},
+      "flags": {},
+      "owners": {},
+      "type": "cuboid",
+      "priority": 2
+    },
+    "qa-lostsoul": {
+      "min": {
+        "x": 863,
+        "y": 59,
+        "z": 29
+      },
+      "max": {
+        "x": 882,
+        "y": 72,
+        "z": 53
+      },
+      "members": {},
+      "flags": {
+        "sleep": "allow",
+        "vehicle-place": "allow",
+        "use": "allow",
+        "vehicle-destroy": "allow",
+        "interact": "allow",
+        "chest-access": "allow",
+        "ride": "allow"
+      },
+      "owners": {},
+      "type": "cuboid",
+      "priority": 1
+    },
+    "maf-nethertreesroot": {
+      "parent": "maf-nethertrees",
+      "min": {
+        "x": -189,
+        "y": 80,
+        "z": -14
+      },
+      "max": {
+        "x": -167,
+        "y": 93,
+        "z": 16
+      },
+      "members": {
+        "groups": [
+          "dragon"
+        ]
+      },
+      "flags": {
+        "block-break": "deny"
+      },
+      "owners": {},
+      "type": "cuboid",
+      "priority": 3
+    },
+    "cropfarms-other": {
+      "parent": "cropfarms",
+      "min": {
+        "x": -9590,
+        "y": 68,
+        "z": 3917
+      },
+      "max": {
+        "x": -9539,
+        "y": 85,
+        "z": 3944
+      },
+      "members": {
+        "groups": [
+          "dragon"
+        ]
+      },
+      "flags": {},
+      "owners": {},
+      "type": "cuboid",
+      "priority": 2
+    },
+    "sweetberryfarm": {
+      "min": {
+        "x": -68,
+        "y": 62,
+        "z": -1181
+      },
+      "max": {
+        "x": -27,
+        "y": 79,
+        "z": -1123
+      },
+      "members": {},
+      "flags": {
+        "enderpearl": "deny",
+        "chorus-fruit-teleport": "deny",
+        "use": "allow",
+        "interact": "allow"
+      },
+      "owners": {},
+      "type": "cuboid",
+      "priority": 1
+    },
+    "marketandfarms-smallshop30": {
+      "parent": "marketandfarms",
+      "min": {
+        "x": -216,
+        "y": 57,
+        "z": 219
+      },
+      "max": {
+        "x": -212,
+        "y": 61,
+        "z": 223
+      },
+      "members": {},
+      "flags": {},
+      "owners": {},
+      "type": "cuboid",
+      "priority": 2
+    },
+    "icefarm-tray": {
+      "parent": "icefarm",
+      "min": {
+        "x": -1680,
+        "y": 64,
+        "z": 6007
+      },
+      "max": {
+        "x": -1561,
+        "y": 64,
+        "z": 6093
+      },
+      "members": {
+        "groups": [
+          "dragon"
+        ]
+      },
+      "flags": {
+        "block-place": "deny"
+      },
+      "owners": {},
+      "type": "cuboid",
+      "priority": 2
+    },
+    "spawnnorth": {
+      "min": {
+        "x": 105,
+        "y": 41,
+        "z": -814
+      },
+      "max": {
+        "x": 187,
+        "y": 123,
+        "z": -776
+      },
+      "members": {},
+      "flags": {
+        "sleep": "allow",
+        "use": "allow",
+        "interact": "allow",
+        "mob-spawning": "deny"
+      },
+      "owners": {},
+      "type": "cuboid",
+      "priority": 1
+    },
+    "spawnjail": {
+      "min": {
+        "x": -65,
+        "y": -23,
+        "z": -143
+      },
+      "max": {
+        "x": -51,
+        "y": -16,
+        "z": -126
+      },
+      "members": {},
+      "flags": {
+        "chorus-fruit-teleport": "deny",
+        "invincible": "allow",
+        "use": "deny",
+        "greeting": "You've been jailed it seems, perhaps you got a /mail to read!!",
+        "feed-amount": 10,
+        "interact": "deny",
+        "chest-access": "deny",
+        "enderpearl": "deny",
+        "item-drop": "deny",
+        "item-pickup": "deny",
+        "feed-delay": 0,
+        "heal-amount": 10,
+        "heal-delay": 0,
+        "farewell": "You've served your time, good luck and have fun."
+      },
+      "owners": {},
+      "type": "cuboid",
+      "priority": 10
+    },
+    "icefarm": {
+      "min": {
+        "x": -1715,
+        "y": 39,
+        "z": 5973
+      },
+      "max": {
+        "x": -1473,
+        "y": 319,
+        "z": 6127
+      },
+      "members": {
+        "unique-ids": [
+          "3487cfbc-3eb3-498a-af8f-c1beb4a90476"
+        ]
+      },
+      "flags": {
+        "sleep": "allow",
+        "interact": "allow",
+        "chest-access": "allow",
+        "deny-spawn": [
+          "minecraft:pillager",
+          "minecraft:skeleton",
+          "minecraft:phantom",
+          "minecraft:stray",
+          "minecraft:enderman",
+          "minecraft:witch",
+          "minecraft:spider",
+          "minecraft:zombie",
+          "minecraft:creeper",
+          "minecraft:drowned",
+          "minecraft:slime"
+        ]
+      },
+      "owners": {},
+      "type": "cuboid",
+      "priority": 1
+    },
+    "maf-darkoaktrees": {
+      "parent": "marketandfarms",
+      "min": {
+        "x": -280,
+        "y": 82,
+        "z": -23
+      },
+      "max": {
+        "x": -242,
+        "y": 94,
+        "z": 6
+      },
+      "members": {
+        "groups": [
+          "dragon"
+        ]
+      },
+      "flags": {
+        "block-break": "allow",
+        "block-place": "allow"
+      },
+      "owners": {},
+      "type": "cuboid",
+      "priority": 2
+    },
+    "marketandfarms-interactc1": {
+      "parent": "marketandfarms-interact",
+      "min": {
+        "x": -190,
+        "y": 67,
+        "z": 351
+      },
+      "max": {
+        "x": -185,
+        "y": 71,
+        "z": 356
+      },
+      "members": {},
+      "flags": {},
+      "owners": {},
+      "type": "cuboid",
+      "priority": 3
+    },
+    "ironfarm": {
+      "members": {},
+      "flags": {
+        "enderpearl": "deny",
+        "chorus-fruit-teleport": "deny",
+        "use": "allow",
+        "interact": "allow",
+        "chest-access": "allow",
+        "deny-spawn": [
+          "minecraft:cat",
+          "minecraft:cow",
+          "minecraft:chicken",
+          "minecraft:drowned",
+          "minecraft:pig",
+          "minecraft:sheep",
+          "minecraft:evoker"
+        ]
+      },
+      "owners": {},
+      "type": "poly2d",
+      "priority": 1,
+      "max-y": 168,
+      "min-y": 18,
+      "points": [
+        {
+          "x": 441,
+          "z": 3784
+        },
+        {
+          "x": 422,
+          "z": 3887
+        },
+        {
+          "x": 556,
+          "z": 3896
+        },
+        {
+          "x": 590,
+          "z": 3852
+        },
+        {
+          "x": 504,
+          "z": 3786
+        }
+      ]
+    },
+    "cropfarms-cocoa": {
+      "parent": "cropfarms",
+      "min": {
+        "x": -9600,
+        "y": 68,
+        "z": 3952
+      },
+      "max": {
+        "x": -9594,
+        "y": 70,
+        "z": 3964
+      },
+      "members": {
+        "groups": [
+          "dragon"
+        ]
+      },
+      "flags": {},
+      "owners": {},
+      "type": "cuboid",
+      "priority": 2
+    },
+    "marketandfarms-interactc2": {
+      "parent": "marketandfarms-interact",
+      "min": {
+        "x": -192,
+        "y": 67,
+        "z": 369
+      },
+      "max": {
+        "x": -187,
+        "y": 71,
+        "z": 374
+      },
+      "members": {},
+      "flags": {},
+      "owners": {},
+      "type": "cuboid",
+      "priority": 3
+    },
+    "marketandfarms-interactc3": {
+      "parent": "marketandfarms-interact",
+      "min": {
+        "x": -201,
+        "y": 67,
+        "z": 382
+      },
+      "max": {
+        "x": -196,
+        "y": 71,
+        "z": 387
+      },
+      "members": {},
+      "flags": {},
+      "owners": {},
+      "type": "cuboid",
+      "priority": 3
+    },
+    "spawnwest": {
+      "min": {
+        "x": -809,
+        "y": 32,
+        "z": -99
+      },
+      "max": {
+        "x": -771,
+        "y": 123,
+        "z": -17
+      },
+      "members": {},
+      "flags": {
+        "sleep": "allow",
+        "use": "allow",
+        "interact": "allow",
+        "mob-spawning": "deny"
+      },
+      "owners": {},
+      "type": "cuboid",
+      "priority": 1
+    },
+    "marketandfarms-wheat": {
+      "parent": "marketandfarms",
+      "members": {
+        "groups": [
+          "dragon"
+        ]
+      },
+      "flags": {},
+      "owners": {},
+      "type": "poly2d",
+      "priority": 2,
+      "max-y": 76,
+      "min-y": 72,
+      "points": [
+        {
+          "x": -142,
+          "z": 276
+        },
+        {
+          "x": -159,
+          "z": 276
+        },
+        {
+          "x": -159,
+          "z": 241
+        },
+        {
+          "x": -151,
+          "z": 241
+        },
+        {
+          "x": -151,
+          "z": 250
+        },
+        {
+          "x": -142,
+          "z": 250
+        }
+      ]
+    },
+    "marketandfarms-interactc4": {
+      "parent": "marketandfarms-interact",
+      "min": {
+        "x": -205,
+        "y": 67,
+        "z": 350
+      },
+      "max": {
+        "x": -200,
+        "y": 71,
+        "z": 360
+      },
+      "members": {},
+      "flags": {},
+      "owners": {},
+      "type": "cuboid",
+      "priority": 3
+    },
+    "honeyfarm": {
+      "min": {
+        "x": 15,
+        "y": 62,
+        "z": -1189
+      },
+      "max": {
+        "x": 58,
+        "y": 85,
+        "z": -1161
+      },
+      "members": {},
+      "flags": {
+        "sleep": "allow",
+        "enderpearl": "deny",
+        "chorus-fruit-teleport": "deny",
+        "use": "allow",
+        "interact": "allow",
+        "pvp": "deny",
+        "chest-access": "allow"
+      },
+      "owners": {},
+      "type": "cuboid",
+      "priority": 1
+    },
+    "marketandfarms-interactc5": {
+      "parent": "marketandfarms-interact",
+      "min": {
+        "x": -211,
+        "y": 68,
+        "z": 325
+      },
+      "max": {
+        "x": -206,
+        "y": 72,
+        "z": 330
+      },
+      "members": {},
+      "flags": {},
+      "owners": {},
+      "type": "cuboid",
+      "priority": 3
+    },
+    "spawnsouthwest": {
+      "min": {
+        "x": -9838,
+        "y": 15,
+        "z": 10193
+      },
+      "max": {
+        "x": -9778,
+        "y": 319,
+        "z": 10253
+      },
+      "members": {},
+      "flags": {},
+      "owners": {},
+      "type": "cuboid",
+      "priority": 1
+    },
+    "amethystfarm": {
+      "min": {
+        "x": -9121,
+        "y": 17,
+        "z": -8762
+      },
+      "max": {
+        "x": -9088,
+        "y": 43,
+        "z": -8735
+      },
+      "members": {},
+      "flags": {
+        "sleep": "allow",
+        "use": "allow",
+        "interact": "allow",
+        "chest-access": "allow",
+        "deny-spawn": [
+          "minecraft:skeleton",
+          "minecraft:enderman",
+          "minecraft:witch",
+          "minecraft:spider",
+          "minecraft:zombie",
+          "minecraft:creeper",
+          "minecraft:drowned"
+        ],
+        "ride": "allow"
+      },
+      "owners": {},
+      "type": "cuboid",
+      "priority": 1
     },
     "spawnnorthwest": {
       "min": {
@@ -49,8 +1464,8 @@
         "use": "allow",
         "greeting": "§cNow entering spawns §4§lPVP §carena",
         "potion-splash": "allow",
-        "interact": "allow",
         "lighter": "allow",
+        "interact": "allow",
         "damage-animals": "allow",
         "pvp": "allow",
         "farewell": "§aBack to safety"
@@ -58,7 +1473,7 @@
       "owners": {},
       "type": "poly2d",
       "priority": 1,
-      "max-y": 69,
+      "max-y": 68,
       "min-y": 63,
       "points": [
         {
@@ -223,42 +1638,6 @@
         }
       ]
     },
-    "marketandfarms-shop19": {
-      "parent": "marketandfarms",
-      "min": {
-        "x": -229,
-        "y": 77,
-        "z": 298
-      },
-      "max": {
-        "x": -219,
-        "y": 82,
-        "z": 308
-      },
-      "members": {},
-      "flags": {},
-      "owners": {},
-      "type": "cuboid",
-      "priority": 2
-    },
-    "marketandfarms-shop18": {
-      "parent": "marketandfarms",
-      "min": {
-        "x": -182,
-        "y": 77,
-        "z": 298
-      },
-      "max": {
-        "x": -172,
-        "y": 82,
-        "z": 308
-      },
-      "members": {},
-      "flags": {},
-      "owners": {},
-      "type": "cuboid",
-      "priority": 2
-    },
     "marketandfarms-smallshop10": {
       "parent": "marketandfarms",
       "min": {
@@ -274,28 +1653,6 @@
       "members": {},
       "flags": {},
       "owners": {},
-      "type": "cuboid",
-      "priority": 2
-    },
-    "marketandfarms-shop9": {
-      "parent": "marketandfarms",
-      "min": {
-        "x": -229,
-        "y": 67,
-        "z": 266
-      },
-      "max": {
-        "x": -219,
-        "y": 72,
-        "z": 276
-      },
-      "members": {},
-      "flags": {},
-      "owners": {
-        "unique-ids": [
-          "20484e65-0782-4c85-aa2f-531bc41648e7"
-        ]
-      },
       "type": "cuboid",
       "priority": 2
     },
@@ -349,7 +1706,11 @@
       },
       "members": {},
       "flags": {},
-      "owners": {},
+      "owners": {
+        "unique-ids": [
+          "f4b73b51-408a-4146-bef9-3b73c69079de"
+        ]
+      },
       "type": "cuboid",
       "priority": 2
     },
@@ -367,6 +1728,58 @@
       },
       "members": {},
       "flags": {},
+      "owners": {},
+      "type": "cuboid",
+      "priority": 2
+    },
+    "paddymaze": {
+      "min": {
+        "x": -1523,
+        "y": -64,
+        "z": 1112
+      },
+      "max": {
+        "x": -1296,
+        "y": 319,
+        "z": 1355
+      },
+      "members": {
+        "unique-ids": [
+          "2b0593ac-1810-49dc-bf46-4ac3bc7be60f"
+        ]
+      },
+      "flags": {
+        "deny-spawn": [
+          "minecraft:pillager",
+          "minecraft:skeleton",
+          "minecraft:zoglin",
+          "minecraft:donkey",
+          "minecraft:ravager",
+          "minecraft:squid",
+          "minecraft:ghast",
+          "minecraft:glow_squid",
+          "minecraft:vindicator",
+          "minecraft:cow",
+          "minecraft:spider",
+          "minecraft:creeper",
+          "minecraft:horse",
+          "minecraft:evoker",
+          "minecraft:slime",
+          "minecraft:wandering_trader",
+          "minecraft:bat",
+          "minecraft:phantom",
+          "minecraft:zombified_piglin",
+          "minecraft:witch",
+          "minecraft:pig",
+          "minecraft:sheep",
+          "minecraft:enderman",
+          "minecraft:stray",
+          "minecraft:chicken",
+          "minecraft:zombie",
+          "minecraft:drowned",
+          "minecraft:zombie_villager"
+        ]
+      },
       "owners": {},
       "type": "cuboid",
       "priority": 2
@@ -407,146 +1820,6 @@
       "type": "cuboid",
       "priority": 2
     },
-    "cropfarms": {
-      "members": {
-        "unique-ids": [
-          "1ba56b40-b924-4e44-ab87-4eea8605ca7e"
-        ]
-      },
-      "flags": {
-        "sleep": "allow",
-        "vehicle-place": "allow",
-        "use": "allow",
-        "potion-splash": "allow",
-        "interact": "allow",
-        "vehicle-destroy": "allow",
-        "damage-animals": "allow",
-        "chest-access": "allow",
-        "deny-spawn": [
-          "minecraft:pillager",
-          "minecraft:skeleton",
-          "minecraft:wandering_trader",
-          "minecraft:bat",
-          "minecraft:phantom",
-          "minecraft:zoglin",
-          "minecraft:zombified_piglin",
-          "minecraft:witch",
-          "minecraft:ravager",
-          "minecraft:ghast",
-          "minecraft:enderman",
-          "minecraft:stray",
-          "minecraft:vindicator",
-          "minecraft:spider",
-          "minecraft:zombie",
-          "minecraft:creeper",
-          "minecraft:drowned",
-          "minecraft:zombie_villager",
-          "minecraft:evoker",
-          "minecraft:slime"
-        ],
-        "ride": "allow",
-        "use-anvil": "allow"
-      },
-      "owners": {},
-      "type": "poly2d",
-      "priority": 1,
-      "max-y": 319,
-      "min-y": 34,
-      "points": [
-        {
-          "x": -9552,
-          "z": 4031
-        },
-        {
-          "x": -9489,
-          "z": 3968
-        },
-        {
-          "x": -9489,
-          "z": 3952
-        },
-        {
-          "x": -9505,
-          "z": 3935
-        },
-        {
-          "x": -9505,
-          "z": 3888
-        },
-        {
-          "x": -9616,
-          "z": 3888
-        },
-        {
-          "x": -9616,
-          "z": 3903
-        },
-        {
-          "x": -9632,
-          "z": 3919
-        },
-        {
-          "x": -9632,
-          "z": 3951
-        },
-        {
-          "x": -9617,
-          "z": 3967
-        },
-        {
-          "x": -9617,
-          "z": 3999
-        },
-        {
-          "x": -9600,
-          "z": 3999
-        },
-        {
-          "x": -9569,
-          "z": 4031
-        }
-      ]
-    },
-    "marketandfarms-shop11": {
-      "parent": "marketandfarms",
-      "min": {
-        "x": -229,
-        "y": 67,
-        "z": 234
-      },
-      "max": {
-        "x": -219,
-        "y": 72,
-        "z": 244
-      },
-      "members": {},
-      "flags": {},
-      "owners": {},
-      "type": "cuboid",
-      "priority": 2
-    },
-    "marketandfarms-shop3": {
-      "parent": "marketandfarms",
-      "min": {
-        "x": -182,
-        "y": 67,
-        "z": 250
-      },
-      "max": {
-        "x": -172,
-        "y": 72,
-        "z": 260
-      },
-      "members": {},
-      "flags": {},
-      "owners": {
-        "unique-ids": [
-          "3487cfbc-3eb3-498a-af8f-c1beb4a90476"
-        ]
-      },
-      "type": "cuboid",
-      "priority": 2
-    },
     "marketandfarms-smallshop17": {
       "parent": "marketandfarms",
       "min": {
@@ -565,42 +1838,27 @@
       "type": "cuboid",
       "priority": 2
     },
-    "marketandfarms-shop10": {
-      "parent": "marketandfarms",
+    "amethystfarm-wall": {
+      "parent": "amethystfarm",
       "min": {
-        "x": -229,
-        "y": 67,
-        "z": 250
+        "x": -9098,
+        "y": 27,
+        "z": -8751
       },
       "max": {
-        "x": -219,
-        "y": 72,
-        "z": 260
+        "x": -9098,
+        "y": 31,
+        "z": -8746
       },
-      "members": {},
-      "flags": {},
-      "owners": {
-        "unique-ids": [
-          "777f1413-8158-4a45-9b9d-1913653c930d"
+      "members": {
+        "groups": [
+          "dragon"
         ]
       },
-      "type": "cuboid",
-      "priority": 2
-    },
-    "marketandfarms-shop4": {
-      "parent": "marketandfarms",
-      "min": {
-        "x": -182,
-        "y": 67,
-        "z": 266
+      "flags": {
+        "block-break": "allow",
+        "block-place": "deny"
       },
-      "max": {
-        "x": -172,
-        "y": 72,
-        "z": 276
-      },
-      "members": {},
-      "flags": {},
       "owners": {},
       "type": "cuboid",
       "priority": 2
@@ -616,42 +1874,6 @@
         "x": -212,
         "y": 61,
         "z": 295
-      },
-      "members": {},
-      "flags": {},
-      "owners": {},
-      "type": "cuboid",
-      "priority": 2
-    },
-    "marketandfarms-shop13": {
-      "parent": "marketandfarms",
-      "min": {
-        "x": -182,
-        "y": 77,
-        "z": 218
-      },
-      "max": {
-        "x": -172,
-        "y": 82,
-        "z": 228
-      },
-      "members": {},
-      "flags": {},
-      "owners": {},
-      "type": "cuboid",
-      "priority": 2
-    },
-    "marketandfarms-shop1": {
-      "parent": "marketandfarms",
-      "min": {
-        "x": -182,
-        "y": 67,
-        "z": 218
-      },
-      "max": {
-        "x": -172,
-        "y": 72,
-        "z": 228
       },
       "members": {},
       "flags": {},
@@ -677,102 +1899,39 @@
       "type": "cuboid",
       "priority": 2
     },
-    "marketandfarms-shop12": {
-      "parent": "marketandfarms",
-      "min": {
-        "x": -229,
-        "y": 67,
-        "z": 218
-      },
-      "max": {
-        "x": -219,
-        "y": 72,
-        "z": 228
-      },
-      "members": {},
-      "flags": {},
-      "owners": {},
-      "type": "cuboid",
-      "priority": 2
-    },
-    "marketandfarms-shop2": {
-      "parent": "marketandfarms",
-      "min": {
-        "x": -182,
-        "y": 67,
-        "z": 234
-      },
-      "max": {
-        "x": -172,
-        "y": 72,
-        "z": 244
-      },
-      "members": {},
-      "flags": {},
-      "owners": {},
-      "type": "cuboid",
-      "priority": 2
-    },
-    "marketandfarms-shop15": {
-      "parent": "marketandfarms",
-      "min": {
-        "x": -182,
-        "y": 77,
-        "z": 250
-      },
-      "max": {
-        "x": -172,
-        "y": 82,
-        "z": 260
-      },
-      "members": {},
-      "flags": {},
-      "owners": {},
-      "type": "cuboid",
-      "priority": 2
-    },
-    "marketandfarms-shop7": {
-      "parent": "marketandfarms",
-      "min": {
-        "x": -229,
-        "y": 67,
-        "z": 298
-      },
-      "max": {
-        "x": -219,
-        "y": 72,
-        "z": 308
-      },
-      "members": {},
-      "flags": {},
-      "owners": {},
-      "type": "cuboid",
-      "priority": 2
-    },
     "raidfarm-pillageroutpost": {
       "min": {
-        "x": -8015,
+        "x": -8020,
         "y": 45,
-        "z": 466
+        "z": 461
       },
       "max": {
-        "x": -7939,
+        "x": -7934,
         "y": 131,
-        "z": 542
+        "z": 547
       },
-      "members": {
-        "unique-ids": [
-          "1ba56b40-b924-4e44-ab87-4eea8605ca7e"
-        ]
-      },
+      "members": {},
       "flags": {
         "sleep": "allow",
         "use": "allow",
         "potion-splash": "allow",
-        "interact": "allow",
         "lighter": "allow",
+        "interact": "allow",
         "damage-animals": "allow",
         "chest-access": "allow",
+        "deny-spawn": [
+          "minecraft:skeleton",
+          "minecraft:phantom",
+          "minecraft:stray",
+          "minecraft:enderman",
+          "minecraft:witch",
+          "minecraft:spider",
+          "minecraft:zombie",
+          "minecraft:drowned",
+          "minecraft:creeper",
+          "minecraft:husk",
+          "minecraft:slime"
+        ],
         "firework-damage": "allow",
         "use-anvil": "allow"
       },
@@ -780,94 +1939,19 @@
       "type": "cuboid",
       "priority": 1
     },
-    "marketandfarms-shop14": {
-      "parent": "marketandfarms",
-      "min": {
-        "x": -182,
-        "y": 77,
-        "z": 234
-      },
-      "max": {
-        "x": -172,
-        "y": 82,
-        "z": 244
-      },
-      "members": {},
-      "flags": {},
-      "owners": {},
-      "type": "cuboid",
-      "priority": 2
-    },
-    "marketandfarms-shop8": {
-      "parent": "marketandfarms",
-      "min": {
-        "x": -229,
-        "y": 67,
-        "z": 282
-      },
-      "max": {
-        "x": -219,
-        "y": 72,
-        "z": 292
-      },
-      "members": {},
-      "flags": {},
-      "owners": {},
-      "type": "cuboid",
-      "priority": 2
-    },
-    "marketandfarms-shop17": {
-      "parent": "marketandfarms",
-      "min": {
-        "x": -182,
-        "y": 77,
-        "z": 282
-      },
-      "max": {
-        "x": -172,
-        "y": 82,
-        "z": 292
-      },
-      "members": {},
-      "flags": {},
-      "owners": {},
-      "type": "cuboid",
-      "priority": 2
-    },
-    "marketandfarms-shop5": {
-      "parent": "marketandfarms",
-      "min": {
-        "x": -182,
-        "y": 67,
-        "z": 282
-      },
-      "max": {
-        "x": -172,
-        "y": 72,
-        "z": 292
-      },
-      "members": {},
-      "flags": {},
-      "owners": {
-        "unique-ids": [
-          "35331d78-6d18-4d2a-8c57-49e899efcaed"
-        ]
-      },
-      "type": "cuboid",
-      "priority": 2
-    },
     "vernitopia": {
       "members": {
         "unique-ids": [
-          "2b0593ac-1810-49dc-bf46-4ac3bc7be60f"
+          "2b0593ac-1810-49dc-bf46-4ac3bc7be60f",
+          "c82dc394-70b4-4c9c-a7e0-5ce96d896abb"
         ]
       },
       "flags": {
         "sleep": "allow",
         "vehicle-place": "allow",
         "use": "allow",
-        "interact": "allow",
         "vehicle-destroy": "allow",
+        "interact": "allow",
         "chest-access": "allow",
         "ride": "allow"
       },
@@ -920,83 +2004,6 @@
         {
           "x": -1328,
           "z": 1855
-        }
-      ]
-    },
-    "marketandfarms-shop16": {
-      "parent": "marketandfarms",
-      "min": {
-        "x": -182,
-        "y": 77,
-        "z": 266
-      },
-      "max": {
-        "x": -172,
-        "y": 82,
-        "z": 276
-      },
-      "members": {},
-      "flags": {},
-      "owners": {},
-      "type": "cuboid",
-      "priority": 2
-    },
-    "marketandfarms-shop6": {
-      "parent": "marketandfarms",
-      "min": {
-        "x": -182,
-        "y": 67,
-        "z": 298
-      },
-      "max": {
-        "x": -172,
-        "y": 72,
-        "z": 308
-      },
-      "members": {},
-      "flags": {},
-      "owners": {},
-      "type": "cuboid",
-      "priority": 2
-    },
-    "creeperfarm": {
-      "members": {
-        "unique-ids": [
-          "3ba39644-4382-46ca-960f-f2d8ad5e2b24"
-        ]
-      },
-      "flags": {
-        "sleep": "allow",
-        "vehicle-place": "allow",
-        "use": "allow",
-        "potion-splash": "allow",
-        "interact": "allow",
-        "vehicle-destroy": "allow",
-        "chest-access": "allow",
-        "ride": "allow",
-        "use-anvil": "allow"
-      },
-      "owners": {},
-      "type": "poly2d",
-      "priority": 1,
-      "max-y": 319,
-      "min-y": 57,
-      "points": [
-        {
-          "x": 1752,
-          "z": 3543
-        },
-        {
-          "x": 1780,
-          "z": 3572
-        },
-        {
-          "x": 1752,
-          "z": 3601
-        },
-        {
-          "x": 1723,
-          "z": 3572
         }
       ]
     },
@@ -1093,7 +2100,7 @@
       "min": {
         "x": -9552,
         "y": 68,
-        "z": 3952
+        "z": 3950
       },
       "max": {
         "x": -9539,
@@ -1207,10 +2214,11 @@
     "marketandfarms": {
       "members": {},
       "flags": {
-        "deny-message": "Sorry, but you can't %what% here, this is a reserved space for markets and farms.",
+        "deny-message": "You can't %what% at this public warp.",
         "use": "allow",
-        "interact": "allow",
+        "block-trampling": "deny",
         "vehicle-destroy": "allow",
+        "interact": "allow",
         "chest-access": "allow",
         "deny-spawn": [
           "minecraft:pillager",
@@ -1310,30 +2318,6 @@
         }
       ]
     },
-    "spawneast": {
-      "min": {
-        "x": 794,
-        "y": 43,
-        "z": -54
-      },
-      "max": {
-        "x": 832,
-        "y": 123,
-        "z": 28
-      },
-      "members": {},
-      "flags": {
-        "sleep": "allow",
-        "vine-growth": "deny",
-        "use": "allow",
-        "interact": "allow",
-        "chest-access": "allow",
-        "mob-spawning": "deny"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 1
-    },
     "marketandfarms-smallshop24": {
       "parent": "marketandfarms",
       "min": {
@@ -1406,24 +2390,6 @@
       "type": "cuboid",
       "priority": 2
     },
-    "marketandfarms-shop22": {
-      "parent": "marketandfarms",
-      "min": {
-        "x": -229,
-        "y": 77,
-        "z": 250
-      },
-      "max": {
-        "x": -219,
-        "y": 82,
-        "z": 260
-      },
-      "members": {},
-      "flags": {},
-      "owners": {},
-      "type": "cuboid",
-      "priority": 2
-    },
     "marketandfarms-smallshop28": {
       "parent": "marketandfarms",
       "min": {
@@ -1435,24 +2401,6 @@
         "x": -212,
         "y": 61,
         "z": 235
-      },
-      "members": {},
-      "flags": {},
-      "owners": {},
-      "type": "cuboid",
-      "priority": 2
-    },
-    "marketandfarms-shop21": {
-      "parent": "marketandfarms",
-      "min": {
-        "x": -229,
-        "y": 77,
-        "z": 266
-      },
-      "max": {
-        "x": -219,
-        "y": 82,
-        "z": 276
       },
       "members": {},
       "flags": {},
@@ -1498,134 +2446,17 @@
       "type": "cuboid",
       "priority": 1
     },
-    "marketandfarms-shop24": {
+    "maf-acaciatrees": {
       "parent": "marketandfarms",
       "min": {
-        "x": -229,
-        "y": 77,
-        "z": 218
+        "x": -320,
+        "y": 83,
+        "z": -49
       },
       "max": {
-        "x": -219,
-        "y": 82,
-        "z": 228
-      },
-      "members": {},
-      "flags": {},
-      "owners": {},
-      "type": "cuboid",
-      "priority": 2
-    },
-    "marketandfarms-potatoes": {
-      "parent": "marketandfarms",
-      "members": {
-        "groups": [
-          "dragon"
-        ]
-      },
-      "flags": {},
-      "owners": {},
-      "type": "poly2d",
-      "priority": 2,
-      "max-y": 74,
-      "min-y": 70,
-      "points": [
-        {
-          "x": -142,
-          "z": 248
-        },
-        {
-          "x": -149,
-          "z": 248
-        },
-        {
-          "x": -149,
-          "z": 239
-        },
-        {
-          "x": -159,
-          "z": 239
-        },
-        {
-          "x": -159,
-          "z": 222
-        },
-        {
-          "x": -142,
-          "z": 222
-        },
-        {
-          "x": -142,
-          "z": 231
-        },
-        {
-          "x": -133,
-          "z": 231
-        },
-        {
-          "x": -133,
-          "z": 239
-        },
-        {
-          "x": -142,
-          "z": 239
-        }
-      ]
-    },
-    "marketandfarms-shop23": {
-      "parent": "marketandfarms",
-      "min": {
-        "x": -229,
-        "y": 77,
-        "z": 234
-      },
-      "max": {
-        "x": -219,
-        "y": 82,
-        "z": 244
-      },
-      "members": {},
-      "flags": {},
-      "owners": {},
-      "type": "cuboid",
-      "priority": 2
-    },
-    "qa-lostsoul": {
-      "min": {
-        "x": 863,
-        "y": 59,
-        "z": 29
-      },
-      "max": {
-        "x": 882,
-        "y": 72,
-        "z": 53
-      },
-      "members": {},
-      "flags": {
-        "sleep": "allow",
-        "vehicle-place": "allow",
-        "use": "allow",
-        "interact": "allow",
-        "vehicle-destroy": "allow",
-        "chest-access": "allow",
-        "ride": "allow"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 1
-    },
-    "marketandfarms-interact": {
-      "parent": "marketandfarms",
-      "min": {
-        "x": -174,
-        "y": 66,
-        "z": 357
-      },
-      "max": {
-        "x": -169,
-        "y": 70,
-        "z": 362
+        "x": -258,
+        "y": 95,
+        "z": -27
       },
       "members": {
         "groups": [
@@ -1640,45 +2471,106 @@
       "type": "cuboid",
       "priority": 2
     },
-    "cropfarms-other": {
-      "parent": "cropfarms",
+    "marketandfarms-interact": {
+      "parent": "marketandfarms",
       "min": {
-        "x": -9574,
+        "x": -187,
         "y": 68,
-        "z": 3917
+        "z": 329
       },
       "max": {
-        "x": -9539,
-        "y": 85,
-        "z": 3944
+        "x": -180,
+        "y": 72,
+        "z": 334
       },
       "members": {
         "groups": [
           "dragon"
         ]
       },
-      "flags": {},
+      "flags": {
+        "block-break": "allow",
+        "block-place": "allow"
+      },
       "owners": {},
       "type": "cuboid",
       "priority": 2
     },
-    "marketandfarms-smallshop30": {
+    "maf-jungletrees": {
       "parent": "marketandfarms",
       "min": {
-        "x": -216,
-        "y": 57,
-        "z": 219
+        "x": -278,
+        "y": 84,
+        "z": 18
       },
       "max": {
-        "x": -212,
-        "y": 61,
-        "z": 223
+        "x": -239,
+        "y": 120,
+        "z": 57
       },
-      "members": {},
-      "flags": {},
+      "members": {
+        "groups": [
+          "dragon"
+        ]
+      },
+      "flags": {
+        "block-break": "allow",
+        "block-place": "allow"
+      },
       "owners": {},
       "type": "cuboid",
       "priority": 2
+    },
+    "maf-mushredtrees": {
+      "parent": "marketandfarms",
+      "min": {
+        "x": -235,
+        "y": 89,
+        "z": 27
+      },
+      "max": {
+        "x": -217,
+        "y": 109,
+        "z": 45
+      },
+      "members": {
+        "groups": [
+          "dragon"
+        ]
+      },
+      "flags": {
+        "block-break": "allow",
+        "block-place": "allow"
+      },
+      "owners": {},
+      "type": "cuboid",
+      "priority": 2
+    },
+    "sheepfarm": {
+      "min": {
+        "x": -421,
+        "y": 47,
+        "z": -1151
+      },
+      "max": {
+        "x": -377,
+        "y": 82,
+        "z": -1061
+      },
+      "members": {},
+      "flags": {
+        "sleep": "allow",
+        "enderpearl": "deny",
+        "chorus-fruit-teleport": "deny",
+        "use": "allow",
+        "potion-splash": "deny",
+        "interact": "allow",
+        "damage-animals": "allow",
+        "chest-access": "allow"
+      },
+      "owners": {},
+      "type": "cuboid",
+      "priority": 1
     },
     "ua-academia": {
       "min": {
@@ -1692,6 +2584,9 @@
         "z": 4427
       },
       "members": {
+        "groups": [
+          "perm-helper"
+        ],
         "unique-ids": [
           "20484e65-0782-4c85-aa2f-531bc41648e7"
         ]
@@ -1700,9 +2595,9 @@
         "sleep": "allow",
         "vehicle-place": "allow",
         "use": "allow",
-        "interact": "allow",
-        "damage-animals": "allow",
         "vehicle-destroy": "allow",
+        "interact": "allow",
+        "damage-animals": "deny",
         "chest-access": "allow",
         "ride": "allow",
         "use-anvil": "allow"
@@ -1711,27 +2606,30 @@
       "type": "cuboid",
       "priority": 10
     },
-    "spawnnorth": {
+    "maf-oaktrees": {
+      "parent": "marketandfarms",
       "min": {
-        "x": 105,
-        "y": 41,
-        "z": -814
+        "x": -319,
+        "y": 75,
+        "z": 26
       },
       "max": {
-        "x": 187,
-        "y": 123,
-        "z": -776
+        "x": -283,
+        "y": 80,
+        "z": 59
       },
-      "members": {},
+      "members": {
+        "groups": [
+          "dragon"
+        ]
+      },
       "flags": {
-        "sleep": "allow",
-        "use": "allow",
-        "interact": "allow",
-        "mob-spawning": "deny"
+        "block-break": "allow",
+        "block-place": "allow"
       },
       "owners": {},
       "type": "cuboid",
-      "priority": 1
+      "priority": 2
     },
     "drownedfarm": {
       "min": {
@@ -1744,19 +2642,17 @@
         "y": 319,
         "z": 9768
       },
-      "members": {
-        "unique-ids": [
-          "1ba56b40-b924-4e44-ab87-4eea8605ca7e"
-        ]
-      },
+      "members": {},
       "flags": {
         "sleep": "allow",
+        "enderpearl": "deny",
+        "chorus-fruit-teleport": "deny",
         "vehicle-place": "allow",
         "use": "allow",
         "mob-damage": "allow",
+        "vehicle-destroy": "allow",
         "interact": "allow",
         "damage-animals": "allow",
-        "vehicle-destroy": "allow",
         "chest-access": "allow",
         "deny-spawn": [
           "minecraft:skeleton",
@@ -1772,6 +2668,28 @@
       "owners": {},
       "type": "cuboid",
       "priority": 1
+    },
+    "maf-nethertrees": {
+      "parent": "marketandfarms",
+      "min": {
+        "x": -189,
+        "y": 94,
+        "z": -14
+      },
+      "max": {
+        "x": -167,
+        "y": 130,
+        "z": 16
+      },
+      "members": {
+        "groups": [
+          "dragon"
+        ]
+      },
+      "flags": {},
+      "owners": {},
+      "type": "cuboid",
+      "priority": 2
     },
     "marketandfarms-smallshop8": {
       "parent": "marketandfarms",
@@ -1845,38 +2763,6 @@
       "type": "cuboid",
       "priority": 2
     },
-    "spawnjail": {
-      "min": {
-        "x": -65,
-        "y": -23,
-        "z": -143
-      },
-      "max": {
-        "x": -51,
-        "y": -16,
-        "z": -126
-      },
-      "members": {},
-      "flags": {
-        "chorus-fruit-teleport": "deny",
-        "use": "deny",
-        "invincible": "allow",
-        "feed-amount": 10,
-        "greeting": "You've been jailed it seems, perhaps you got a /mail to read!!",
-        "interact": "deny",
-        "chest-access": "deny",
-        "enderpearl": "deny",
-        "item-drop": "deny",
-        "item-pickup": "deny",
-        "feed-delay": 0,
-        "heal-amount": 10,
-        "heal-delay": 0,
-        "farewell": "You've served your time, good luck and have fun."
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 10
-    },
     "marketandfarms-smallshop4": {
       "parent": "marketandfarms",
       "min": {
@@ -1909,6 +2795,31 @@
       },
       "members": {},
       "flags": {},
+      "owners": {},
+      "type": "cuboid",
+      "priority": 2
+    },
+    "maf-birchtrees": {
+      "parent": "marketandfarms",
+      "min": {
+        "x": -324,
+        "y": 78,
+        "z": -18
+      },
+      "max": {
+        "x": -291,
+        "y": 84,
+        "z": 18
+      },
+      "members": {
+        "groups": [
+          "dragon"
+        ]
+      },
+      "flags": {
+        "block-break": "allow",
+        "block-place": "allow"
+      },
       "owners": {},
       "type": "cuboid",
       "priority": 2
@@ -1954,7 +2865,7 @@
       "min": {
         "x": -9591,
         "y": 68,
-        "z": 3968
+        "z": 3950
       },
       "max": {
         "x": -9556,
@@ -1971,23 +2882,84 @@
       "type": "cuboid",
       "priority": 2
     },
-    "marketandfarms-interactc1": {
-      "parent": "marketandfarms-interact",
-      "min": {
-        "x": -190,
-        "y": 67,
-        "z": 351
-      },
-      "max": {
-        "x": -185,
-        "y": 71,
-        "z": 356
-      },
+    "dragontowerparkour": {
+      "parent": "spawn",
       "members": {},
-      "flags": {},
+      "flags": {
+        "enderpearl": "deny",
+        "chorus-fruit-teleport": "deny"
+      },
       "owners": {},
-      "type": "cuboid",
-      "priority": 3
+      "type": "poly2d",
+      "priority": 2,
+      "max-y": 319,
+      "min-y": 74,
+      "points": [
+        {
+          "x": 378,
+          "z": -2
+        },
+        {
+          "x": 397,
+          "z": 0
+        },
+        {
+          "x": 410,
+          "z": 8
+        },
+        {
+          "x": 418,
+          "z": 22
+        },
+        {
+          "x": 418,
+          "z": 38
+        },
+        {
+          "x": 413,
+          "z": 51
+        },
+        {
+          "x": 407,
+          "z": 58
+        },
+        {
+          "x": 402,
+          "z": 61
+        },
+        {
+          "x": 390,
+          "z": 66
+        },
+        {
+          "x": 378,
+          "z": 66
+        },
+        {
+          "x": 365,
+          "z": 61
+        },
+        {
+          "x": 357,
+          "z": 54
+        },
+        {
+          "x": 351,
+          "z": 45
+        },
+        {
+          "x": 350,
+          "z": 26
+        },
+        {
+          "x": 354,
+          "z": 15
+        },
+        {
+          "x": 361,
+          "z": 6
+        }
+      ]
     },
     "spawnnortheast": {
       "min": {
@@ -2009,16 +2981,39 @@
       "type": "cuboid",
       "priority": 1
     },
-    "prismarinefarm": {
+    "bamboofarm": {
       "min": {
-        "x": -1933,
-        "y": 0,
-        "z": 1027
+        "x": 1836,
+        "y": -9,
+        "z": 3390
       },
       "max": {
-        "x": -1844,
+        "x": 1866,
+        "y": 71,
+        "z": 3431
+      },
+      "members": {},
+      "flags": {
+        "enderpearl": "deny",
+        "chorus-fruit-teleport": "deny",
+        "use": "allow",
+        "interact": "allow",
+        "chest-access": "allow"
+      },
+      "owners": {},
+      "type": "cuboid",
+      "priority": 1
+    },
+    "prismarinefarm": {
+      "min": {
+        "x": -2029,
+        "y": -64,
+        "z": 931
+      },
+      "max": {
+        "x": -1748,
         "y": 163,
-        "z": 1116
+        "z": 1212
       },
       "members": {
         "unique-ids": [
@@ -2026,6 +3021,8 @@
         ]
       },
       "flags": {
+        "enderpearl": "deny",
+        "chorus-fruit-teleport": "deny",
         "use": "allow",
         "interact": "allow",
         "chest-access": "allow",
@@ -2056,36 +3053,6 @@
       "type": "cuboid",
       "priority": 1
     },
-    "spawnportal": {
-      "parent": "spawn",
-      "min": {
-        "x": 20,
-        "y": 68,
-        "z": -260
-      },
-      "max": {
-        "x": 67,
-        "y": 94,
-        "z": -220
-      },
-      "members": {},
-      "flags": {
-        "mycelium-spread": "deny",
-        "use": "allow",
-        "interact": "allow",
-        "chest-access": "allow",
-        "mushroom-growth": "deny",
-        "grass-growth": "deny",
-        "crop-growth": "deny"
-      },
-      "owners": {
-        "unique-ids": [
-          "2def415a-beeb-42a5-8222-f48e80a83915"
-        ]
-      },
-      "type": "cuboid",
-      "priority": 2
-    },
     "spawn": {
       "members": {},
       "flags": {
@@ -2093,8 +3060,8 @@
         "use": "allow",
         "greeting": "Welcome to spawn",
         "ice-melt": "deny",
-        "interact": "allow",
         "vehicle-destroy": "allow",
+        "interact": "allow",
         "chest-access": "allow",
         "deny-spawn": [
           "minecraft:pillager",
@@ -2131,8 +3098,8 @@
         "item-frame-rotation": "deny",
         "snow-melt": "deny",
         "entity-painting-destroy": "deny",
-        "heal-amount": 1,
         "entity-item-frame-destroy": "deny",
+        "heal-amount": 1,
         "heal-delay": 10,
         "farewell": "Leaving spawn..."
       },
@@ -2143,8 +3110,8 @@
       "min-y": -64,
       "points": [
         {
-          "x": 431,
-          "z": 75
+          "x": 511,
+          "z": 80
         },
         {
           "x": 271,
@@ -2173,60 +3140,23 @@
         {
           "x": 431,
           "z": -416
-        }
-      ]
-    },
-    "ironfarm": {
-      "members": {},
-      "flags": {
-        "enderpearl": "deny",
-        "chorus-fruit-teleport": "deny",
-        "use": "allow",
-        "interact": "allow",
-        "chest-access": "allow",
-        "deny-spawn": [
-          "minecraft:cat",
-          "minecraft:cow",
-          "minecraft:chicken",
-          "minecraft:drowned",
-          "minecraft:pig",
-          "minecraft:sheep",
-          "minecraft:evoker"
-        ]
-      },
-      "owners": {},
-      "type": "poly2d",
-      "priority": 1,
-      "max-y": 168,
-      "min-y": 18,
-      "points": [
-        {
-          "x": 441,
-          "z": 3784
         },
         {
-          "x": 422,
-          "z": 3887
+          "x": 431,
+          "z": -112
         },
         {
-          "x": 556,
-          "z": 3896
-        },
-        {
-          "x": 590,
-          "z": 3852
-        },
-        {
-          "x": 504,
-          "z": 3786
+          "x": 511,
+          "z": -64
         }
       ]
     },
     "birdland": {
       "members": {},
       "flags": {
-        "interact": "allow",
+        "deny-message": "§cHi! §fSorry, this is the private area from MrBirdy.",
         "damage-animals": "deny",
+        "interact": "allow",
         "deny-spawn": [
           "minecraft:pillager",
           "minecraft:skeleton",
@@ -2280,122 +3210,6 @@
         }
       ]
     },
-    "marketandfarms-interactc2": {
-      "parent": "marketandfarms-interact",
-      "min": {
-        "x": -192,
-        "y": 67,
-        "z": 369
-      },
-      "max": {
-        "x": -187,
-        "y": 71,
-        "z": 374
-      },
-      "members": {},
-      "flags": {},
-      "owners": {},
-      "type": "cuboid",
-      "priority": 3
-    },
-    "marketandfarms-interactc3": {
-      "parent": "marketandfarms-interact",
-      "min": {
-        "x": -201,
-        "y": 67,
-        "z": 382
-      },
-      "max": {
-        "x": -196,
-        "y": 71,
-        "z": 387
-      },
-      "members": {},
-      "flags": {},
-      "owners": {},
-      "type": "cuboid",
-      "priority": 3
-    },
-    "spawnwest": {
-      "min": {
-        "x": -809,
-        "y": 32,
-        "z": -99
-      },
-      "max": {
-        "x": -771,
-        "y": 123,
-        "z": -17
-      },
-      "members": {},
-      "flags": {
-        "sleep": "allow",
-        "use": "allow",
-        "interact": "allow",
-        "mob-spawning": "deny"
-      },
-      "owners": {},
-      "type": "cuboid",
-      "priority": 1
-    },
-    "marketandfarms-wheat": {
-      "parent": "marketandfarms",
-      "members": {
-        "groups": [
-          "dragon"
-        ]
-      },
-      "flags": {},
-      "owners": {},
-      "type": "poly2d",
-      "priority": 2,
-      "max-y": 76,
-      "min-y": 72,
-      "points": [
-        {
-          "x": -142,
-          "z": 276
-        },
-        {
-          "x": -159,
-          "z": 276
-        },
-        {
-          "x": -159,
-          "z": 241
-        },
-        {
-          "x": -151,
-          "z": 241
-        },
-        {
-          "x": -151,
-          "z": 250
-        },
-        {
-          "x": -142,
-          "z": 250
-        }
-      ]
-    },
-    "marketandfarms-interactc4": {
-      "parent": "marketandfarms-interact",
-      "min": {
-        "x": -205,
-        "y": 67,
-        "z": 350
-      },
-      "max": {
-        "x": -200,
-        "y": 71,
-        "z": 360
-      },
-      "members": {},
-      "flags": {},
-      "owners": {},
-      "type": "cuboid",
-      "priority": 3
-    },
     "__global__": {
       "members": {},
       "flags": {
@@ -2403,6 +3217,7 @@
         "lava-fire": "deny",
         "enderman-grief": "deny",
         "pvp": "deny",
+        "chest-access": "allow",
         "ravager-grief": "deny",
         "fire-spread": "deny",
         "enderdragon-block-damage": "deny"
@@ -2410,41 +3225,6 @@
       "owners": {},
       "type": "global",
       "priority": 0
-    },
-    "marketandfarms-interactc5": {
-      "parent": "marketandfarms-interact",
-      "min": {
-        "x": -211,
-        "y": 68,
-        "z": 325
-      },
-      "max": {
-        "x": -206,
-        "y": 72,
-        "z": 330
-      },
-      "members": {},
-      "flags": {},
-      "owners": {},
-      "type": "cuboid",
-      "priority": 3
-    },
-    "spawnsouthwest": {
-      "min": {
-        "x": -9838,
-        "y": 15,
-        "z": 10193
-      },
-      "max": {
-        "x": -9778,
-        "y": 319,
-        "z": 10253
-      },
-      "members": {},
-      "flags": {},
-      "owners": {},
-      "type": "cuboid",
-      "priority": 1
     }
   }
 }
